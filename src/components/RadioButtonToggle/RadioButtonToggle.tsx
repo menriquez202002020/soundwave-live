@@ -9,9 +9,9 @@ interface ToggleButtonProps {
 const RadioButtonToggle: React.FC<ToggleButtonProps> = ({ options, handleFrameSelection }) => {
   const [selectedOption, setSelectedOption] = useState('frame')
 
-  const handleOptionChange = (value: string): any => {
-    setSelectedOption(value)
-    handleFrameSelection(value)
+  const handleOptionChange = (value: any): any => {
+    setSelectedOption(value.value)
+    handleFrameSelection(value.title)
   }
   return (
     <>
@@ -22,9 +22,9 @@ const RadioButtonToggle: React.FC<ToggleButtonProps> = ({ options, handleFrameSe
                     type="radio"
                     value={option.value}
                     checked={selectedOption === option.value}
-                    onChange={() => handleOptionChange(option.value)}
+                    onChange={() => handleOptionChange(option)}
                 />
-                <img src={option.image} alt={option.value} />
+                <img src={option.image} alt={option.title} />
                 <span>{option.title}</span>
                 </label>
             ))}

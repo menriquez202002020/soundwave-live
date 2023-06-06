@@ -14,9 +14,9 @@ export const Customizer: React.FC = () => {
   const [audioBuffer, setAudioBuffer] = useState<AudioBuffer | null>(null)
   const [showFileSizeAlert, setShowFileSizeAlert] = useState<boolean>(false)
   const [audioFileName, setAudioFileName] = useState<string>('No Files Selected')
-  const [selectedFrame, setSelectedFrame] = useState<string>('Frame')
-  const [selectedSizing, setSelectedSizing] = useState<string>('Small')
-  const [selectedColor, setSelectedColor] = useState<string>('Frame')
+  const [selectedFrame, setSelectedFrame] = useState<string>('')
+  const [selectedSizing, setSelectedSizing] = useState<string>('')
+  const [selectedColor, setSelectedColor] = useState<string>('')
   const [canvasTitle, setCanvasTitle] = useState<string>('Enter your title')
   const [canvasSubtitle, setCanvasSubtitle] = useState<string>('Enter your subtitle here')
 
@@ -84,10 +84,9 @@ export const Customizer: React.FC = () => {
         <div className='col-4 input-container'>
         <Accordion defaultActiveKey={['0']} >
           <Accordion.Item eventKey='0'>
-            <Accordion.Header><div className='upload-header'><div><img src='src/assets/icons/upload.png' alt='icon' /> Upload </div><p className='upload-desc'>Upload yuor media to continue:</p></div></Accordion.Header>
+            <Accordion.Header className={`upload-header ${ audioBuffer && 'file-uploaded'}`}><div className='upload-header'><div><img src='src/assets/icons/upload.png' alt='icon' /> Upload </div><p className='upload-desc'>Upload yuor media to continue:</p></div></Accordion.Header>
             <Accordion.Body>
               <div className='accordion-upload-container'>
-
                 {(audioBuffer !== null) &&
                   <div className='upload-wave-container'>
                     <WaveCanvas id='acc_sound_wave' waveHeight={initialState.waveHeight} audioBuffer={audioBuffer} width={initialState.canvasWidth} height={initialState.canvasHeight} />
@@ -107,7 +106,7 @@ export const Customizer: React.FC = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey='1'>
-            <Accordion.Header><img src='src/assets/icons/material-sizing.png' alt='icon' /> Material & Sizing</Accordion.Header>
+            <Accordion.Header className={`material-and-sizing-header ${ (selectedFrame && selectedSizing && audioBuffer ) && 'material-sizing-selected'}`} ><div className='upload-header'><div><img src='src/assets/icons/material-sizing.png' alt='icon' /> Material & Sizing</div><p className='upload-desc'>Upload yuor media to continue:</p></div></Accordion.Header>
             <Accordion.Body>
               <div className="material-and-sizing-container">
                 <p>Frame Type</p>
@@ -118,9 +117,22 @@ export const Customizer: React.FC = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey='2'>
-            <Accordion.Header><img src='src/assets/icons/preview.png' alt='icon' /> Order Review</Accordion.Header>
+            <Accordion.Header><div className='upload-header'><div><img src='src/assets/icons/preview.png' alt='icon' /> Order Review</div><p className='upload-desc'>Here is your order details:</p></div></Accordion.Header>
             <Accordion.Body>
-             Order Preview
+             <ul className="order-preview-container">
+              <li className="order-item">
+                ORIENTATION<strong>{"Landscapre"}</strong>
+              </li>
+              <li className="order-item">
+                FRAME TYPE<strong>{selectedFrame}</strong>
+              </li>
+              <li className="order-item">
+                SIZE<strong>{selectedSizing}</strong>
+              </li>
+              <li className="order-item">
+                TOTAL PRICE<strong>{"€50.00"}</strong>
+              </li>
+             </ul>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
