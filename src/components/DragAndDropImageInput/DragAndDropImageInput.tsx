@@ -13,7 +13,7 @@ const DragAndDropImageInput: React.FC<DragAndDropInputProps> = ({ onImageChange 
   const [state, setState] = useState<DragAndDropInputState>({
     isDragging: false
   })
-  const inputRef = useRef <any>()
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const handleDragEnter = (event: React.DragEvent<HTMLInputElement>): void => {
     event.preventDefault()
@@ -42,15 +42,15 @@ const DragAndDropImageInput: React.FC<DragAndDropInputProps> = ({ onImageChange 
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
     >
-      <img src='../src/assets/icons/img-upload.png' alt='' onClick={() => inputRef.current.click()} className='plus-icon' />
+      <img src='../src/assets/icons/img-upload.png' alt='' onClick={() => inputRef?.current?.click()} className='plus-icon' />
       <input
         type='file'
         accept='img/*'
-        onChange={(event) => { onImageChange(event.target.files?.[0]) }}
+        onChange={(event: any) => { onImageChange(event.target.files?.[0]) }}
         hidden
         ref={inputRef}
       />
-      <p onClick={() => inputRef.current.click()}>Upload or drag & drop your image</p>
+      <p onClick={() => inputRef?.current?.click()}>Upload or drag & drop your image</p>
       <span>JPG, JPEG, PNG - 5MB</span>
     </div>
   )
