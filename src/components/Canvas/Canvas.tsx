@@ -34,7 +34,7 @@ const Canvas: React.FC<CanvasProps> = ({ id, waveHeight, audioBuffer, width, hei
             {/* <h1>{ canvasSubtitle }</h1> */}
           </div>
           <div className="canvas-soundwave">
-          <WaveCanvas id={id} waveHeight={waveHeight} audioBuffer={audioBuffer} width={width} height={height} />
+            <WaveCanvas id={id} waveHeight={waveHeight} audioBuffer={audioBuffer} width={width} height={height} />
           </div>
         </div>
         <div className='canvas-footer desktop'>
