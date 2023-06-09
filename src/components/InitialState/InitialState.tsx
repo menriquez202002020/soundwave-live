@@ -1,4 +1,5 @@
 export const initialState = {
+  defaultLayoutBackgroundImage : 'src/assets/img/layout-background.jpeg',
   waveHeight: 20,
   canvasWidth: 350,
   canvasHeight: 170,

@@ -3,8 +3,6 @@ import React, { useCallback, useEffect, useState } from 'react'
 import DragAndDropInput from './../DragAndDropInput/DragAndDropInput'
 import WaveCanvas from './../WaveCanvas/WaveCanvas'
 import { initialState } from './../InitialState/InitialState'
-import RadioButtonToggle from './../RadioButtonToggle/RadioButtonToggle'
-import LayoutSizing from './../LayoutSizing/LayoutSizing'
 import './AccordionInput.css'
 
 export const AccordionInput: React.FC = () => {
@@ -12,9 +10,6 @@ export const AccordionInput: React.FC = () => {
   const [audioBuffer, setAudioBuffer] = useState<AudioBuffer | null>(null)
   const [showFileSizeAlert, setShowFileSizeAlert] = useState<boolean>(false)
   const [audioFileName, setAudioFileName] = useState<string>('No Files Selected')
-  const [selectedFrame, setSelectedFrame] = useState<string>('Frame')
-  const [selectedSizing, setSelectedSizing] = useState<string>('Small')
-  // const [activeSelection, setActiveSelection] = useState<boolean>(false)
 
   const handleAudioChange = (file: File): void => {
     if (typeof file !== 'undefined' || file !== null) {
@@ -30,6 +25,7 @@ export const AccordionInput: React.FC = () => {
       }
     }
   }
+
   const convertToAudioBuffer = useCallback(
     (file: File): void => {
       if (typeof file === 'undefined') {
@@ -52,25 +48,17 @@ export const AccordionInput: React.FC = () => {
     setAudioBuffer(null)
     console.log('reset')
   }
-  const handleFrameSelection = (value: string): void => {
-    setSelectedFrame(value)
-    console.log(value)
-  }
-  const handleSizingSelection = (value: string): void => {
-    setSelectedSizing(value)
-    console.log(value)
-  }
+
   useEffect(
     () => {
-      console.log(selectedFrame)
-      console.log(selectedSizing)
       console.log(audioFile)
     },
-    [audioFile, selectedFrame, selectedSizing]
+    [audioFile]
   )
+
   return (
     <>
-      <Accordion defaultActiveKey={['0']} >
+      <Accordion defaultActiveKey={['0']} alwaysOpen>
         <Accordion.Item eventKey='0'>
           <Accordion.Header><div className='upload-header'><div><img src='src/assets/icons/upload.png' alt='icon' /> Upload </div><p className='upload-desc'>Upload yuor media to continue:</p></div></Accordion.Header>
           <Accordion.Body>
@@ -97,12 +85,13 @@ export const AccordionInput: React.FC = () => {
         <Accordion.Item eventKey='1'>
           <Accordion.Header><img src='src/assets/icons/material-sizing.png' alt='icon' /> Material & Sizing</Accordion.Header>
           <Accordion.Body>
-            <div className="material-and-sizing-container">
-              <p>Frame Type</p>
-              <RadioButtonToggle options={initialState.frameOptions} handleFrameSelection={handleFrameSelection}/>
-              <p>Size</p>
-              <LayoutSizing options={initialState.sizingOptions} handleSizingSelection={handleSizingSelection}/>
-            </div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey='2'>

@@ -16,7 +16,7 @@ const LayoutSizing: React.FC<ToggleButtonProps> = ({ options, handleSizingSelect
     <>
       <div className='sizing-container'>
           {options.map((option: any) => (
-            <label className={`col-6 frame-selection ${selectedOption === option.title && 'active'}`} key={option.title}>
+            <label className={`col-6 frame-selection ${selectedOption === option.title ? 'active' : ''}`} key={option.title}>
               <input
                   type="radio"
                   value={option.title}

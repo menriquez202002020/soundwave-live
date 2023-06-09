@@ -9,22 +9,22 @@ interface ToggleButtonProps {
 const RadioButtonToggle: React.FC<ToggleButtonProps> = ({ options, handleFrameSelection }) => {
   const [selectedOption, setSelectedOption] = useState('frame')
 
-  const handleOptionChange = (value: string): any => {
-    setSelectedOption(value)
-    handleFrameSelection(value)
+  const handleOptionChange = (value: any): any => {
+    setSelectedOption(value.value)
+    handleFrameSelection(value.title)
   }
   return (
     <>
         <div className='frame-type'>
             {options.map((option: any) => (
-                <label className={`col-4 frame-selection frame ${selectedOption === option.value && 'active'}`} key={option.value}>
+                <label className={`col-4 frame-selection frame ${selectedOption === option.value ? 'active' : ''}`} key={option.value}>
                 <input
                     type="radio"
                     value={option.value}
                     checked={selectedOption === option.value}
-                    onChange={() => handleOptionChange(option.value)}
+                    onChange={() => handleOptionChange(option)}
                 />
-                <img src={option.image} alt={option.value} />
+                <img src={option.image} alt={option.title} />
                 <span>{option.title}</span>
                 </label>
             ))}

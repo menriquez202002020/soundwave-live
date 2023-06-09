@@ -1,0 +1,14 @@
+.drag-and-drop-input p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0px; 
+}
+.drag-and-drop-input span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #B3B2B2;
+}

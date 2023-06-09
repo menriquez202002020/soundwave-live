@@ -4,7 +4,6 @@ import { initialState } from './../InitialState/InitialState'
 import WaveCanvas from '../WaveCanvas/WaveCanvas'
 import './Canvas.css'
 
-
 interface CanvasProps {
   id: string
   audioBuffer: AudioBuffer

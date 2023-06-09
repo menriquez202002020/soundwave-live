@@ -1,4 +1,4 @@
-import './styles/main.css'
+import './styles/main.scss'
 import { Customizer } from './/pages/customizer/customizer'
 import React from 'react'
 
