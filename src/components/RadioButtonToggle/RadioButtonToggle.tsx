@@ -17,7 +17,7 @@ const RadioButtonToggle: React.FC<ToggleButtonProps> = ({ options, handleFrameSe
     <>
         <div className='frame-type'>
             {options.map((option: any) => (
-                <label className={`col-4 frame-selection frame ${selectedOption === option.value && 'active'}`} key={option.value}>
+                <label className={`col-4 frame-selection frame ${selectedOption === option.value ? 'active' : ''}`} key={option.value}>
                 <input
                     type="radio"
                     value={option.value}
