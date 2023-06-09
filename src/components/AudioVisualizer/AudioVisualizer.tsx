@@ -1,5 +1,5 @@
 import React, { useCallback, useRef, useState } from 'react'
-import WaveCanvas from './WaveCanvas'
+import WaveCanvas from '../WaveCanvas/WaveCanvas'
 
 const AudioWaveform: React.FC = () => {
   const widthDefault = 600
