@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './RadioButtonToggle.css'
+import './RadioButtonToggle.scss'
 
 interface ToggleButtonProps {
   options: Array<{ value: string, image: string, title: string }>
@@ -18,6 +18,7 @@ const RadioButtonToggle: React.FC<ToggleButtonProps> = ({ options, handleFrameSe
         <div className='frame-type'>
             {options.map((option: any) => (
                 <label className={`col-4 frame-selection frame ${selectedOption === option.value ? 'active' : ''}`} key={option.value}>
+                <span className='custom-select'></span>
                 <input
                     type="radio"
                     value={option.value}

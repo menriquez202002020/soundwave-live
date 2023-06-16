@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './LayoutSizing.css'
+import './LayoutSizing.scss'
 
 interface ToggleButtonProps {
   options: Array<{ size_inc: string, size_cm: string, title: string }>
@@ -17,6 +17,7 @@ const LayoutSizing: React.FC<ToggleButtonProps> = ({ options, handleSizingSelect
       <div className='sizing-container'>
           {options.map((option: any) => (
             <label className={`col-6 frame-selection ${selectedOption === option.title ? 'active' : ''}`} key={option.title}>
+              <span className='custom-select'></span>
               <input
                   type="radio"
                   value={option.title}

@@ -1,0 +1,43 @@
+.card-wrapper {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.title-container {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.card-wrapper .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #222222;
+}
+
+.color-scheme-container {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.color-scheme-container .color {
+    background: #F27121;
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
