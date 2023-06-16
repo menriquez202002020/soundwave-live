@@ -12,3 +12,6 @@
     line-height: 24px;
     color: #B3B2B2;
 }
+.drag-and-drop-input {
+    z-index: 30 !important;
+}

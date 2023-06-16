@@ -1,36 +1,47 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import './LayoutSizing.scss'
+import { useSelector, useDispatch } from 'react-redux'
+import type { RootState } from '../../redux/store'
+import { setSize } from '../../redux/reducers/selected'
+import { setSizes } from '../../redux/reducers/listing'
 
-interface ToggleButtonProps {
-  options: Array<{ size_inc: string, size_cm: string, title: string }>
-  handleSizingSelection: (value: string) => void
-}
-const LayoutSizing: React.FC<ToggleButtonProps> = ({ options, handleSizingSelection }) => {
-  const [selectedOption, setSelectedOption] = useState('Small')
+const LayoutSizing: React.FC = () => {
+  const { sizes } = useSelector((state: RootState) => state.listing.listing)
+  const { size } = useSelector((state: RootState) => state.selected.selected)
+  const dispatch = useDispatch()
 
-  const handleOptionChange = (value: string): any => {
-    setSelectedOption(value)
-    handleSizingSelection(value)
+  const fetchSizes = (): void => {
+    fetch('/src/data/sizes.json')
+      .then(async (res) => await res.json())
+      .then(async (data) => {
+        dispatch(setSizes(data))
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
+
+  useEffect(() => {
+    fetchSizes()
+  }, [])
+
   return (
-    <>
-      <div className='sizing-container'>
-          {options.map((option: any) => (
-            <label className={`col-6 frame-selection ${selectedOption === option.title ? 'active' : ''}`} key={option.title}>
-              <span className='custom-select'></span>
-              <input
-                  type="radio"
-                  value={option.title}
-                  checked={selectedOption === option.title}
-                  onChange={() => handleOptionChange(option.title)}
-              />
-              <p>{option.title}</p>
-              <span>{option.size_inc}</span>
-              <span>{option.size_cm}</span>
-            </label>
-          ))}
-      </div>
-    </>
+    <div className='sizing-container'>
+        {sizes.map((option: any) => (
+          <label className={`col-6 frame-selection ${size.title === option.title ? 'active' : ''}`} key={option.title}>
+            <span className='custom-select'></span>
+            <input
+                type="radio"
+                value={option.title}
+                checked={size.title === option.title}
+                onChange={() => { dispatch(setSize(option)) }}
+            />
+            <p>{option.title}</p>
+            <span>{option.size_inc}</span>
+            <span>{option.size_cm}</span>
+          </label>
+        ))}
+    </div>
   )
 }
 

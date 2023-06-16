@@ -1,5 +1,5 @@
 import '../../styles/main.scss'
-import './templates.css'
+import './templates.scss'
 import React, { useEffect } from 'react'
 import type { RootState } from '../../redux/store'
 import { useDispatch, useSelector } from 'react-redux'
@@ -34,10 +34,10 @@ const Templates: React.FC = () => {
       <div className="loader-container">
         <button className="load-more">Load more</button>
       </div>
-      <div className="action-container">
+      {/* <div className="action-container">
         <button className="preview">Preview</button>
         <button className="continue">Continue</button>
-      </div>
+      </div> */}
     </div>
   )
 }

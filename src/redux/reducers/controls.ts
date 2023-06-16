@@ -8,7 +8,8 @@ export interface ControlsState {
 
 const initialState: ControlsState = {
   controls: {
-    showTemplates: false
+    showTemplates: false,
+    editBackground: false
   }
 }
 
@@ -18,10 +19,13 @@ export const controlsSlice = createSlice({
   reducers: {
     toggleShowTemplates: (state: ControlsState, action: PayloadAction<boolean>) => {
       state.controls.showTemplates = action.payload
+    },
+    toggleEditBackground: (state: ControlsState, action: PayloadAction<boolean>) => {
+      state.controls.editBackground = action.payload
     }
   }
 })
 
-export const { toggleShowTemplates } = controlsSlice.actions
+export const { toggleShowTemplates, toggleEditBackground } = controlsSlice.actions
 
 export default controlsSlice.reducer

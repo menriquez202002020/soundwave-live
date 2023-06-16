@@ -256,6 +256,12 @@ button.accordion-button {
     padding: 24px 0px;
     gap: 24px;
     justify-content: space-between;
+    button {
+      background-color: $gray-100;
+      width: 32px;
+      height: 32px;
+      padding: 7px;
+    }
 }
 .canvas-header p {
     font-family: 'SF Pro';
@@ -331,6 +337,13 @@ button.accordion-button {
   width: 100%;
   z-index: 1;
 }
+.orientation-icon {
+  transition: 0.2s ease-in-out;
+}
+.portrait-orientation {
+  transition: .2s ease-in-out;
+  transform: rotate(90deg);
+}
 .canvas-content > div:not(first-child) {
   z-index: 2;
 }
@@ -352,6 +365,8 @@ button.accordion-button {
 .overlay.mobile.option_3 {
   background: #d6b0ff82;
 }
+/*End of Canvas*/ 
+
 /* Order Review CSS */
 ul.order-preview-container {
   padding: 0;
@@ -397,9 +412,14 @@ button.accordion-button .upload-header .upload-desc {
 }
 .col-7.canvas-container.portrait .canvas-component > div:not(.canvas-header) {
   width: 550px;
+  transition: width 0.3s ease;
 }
 .col-7.canvas-container.landscape .canvas-component > div:not(.canvas-header) {
   width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 }
 .col-7.canvas-container.portrait .canvas-component {
   display: flex;
@@ -411,7 +431,7 @@ button.accordion-button .upload-header .upload-desc {
   text-transform: capitalize;
 }
 .col-7.canvas-container.portrait .template-color {
-  gap: 10px;
+  gap: 24px;
 }
 
 .template-action-container {

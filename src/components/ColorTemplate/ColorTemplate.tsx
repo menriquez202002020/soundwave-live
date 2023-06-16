@@ -1,35 +1,54 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import './ColorTemplate.css'
+import { useSelector, useDispatch } from 'react-redux'
+import type { RootState } from '../../redux/store'
+import { setColors } from '../../redux/reducers/listing'
+import { setColor } from '../../redux/reducers/selected'
+import { toggleEditBackground } from '../../redux/reducers/controls'
 
 interface ToggleButtonProps {
-  options: Array<{ key: string, image: string, view: string }>
-  handleColorSelection: (value: string) => void
-  onImageClick: (event: Event) => void
+  view: string
 }
 
-interface Event { key: string, image: string, view: string }
+const ColorTemplate: React.FC<ToggleButtonProps> = ({ view = 'desktop' }) => {
+  const { colors } = useSelector((state: RootState) => state.listing.listing)
+  const { color } = useSelector((state: RootState) => state.selected.selected)
+  const dispatch = useDispatch()
 
-const ColorTemplate: React.FC<ToggleButtonProps> = ({ options, handleColorSelection, onImageClick }) => {
-  const [selectedOption, setSelectedOption] = useState('option_0')
-  const handleOptionChange = (value: Event): void => {
-    setSelectedOption(value.key)
-    handleColorSelection(value.view.concat(' ').concat(value.key))
-    onImageClick(value)
+  const fetchColors = (): void => {
+    fetch('/src/data/colors.json')
+      .then(async (res) => await res.json())
+      .then(async (data) => dispatch(setColors(data)))
+      .catch(err => {
+        console.log(err)
+      })
   }
+
+  const handleOptionChange = (option: any): void => {
+    dispatch(setColor(option))
+    dispatch(toggleEditBackground(true))
+  }
+
+  useEffect(() => {
+    fetchColors()
+  }, [])
+
   return (
     <>
         <div className='template-color'>
-            {options.map((option) => (
-                <label className={`col-3 frame-color-selection frame-color ${option.view} ${selectedOption === option.key ? 'active' : ''}`} key={option.key}>
-                <input
-                    type="radio"
-                    value={option.key}
-                    checked={selectedOption === option.key}
-                    onChange={() => { handleOptionChange(option) }}
-                />
-                <img src={option.image} alt={option.key} />
+            {colors.map((option) => {
+              return view === option.view
+                ? <label className={`col-3 frame-color-selection frame-color ${option.view} ${color.id === option.id ? 'active' : ''}`} key={option.id}>
+                    <input
+                      className='frame-color-selection-input'
+                      type="radio"
+                      value={option.key}
+                      checked={color.id === option.id}
+                      onChange={() => { handleOptionChange(option) }} />
+                    <img className='frame-color-selection-img' src={option.image} alt={option.key} />
                 </label>
-            ))}
+                : null
+            })}
         </div>
     </>
   )

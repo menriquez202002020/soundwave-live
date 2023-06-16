@@ -1,0 +1,118 @@
+.container {
+    padding: 28px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #222222;
+}
+
+.filter {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 590;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222222;
+    padding: 8px 16px;
+    display: block;
+    border: 1px solid #222222;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.filter .icon {
+    margin-left: 10px;
+}
+
+.cards-container {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-top: 32px;
+}
+
+.loader-container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.loader-container .load-more {
+    background: #222222;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 12px 24px;
+    border: none;
+    width: 100%;
+}
+
+.action-container {
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #EFEFEF;
+    background: #fff;
+    padding: 28px 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+.action-container button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #222222;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 0;
+    background: transparent;
+}
+
+.action-container .continue {
+    color: #fff;
+    background-color: #222222;
+}
+
+@media only screen and (max-width: 414px) {
+    .title-container .title {
+        font-weight: 510;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .filter {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .cards-container {
+         grid-template-columns: 1fr;
+    }
+}

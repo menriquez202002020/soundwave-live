@@ -1,6 +1,6 @@
 export const initialState = {
   defaultLayoutBackgroundImage: 'src/assets/img/layout-background.jpeg',
-  customizerLayout: 'portrait',
+  customizerLayout: 'landscape',
   waveHeight: 20,
   canvasWidth: 350,
   canvasHeight: 170,

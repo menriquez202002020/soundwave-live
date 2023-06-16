@@ -34,23 +34,29 @@ const DragAndDropImageInput: React.FC<DragAndDropInputProps> = ({ onImageChange 
     setState({ isDragging: false })
   }
 
+  const handleFileInputClick = (): void => {
+    inputRef?.current?.click()
+  }
+
   return (
     <div
-      className={`drag-and-drop-input ${state.isDragging ? 'dragging' : ''}`}
+      className={`d-d-content drag-and-drop-input ${state.isDragging ? 'dragging' : ''}`}
       onDragEnter={handleDragEnter}
       onDragOver={handleDragEnter}
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
+      onClick={handleFileInputClick}
     >
-      <img src='../src/assets/icons/img-upload.png' alt='' onClick={() => inputRef?.current?.click()} className='plus-icon' />
+      <img src='../src/assets/icons/img-upload.png' alt='' onClick={() => inputRef?.current?.click()} className='plus-icon d-d-content' />
       <input
+        className='d-d-content'
         type='file'
         accept='img/*'
         onChange={(event: any) => { onImageChange(event.target.files?.[0]) }}
         hidden
         ref={inputRef}
       />
-      <p onClick={() => inputRef?.current?.click()}>Upload or drag & drop your image</p>
+      <p className='d-d-content' onClick={() => inputRef?.current?.click()}>Upload or drag & drop your image</p>
       <span>JPG, JPEG, PNG - 5MB</span>
     </div>
   )

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "key": "option_0",
+    "image": "src/assets/img/first.png",
+    "view": "desktop"
+  },
+  {
+    "id": 2,
+    "key": "option_1",
+    "image": "src/assets/img/second.png",
+    "view": "desktop"
+  },
+  {
+    "id": 3,
+    "key": "option_2",
+    "image": "src/assets/img/third.png",
+    "view": "desktop"
+  },
+  {
+    "id": 4,
+    "key": "option_3",
+    "image": "src/assets/img/forth.png",
+    "view": "desktop"
+  },
+  {
+    "id": 5,
+    "key": "option_1",
+    "image": "/src/assets/icons/first_mobile.png",
+    "view": "mobile"
+  },
+  {
+    "id": 6,
+    "key": "option_2",
+    "image": "/src/assets/icons/second_mobile.png",
+    "view": "mobile"
+  },
+  {
+    "id": 7,
+    "key": "option_3",
+    "image": "/src/assets/icons/third_mobile.png",
+    "view": "mobile"
+  }
+]

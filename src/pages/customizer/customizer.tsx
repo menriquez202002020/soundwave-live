@@ -1,17 +1,20 @@
 import React, { useCallback, useEffect, useState } from 'react'
+import type { MouseEventHandler } from 'react'
 import { Accordion } from 'react-bootstrap'
 import DragAndDropImageInput from '../../components/DragAndDropImageInput/DragAndDropImageInput'
 import DragAndDropInput from '../../components/DragAndDropInput/DragAndDropInput'
 import WaveCanvas from '../../components/WaveCanvas/WaveCanvas'
 import { initialState } from '../../components/InitialState/InitialState'
-import RadioButtonToggle from '../../components/RadioButtonToggle/RadioButtonToggle'
 import LayoutSizing from '../../components/LayoutSizing/LayoutSizing'
 import ColorTemplate from '../../components/ColorTemplate/ColorTemplate'
 import ConfirmationModal from '../../components/ConfirmationModal/ConfirmationModal'
 import Templates from '../../components/Templates'
 import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
-import { toggleShowTemplates } from '../../redux/reducers/controls'
+import { toggleShowTemplates, toggleEditBackground } from '../../redux/reducers/controls'
+import { changeBackgroundImage } from '../../redux/reducers/customizer'
+import FrameOptions from '../../components/FrameOptions'
+import { updateOrientation } from '../../redux/reducers/canvas'
 import '~/pages/customizer/customizer.scss'
 
 export const Customizer: React.FC = () => {
@@ -20,18 +23,15 @@ export const Customizer: React.FC = () => {
   const [showFileSizeAlert, setShowFileSizeAlert] = useState<boolean>(false)
   const [showImageSizeAlert, setShowImageSizeAlert] = useState<boolean>(false)
   const [audioFileName, setAudioFileName] = useState<string>('No Files Selected')
-  const [selectedFrame, setSelectedFrame] = useState<string>('')
-  const [selectedSizing, setSelectedSizing] = useState<string>('')
-  const [selectedColor, setSelectedColor] = useState<string>('')
   const [canvasTitle, setCanvasTitle] = useState<string>('Enter your title')
   const [canvasSubtitle, setCanvasSubtitle] = useState<string>('Enter your subtitle here')
-  const [editLayoutBackground, setEditLayoutBackground] = useState<boolean>(false)
   const [showConfirmation, setShowConfirmation] = useState(false)
-  const [layoutBackgroundImage, setLayoutBackgroundImage] = useState(initialState.defaultLayoutBackgroundImage)
-  const [customizerLayout, setCustomizerLayout] = useState<string>(initialState.customizerLayout)
 
   // Redux state controls
   const { controls } = useSelector((state: RootState) => state.controls)
+  const { customizer } = useSelector((state: RootState) => state.customizer)
+  const { selected } = useSelector((state: RootState) => state.selected)
+  const { orientation } = useSelector((state: RootState) => state.canvas)
   const dispatch = useDispatch()
 
   const handleAudioChange = (file: File): void => {
@@ -55,7 +55,7 @@ export const Customizer: React.FC = () => {
         const imageReader = new FileReader()
         imageReader.readAsDataURL(file)
         imageReader.onloadend = () => {
-          setLayoutBackgroundImage(imageReader.result as string)
+          dispatch(changeBackgroundImage(imageReader.result as string))
           setShowImageSizeAlert(false)
         }
       } else {
@@ -80,32 +80,20 @@ export const Customizer: React.FC = () => {
     },
     [audioFile]
   )
-  const onImageClick = (event: Event): void => {
-    setEditLayoutBackground(true)
-    console.log(event)
-  }
   const resetAudioFile = (): void => {
     setShowConfirmation(true)
     console.log(showConfirmation)
   }
-  const handleFrameSelection = (value: string): void => {
-    setSelectedFrame(value)
-    console.log(value)
-  }
-  const handleSizingSelection = (value: string): void => {
-    setSelectedSizing(value)
-    console.log(value)
-  }
-  // @ts-expect-error: will be used soon for out box closing
-  // const handleCloseEditLayoutBackground = (): void => {
-  //   setEditLayoutBackground(false)
-  // }
-  const handleColorSelection = (value: string): void => {
-    if (selectedColor !== '') {
-      setEditLayoutBackground(true)
-    }
-    setSelectedColor(value)
-    console.log(value)
+
+  const handleCloseEditLayoutBackground: MouseEventHandler<HTMLDivElement> = (event) => {
+    const target = event.target as HTMLDivElement
+    console.log(target)
+    const classList = [...target.classList]
+    const filteredClassList = classList.filter((element: string) => {
+      const canvasClass = ['overlay', 'frame-color-selection-img', 'frame-color-selection-input', 'd-d-content']
+      return canvasClass.includes(element)
+    })
+    dispatch(toggleEditBackground(filteredClassList.length > 0))
   }
   const handleConfirmDelete = (): void => {
     setAudioFile(null)
@@ -113,19 +101,21 @@ export const Customizer: React.FC = () => {
     setShowConfirmation(false)
     console.log('reset')
   }
-
   const handleCancelDelete = (): void => {
     setShowConfirmation(false)
+  }
+  const setCanvasOrientation = (): void => {
+    const canvasOrientation = orientation === 'landscape' ? 'portrait' : 'landscape'
+    dispatch(updateOrientation(canvasOrientation))
   }
 
   useEffect(
     () => {
       setCanvasTitle('Enter your title')
       setCanvasSubtitle('Enter your subtitle here')
-      setCustomizerLayout(customizerLayout)
       console.log(canvasTitle)
     },
-    [audioFile, selectedFrame, selectedSizing, showConfirmation]
+    [audioFile, showConfirmation]
   )
   return (
     <>
@@ -134,13 +124,13 @@ export const Customizer: React.FC = () => {
           <button onClick={() => dispatch(toggleShowTemplates(true))} className="add-template-button">Template gallery</button>
           <button onClick={() => dispatch(toggleShowTemplates(false))} className="close-template-button"><img src="/src/assets/icons/close.png" alt="" className="icon" /></button>
         </div>
-        <div className='col-12 customizer-container'>
+        <div className='col-12 customizer-container' onClick={handleCloseEditLayoutBackground}>
           { controls.showTemplates
             ? <div className="col-5 input-container">
                 <Templates />
               </div>
             : <div className='col-5 input-container'>
-            { editLayoutBackground
+            { controls.editBackground
               ? (<Accordion defaultActiveKey={['0']} className='main-accordion-layout'>
                   <Accordion.Item eventKey='0'>
                   <Accordion.Header className={`upload-header ${audioBuffer !== null ? 'file-uploaded' : ''}`}>
@@ -203,7 +193,7 @@ export const Customizer: React.FC = () => {
                 </Accordion.Item>
                 {/* Material Accordion */}
                 <Accordion.Item eventKey='1'>
-                  <Accordion.Header className={`material-and-sizing-header ${(selectedFrame !== '' && selectedSizing !== '' && audioBuffer !== null) ? 'material-sizing-selected' : ''}`} >
+                  <Accordion.Header className={`material-and-sizing-header ${(selected.frame.value !== '' && selected.size.title !== '' && audioBuffer !== null) ? 'material-sizing-selected' : ''}`} >
                     <div className='upload-header'>
                       <div>
                         <svg className='accordion-icon' width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,9 +207,9 @@ export const Customizer: React.FC = () => {
                   <Accordion.Body>
                     <div className="material-and-sizing-container">
                       <p>Frame Type</p>
-                      <RadioButtonToggle options={initialState.frameOptions} handleFrameSelection={handleFrameSelection} />
+                        <FrameOptions />
                       <p>Size</p>
-                      <LayoutSizing options={initialState.sizingOptions} handleSizingSelection={handleSizingSelection} />
+                      <LayoutSizing />
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -242,10 +232,10 @@ export const Customizer: React.FC = () => {
                         ORIENTATION<strong>{'Landscapre'}</strong>
                       </li>
                       <li className="order-item">
-                        FRAME TYPE<strong>{selectedFrame}</strong>
+                        FRAME TYPE<strong>{selected.frame.title}</strong>
                       </li>
                       <li className="order-item">
-                        SIZE<strong>{selectedSizing}</strong>
+                        SIZE<strong>{selected.size.title}</strong>
                       </li>
                       <li className="order-item">
                         TOTAL PRICE<strong>{'€50.00'}</strong>
@@ -253,7 +243,7 @@ export const Customizer: React.FC = () => {
                     </ul>
                   </Accordion.Body>
                 </Accordion.Item>
-                {!editLayoutBackground && !controls.showTemplates &&
+                {(!controls.showTemplates) &&
                   <div className='input-btns col-12'>
                     <button className='btn-transparent col-6'>
                       Preview
@@ -277,13 +267,17 @@ export const Customizer: React.FC = () => {
             }
           </div>
           }
-          <div className={`col-7 canvas-container ${customizerLayout}`}>
+          {/* Canvas Container */}
+          <div className={`col-7 canvas-container ${orientation}`}>
             <div className='canvas-component'>
               <div className='canvas-header'>
-                <p>Landscape Image Background Template</p><img src='src/assets/icons/header-icon.png' alt='' />
+                <p className='text-capitalize'>{orientation} Image Background Template</p>
+                <button className='btn-circle' onClick={setCanvasOrientation}>
+                  <img className={`orientation-icon ${orientation + '-orientation'}`} src='src/assets/icons/svg/orientation-icon.svg' alt='' />
+                </button>
               </div>
-              <div className={'canvas-content'} style={{ background: `url('${layoutBackgroundImage}'` }}>
-                <div className={`overlay ${selectedColor}`}></div>
+              <div className={'canvas-content'} style={{ background: `url('${customizer.backgroundImage}'` }}>
+                <div className={`overlay ${selected.color.view} ${selected.color.key}`}></div>
                 <div className="canvas-text title">
                   {/* <h1>{canvasTitle}</h1> */}
                 </div>
@@ -298,10 +292,10 @@ export const Customizer: React.FC = () => {
                 </div>
               </div>
               <div className='canvas-footer desktop'>
-                <ColorTemplate options={initialState.colorOptions} onImageClick={onImageClick} handleColorSelection={handleColorSelection} />
+                <ColorTemplate view="desktop" />
               </div>
               <div className='canvas-footer mobile'>
-                <ColorTemplate options={initialState.colorOptionsMobile} onImageClick={onImageClick} handleColorSelection={handleColorSelection} />
+                <ColorTemplate view="mobile" />
               </div>
             </div>
           </div>
