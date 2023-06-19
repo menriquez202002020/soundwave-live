@@ -1,47 +1,58 @@
-import React from 'react'
-// import ColorTemplate from '../ColorTemplate/ColorTemplate'
-// import { initialState } from './../InitialState/InitialState'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import type { RootState } from '../../redux/store'
 import WaveCanvas from '../WaveCanvas/WaveCanvas'
-import './Canvas.css'
+import { updateOrientation } from '../../redux/reducers/canvas'
+import ColorTemplate from '../../components/ColorTemplate/ColorTemplate'
+import './Canvas.scss'
 
-interface CanvasProps {
-  id: string
-  audioBuffer: AudioBuffer
-  waveHeight: number
-  width: number
-  height: number
-}
+const Canvas: React.FC = () => {
+  const [audioFile] = useState<File | null>(null)
+  const [canvasSubtitle] = useState<string>('Enter your subtitle here')
+  const [showConfirmation] = useState(false)
+  const { orientation, specifications } = useSelector((state: RootState) => state.canvas)
+  const { customizer } = useSelector((state: RootState) => state.customizer)
+  const { selected } = useSelector((state: RootState) => state.selected)
+  const dispatch = useDispatch()
 
-const Canvas: React.FC<CanvasProps> = ({ id, waveHeight, audioBuffer, width, height }) => {
-  // const [canvasTitle, setCanvasTitle] = useState<string>('Enter your title')
-  // const [canvasSubtitle, setCanvasSubtitle] = useState<string>('Enter your subtitle here')
-  // const handleFrameSelection = (value: string): void => {
-  //   setCanvasTitle('Enter your title')
-  //   setCanvasSubtitle('Enter your subtitle here')
-  //   console.log(value)
-  // }
+  const setCanvasOrientation = (): void => {
+    const canvasOrientation = orientation === 'landscape' ? 'portrait' : 'landscape'
+    dispatch(updateOrientation(canvasOrientation))
+  }
+
+  useEffect(
+    () => {},
+    [audioFile, showConfirmation]
+  )
   return (
     <>
       <div className='canvas-component'>
         <div className='canvas-header'>
-          <p>Landscape Image Background Template</p><img src='src/assets/icons/header-icon.png' alt='' />
+          <p className='text-capitalize'>{orientation} Image Background Template</p>
+          <button className='btn-circle' onClick={setCanvasOrientation}>
+            <img className={`orientation-icon ${orientation + '-orientation'}`} src='src/assets/icons/svg/orientation-icon.svg' alt='' />
+          </button>
         </div>
-        <div className='canvas-content'>
+        <div className={'canvas-content'} style={{ background: `url('${customizer.backgroundImage}'` }}>
+          <div className={`overlay ${selected.color.view} ${selected.color.key}`}></div>
           <div className="canvas-text title">
-            {/* <h1>{ canvasTitle }</h1> */}
+            {/* <h1>{canvasTitle}</h1> */}
           </div>
           <div className="canvas-text subtitle">
-            {/* <h1>{ canvasSubtitle }</h1> */}
+            <h1>{canvasSubtitle}</h1>
           </div>
           <div className="canvas-soundwave">
-          <WaveCanvas id={id} waveHeight={waveHeight} audioBuffer={audioBuffer} width={width} height={height} />
+            {(specifications.audioBuffer !== null)
+              ? <WaveCanvas id='main-canvas' />
+              : <div className="temp-canvas-image"><img src="src/assets/img/soundwave.png" alt="" /></div>
+            }
           </div>
         </div>
         <div className='canvas-footer desktop'>
-          {/* <ColorTemplate options={initialState.colorOptions} handleFrameSelection={handleFrameSelection}/> */}
+          <ColorTemplate view="desktop" />
         </div>
         <div className='canvas-footer mobile'>
-          {/* <ColorTemplate options={initialState.colorOptionsMobile} handleFrameSelection={handleFrameSelection}/> */}
+          <ColorTemplate view="mobile" />
         </div>
       </div>
     </>

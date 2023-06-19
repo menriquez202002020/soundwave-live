@@ -9,14 +9,14 @@ const initialState: Canvas = {
   size: 'Small',
   totalPrice: 0,
   content: {
-    title: '',
-    subtitle: ''
+    title: 'Enter Title',
+    subtitle: 'Enter Subtitle'
   },
   specifications: {
     audioBuffer: null,
-    waveHeight: 0,
-    width: 0,
-    height: 0
+    waveHeight: 20,
+    width: 350,
+    height: 170
   }
 }
 
@@ -29,11 +29,19 @@ export const canvasSlice = createSlice({
     },
     updateOrientation: (state, action: PayloadAction<string>) => {
       state.orientation = action.payload
+    },
+    updateSpecifications: (state, action: PayloadAction<any>) => {
+      const data = action.payload
+
+      state.specifications.audioBuffer = data.audio ?? null
+      state.specifications.waveHeight = data.waveHeight ?? 20
+      state.specifications.width = data.width ?? 350
+      state.specifications.height = data.height ?? 170
     }
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { updateTitle, updateOrientation } = canvasSlice.actions
+export const { updateTitle, updateOrientation, updateSpecifications } = canvasSlice.actions
 
 export default canvasSlice.reducer

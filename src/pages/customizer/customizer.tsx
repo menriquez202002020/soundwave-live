@@ -1,53 +1,36 @@
 import React, { useCallback, useEffect, useState } from 'react'
+import type { MouseEventHandler } from 'react'
 import { Accordion } from 'react-bootstrap'
-import DragAndDropImageInput from '../../components/DragAndDropImageInput/DragAndDropImageInput'
-import DragAndDropInput from '../../components/DragAndDropInput/DragAndDropInput'
-import WaveCanvas from '../../components/WaveCanvas/WaveCanvas'
-import { initialState } from '../../components/InitialState/InitialState'
-import LayoutSizing from '../../components/LayoutSizing/LayoutSizing'
-import ColorTemplate from '../../components/ColorTemplate/ColorTemplate'
-import ConfirmationModal from '../../components/ConfirmationModal/ConfirmationModal'
-import Templates from '../../components/Templates'
 import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
 import { toggleShowTemplates, toggleEditBackground } from '../../redux/reducers/controls'
 import { changeBackgroundImage } from '../../redux/reducers/customizer'
-import FrameOptions from '../../components/FrameOptions'
-import { updateOrientation } from '../../redux/reducers/canvas'
-import type { CustomCanvas } from '../../common/types'
+import { updateSpecifications } from '../../redux/reducers/canvas'
 import '~/pages/customizer/customizer.scss'
+
+// Components
+import DragAndDropImageInput from '../../components/DragAndDropImageInput/DragAndDropImageInput'
+import DragAndDropInput from '../../components/DragAndDropInput/DragAndDropInput'
+import WaveCanvas from '../../components/WaveCanvas/WaveCanvas'
+import LayoutSizing from '../../components/LayoutSizing/LayoutSizing'
+import ConfirmationModal from '../../components/ConfirmationModal/ConfirmationModal'
+import Templates from '../../components/Templates'
+import Canvas from '../../components/Canvas/Canvas'
+import FrameOptions from '../../components/FrameOptions'
 
 export const Customizer: React.FC = () => {
   const [audioFile, setAudioFile] = useState<File | null>(null)
-  const [audioBuffer, setAudioBuffer] = useState<AudioBuffer | null>(null)
   const [showFileSizeAlert, setShowFileSizeAlert] = useState<boolean>(false)
-  const [showImageSizeAlert, setShowImageSizeAlert] = useState<boolean>(false)
   const [audioFileName, setAudioFileName] = useState<string>('No Files Selected')
-  const [canvasTitle, setCanvasTitle] = useState<string>('Enter your title')
-  const [canvasSubtitle, setCanvasSubtitle] = useState<string>('Enter your subtitle here')
+  const [showImageSizeAlert, setShowImageSizeAlert] = useState<boolean>(false)
   const [showConfirmation, setShowConfirmation] = useState(false)
 
   // Redux state controls
   const { controls } = useSelector((state: RootState) => state.controls)
-  const { customizer } = useSelector((state: RootState) => state.customizer)
   const { selected } = useSelector((state: RootState) => state.selected)
-  const { orientation } = useSelector((state: RootState) => state.canvas)
+  const { orientation, specifications } = useSelector((state: RootState) => state.canvas)
   const dispatch = useDispatch()
 
-  const handleAudioChange = (file: File): void => {
-    if (typeof file !== 'undefined' || file !== null) {
-      const fileSizeInMB = file.size / (1024 * 1024)
-      if (fileSizeInMB <= 10 && file.type.startsWith('audio/')) {
-        setAudioFile(file)
-        convertToAudioBuffer(file)
-        setAudioFileName(file.name)
-        setShowFileSizeAlert(false)
-      } else {
-        setShowFileSizeAlert(true)
-        setAudioFile(null)
-      }
-    }
-  }
   const handleLayoutImageUpdate = (file: File): void => {
     if (typeof file !== 'undefined' || file !== null) {
       const fileSizeInMB = file.size / (1024 * 1024)
@@ -63,6 +46,22 @@ export const Customizer: React.FC = () => {
       }
     }
   }
+
+  const handleAudioChange = (file: File): void => {
+    if (typeof file !== 'undefined' || file !== null) {
+      const fileSizeInMB = file.size / (1024 * 1024)
+      if (fileSizeInMB <= 10 && file.type.startsWith('audio/')) {
+        setAudioFile(file)
+        convertToAudioBuffer(file)
+        setAudioFileName(file.name)
+        setShowFileSizeAlert(false)
+      } else {
+        setShowFileSizeAlert(true)
+        setAudioFile(null)
+      }
+    }
+  }
+
   const convertToAudioBuffer = useCallback(
     (file: File): void => {
       if (typeof file === 'undefined') {
@@ -74,19 +73,20 @@ export const Customizer: React.FC = () => {
       fileReader.onload = async () => {
         const arrayBuffer = await file.arrayBuffer()
         const audioBufferData = await audioContext.decodeAudioData(arrayBuffer)
-        setAudioBuffer(audioBufferData)
+        dispatch(updateSpecifications({ audio: audioBufferData }))
       }
-      console.log(audioBuffer)
     },
     [audioFile]
   )
+
   const resetAudioFile = (): void => {
     setShowConfirmation(true)
     console.log(showConfirmation)
   }
 
-  const handleCloseEditLayoutBackground = (canvas: CustomCanvas): void => {
-    const classList = [...canvas.target.classList]
+  const handleCloseEditLayoutBackground: MouseEventHandler<HTMLDivElement> = (event) => {
+    const target = event.currentTarget as HTMLDivElement
+    const classList = Array.from(target.classList)
     const filteredClassList = classList.filter((element: string) => {
       const canvasClass = ['overlay', 'frame-color-selection-img', 'frame-color-selection-input', 'd-d-content']
       return canvasClass.includes(element)
@@ -96,24 +96,15 @@ export const Customizer: React.FC = () => {
 
   const handleConfirmDelete = (): void => {
     setAudioFile(null)
-    setAudioBuffer(null)
+    dispatch(updateSpecifications({ audio: null }))
     setShowConfirmation(false)
     console.log('reset')
   }
   const handleCancelDelete = (): void => {
     setShowConfirmation(false)
   }
-  const setCanvasOrientation = (): void => {
-    const canvasOrientation = orientation === 'landscape' ? 'portrait' : 'landscape'
-    dispatch(updateOrientation(canvasOrientation))
-  }
-
   useEffect(
-    () => {
-      setCanvasTitle('Enter your title')
-      setCanvasSubtitle('Enter your subtitle here')
-      console.log(canvasTitle)
-    },
+    () => {},
     [audioFile, showConfirmation]
   )
   return (
@@ -132,7 +123,7 @@ export const Customizer: React.FC = () => {
             { controls.editBackground
               ? (<Accordion defaultActiveKey={['0']} className='main-accordion-layout'>
                   <Accordion.Item eventKey='0'>
-                  <Accordion.Header className={`upload-header ${audioBuffer !== null ? 'file-uploaded' : ''}`}>
+                  <Accordion.Header className={`upload-header ${specifications.audioBuffer !== null ? 'file-uploaded' : ''}`}>
                     <div className='upload-header'>
                       <div>
                         <svg className='accordion-icon' width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +150,7 @@ export const Customizer: React.FC = () => {
               : (<Accordion defaultActiveKey={['0']} className='main-accordion-layout'>
 
                 <Accordion.Item eventKey='0'>
-                  <Accordion.Header className={`upload-header ${audioBuffer !== null ? 'file-uploaded' : ''}`}>
+                  <Accordion.Header className={`upload-header ${specifications.audioBuffer !== null ? 'file-uploaded' : ''}`}>
                     <div className='upload-header'>
                       <div>
                         <svg className='accordion-icon' width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,9 +161,9 @@ export const Customizer: React.FC = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <div className='accordion-upload-container'>
-                      { (audioBuffer !== null) &&
+                      { (specifications.audioBuffer !== null) &&
                         <div className='upload-wave-container'>
-                          <WaveCanvas id='acc_sound_wave' waveHeight={initialState.waveHeight} audioBuffer={audioBuffer} width={initialState.canvasWidth} height={initialState.canvasHeight} />
+                          <WaveCanvas id='acc-canvas' />
                           <div className='filename'>
                             <img src='src/assets/icons/play-icon.png' alt='' />
                             <p className='audio-name'>{audioFileName}</p>
@@ -181,7 +172,7 @@ export const Customizer: React.FC = () => {
                             </button>
                           </div>
                         </div>}
-                      {(audioBuffer === null) && <div className='upload-container'><DragAndDropInput onFileChange={handleAudioChange} /></div>}
+                      {(specifications.audioBuffer === null) && <div className='upload-container'><DragAndDropInput onFileChange={handleAudioChange} /></div>}
                     </div>
                     { (showFileSizeAlert) &&
                       <div className='alert-container'>
@@ -192,7 +183,7 @@ export const Customizer: React.FC = () => {
                 </Accordion.Item>
                 {/* Material Accordion */}
                 <Accordion.Item eventKey='1'>
-                  <Accordion.Header className={`material-and-sizing-header ${(selected.frame.value !== '' && selected.size.title !== '' && audioBuffer !== null) ? 'material-sizing-selected' : ''}`} >
+                  <Accordion.Header className={`material-and-sizing-header ${(selected.frame.value !== '' && selected.size.title !== '' && specifications.audioBuffer !== null) ? 'material-sizing-selected' : ''}`} >
                     <div className='upload-header'>
                       <div>
                         <svg className='accordion-icon' width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -270,35 +261,7 @@ export const Customizer: React.FC = () => {
           }
           {/* Canvas Container */}
           <div className={`col-7 canvas-container ${orientation}`}>
-            <div className='canvas-component'>
-              <div className='canvas-header'>
-                <p className='text-capitalize'>{orientation} Image Background Template</p>
-                <button className='btn-circle' onClick={setCanvasOrientation}>
-                  <img className={`orientation-icon ${orientation + '-orientation'}`} src='src/assets/icons/svg/orientation-icon.svg' alt='' />
-                </button>
-              </div>
-              <div className={'canvas-content'} style={{ background: `url('${customizer.backgroundImage}'` }}>
-                <div className={`overlay ${selected.color.view} ${selected.color.key}`}></div>
-                <div className="canvas-text title">
-                  {/* <h1>{canvasTitle}</h1> */}
-                </div>
-                <div className="canvas-text subtitle">
-                  <h1>{canvasSubtitle}</h1>
-                </div>
-                <div className="canvas-soundwave">
-                  {(audioBuffer !== null)
-                    ? <WaveCanvas id='canvas-canvas' waveHeight={initialState.waveHeight} audioBuffer={audioBuffer} width={initialState.canvasWidth} height={initialState.canvasHeight} />
-                    : <div className="temp-canvas-image"><img src="src/assets/img/soundwave.png" alt="" /></div>
-                  }
-                </div>
-              </div>
-              <div className='canvas-footer desktop'>
-                <ColorTemplate view="desktop" />
-              </div>
-              <div className='canvas-footer mobile'>
-                <ColorTemplate view="mobile" />
-              </div>
-            </div>
+            <Canvas />
           </div>
         </div>
       </div>

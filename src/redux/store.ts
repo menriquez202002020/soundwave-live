@@ -1,20 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import templatesReducer from './reducers/templates'
-import controlsReducer from './reducers/controls'
-import customizerReducer from './reducers/customizer'
-import listingReducer from './reducers/listing'
-import selectedReducer from './reducers/selected'
-import canvasReducer from './reducers/canvas'
+import rootReducer from './reducers/rootReducer'
 
 export const store = configureStore({
-  reducer: {
-    templates: templatesReducer,
-    controls: controlsReducer,
-    customizer: customizerReducer,
-    listing: listingReducer,
-    selected: selectedReducer,
-    canvas: canvasReducer
-  }
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false
+    })
 })
 
 export type RootState = ReturnType<typeof store.getState>

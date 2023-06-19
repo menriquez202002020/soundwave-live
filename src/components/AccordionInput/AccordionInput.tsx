@@ -2,7 +2,6 @@ import { Accordion } from 'react-bootstrap'
 import React, { useCallback, useEffect, useState } from 'react'
 import DragAndDropInput from './../DragAndDropInput/DragAndDropInput'
 import WaveCanvas from './../WaveCanvas/WaveCanvas'
-import { initialState } from './../InitialState/InitialState'
 import './AccordionInput.css'
 
 export const AccordionInput: React.FC = () => {
@@ -66,7 +65,7 @@ export const AccordionInput: React.FC = () => {
 
               {(audioBuffer !== null) &&
                 <div className='upload-wave-container'>
-                  <WaveCanvas id='acc_sound_wave' waveHeight={initialState.waveHeight} audioBuffer={audioBuffer} width={initialState.canvasWidth} height={initialState.canvasHeight} />
+                  <WaveCanvas id='acc_sound_wave' />
                   <div className='filename'>
                     <img src='src/assets/icons/play-icon.png' alt='' />
                     <p className='audio-name'>{audioFileName}</p>

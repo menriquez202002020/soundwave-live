@@ -1,9 +1,5 @@
 export const initialState = {
   defaultLayoutBackgroundImage: 'src/assets/img/layout-background.jpeg',
-  customizerLayout: 'landscape',
-  waveHeight: 20,
-  canvasWidth: 350,
-  canvasHeight: 170,
   mainTitlePosition: {
     x: 0,
     y: 0
