@@ -1,0 +1,87 @@
+.col-3.frame-color-selection {
+  flex: 1;
+  height: 80px;
+}
+.frame-color-selection.frame-color {
+  height: 100px;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+}
+.template-color {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0px;
+} 
+.col-3.frame-color-selection img {
+  width: 100%;
+  height: 100%;
+}
+.col-3.frame-color-selection a,label.col-3.frame-color-selection span {
+  
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #222222;
+}
+label.col-3.frame-color-selection {
+  position: relative;
+  cursor: pointer;
+}
+label.col-3.frame-color-selection input {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 25px;
+}
+label.col-3.frame-color-selection.active {
+  position: relative;
+}
+.frame-color-selection.active {
+  position: relative;
+}
+.desktop .frame-color-selection.active::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(/src/assets/icons/template-selected.png);
+  background-position: 100%;
+  background-size: 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+.desktop .col-6.frame-color-selection.active::after {
+  border: 1px solid #F6F6F6;
+}
+.desktop .col-6.frame-color-selection.false::after {
+  border: 1px solid #F6F6F6;
+  background:#736f6f;;
+}
+.desktop .frame-color-selection.false::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-position: 100%;
+  background-size: 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+.frame-color-selection input {
+  visibility: hidden;
+  position: absolute;
+}
+label.col-3.frame-color-selection img {
+  border-radius: 8px;
+}

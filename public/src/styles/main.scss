@@ -1,0 +1,111 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./var.scss";
+
+:root {
+  --border-color-light: #B3B2B2;
+  --background-color-light: #F5F5F5;
+  --font-color-dark: #222222;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Inter/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../assets/fonts/SF Pro/SFPRODISPLAYREGULAR.OTF') format('opentype');
+}
+
+#root {
+  height: 100vh;
+}
+
+@media (max-width: 980px) {
+  #root {
+    padding: 10px;
+  }
+}
+
+body {
+  background: var(--background-color-light);
+  font-family: 'SF Pro';
+  font-style: normal;
+}
+
+
+.button-container {
+  display: flex;
+  border: 1px solid #000000;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-container.range-container {
+  flex-direction: column !important;
+}
+
+.btn-primary {
+  background-color: #222222;
+  border-color: #222222;
+}
+
+.btn-primary:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-light {
+  color: #9C9C9C;
+}
+
+.btn-standard {
+  font-family: 'SF Pro';
+  font-weight: 590;
+  font-size: 14px;
+  text-align: center;
+  color: $font-color-dark;
+
+  background: $white;
+  border: 1px solid $gray-300;
+  border-radius: 8px;
+
+  padding: 8px 16px;
+}
+.btn-circle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  background: $white;
+  border: 1px solid $gray-300;
+  border-radius: 100px;
+
+  max-height: 40px;
+  max-width: 40px;
+  padding: 12px;
+}
+.btn-transparent {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: $font-color-dark;
+  
+  background: transparent;
+  border: none;
+
+  height: 48px;
+}
+.btn-primary {  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+
+  border-radius: 8px !important;
+} 

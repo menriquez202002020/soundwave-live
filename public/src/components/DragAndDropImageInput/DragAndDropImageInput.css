@@ -1,0 +1,17 @@
+.drag-and-drop-input p {
+    font-family: 'SF Pro';
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0px; 
+}
+.drag-and-drop-input span {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #B3B2B2;
+}
+.drag-and-drop-input {
+    z-index: 30 !important;
+}
