@@ -2,6 +2,7 @@ export const templatesData = [
   {
     id: 1,
     image: '/src/assets/img/frames/frame-1.png',
+    selected: true,
     title: {
       text: 'Minimalist nature',
       fontSize: '24px',
@@ -34,6 +35,7 @@ export const templatesData = [
   {
     id: 2,
     image: '/src/assets/img/frames/frame-2.png',
+    selected: false,
     title: {
       text: 'Artistic minimal',
       fontSize: '24px',
@@ -66,6 +68,7 @@ export const templatesData = [
   {
     id: 3,
     image: '/src/assets/img/frames/frame-3.png',
+    selected: false,
     title: {
       text: 'Minimalist love',
       fontSize: '24px',
@@ -102,6 +105,7 @@ export const templatesData = [
   {
     id: 4,
     image: '/src/assets/img/frames/frame-3.png',
+    selected: false,
     title: {
       text: 'Minimalist love',
       fontSize: '24px',
@@ -138,6 +142,7 @@ export const templatesData = [
   {
     id: 5,
     image: '/src/assets/img/frames/frame-2.png',
+    selected: false,
     title: {
       text: 'Artistic minimal',
       fontSize: '24px',
@@ -170,6 +175,7 @@ export const templatesData = [
   {
     id: 6,
     image: '/src/assets/img/frames/frame-1.png',
+    selected: false,
     title: {
       text: 'Minimalist nature',
       fontSize: '24px',
@@ -202,6 +208,7 @@ export const templatesData = [
   {
     id: 7,
     image: '/src/assets/img/frames/frame-1.png',
+    selected: false,
     title: {
       text: 'Minimalist nature',
       fontSize: '24px',
@@ -234,6 +241,7 @@ export const templatesData = [
   {
     id: 8,
     image: '/src/assets/img/frames/frame-2.png',
+    selected: false,
     title: {
       text: 'Artistic minimal',
       fontSize: '24px',
@@ -266,6 +274,7 @@ export const templatesData = [
   {
     id: 9,
     image: '/src/assets/img/frames/frame-3.png',
+    selected: false,
     title: {
       text: 'Minimalist love',
       fontSize: '24px',

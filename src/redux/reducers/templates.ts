@@ -16,11 +16,27 @@ export const templatesSlice = createSlice({
   reducers: {
     load: (state: TemplatesState, action: PayloadAction<Template[]>) => {
       state.templates = action.payload
+    },
+    setSelectedTemplate: (state: TemplatesState, action: PayloadAction<Template>) => {
+      const newTemplate: Template[] = []
+
+      state.templates.map(template => {
+        if (template.id === action.payload.id) {
+          template.selected = true
+        } else {
+          template.selected = false
+        }
+
+        newTemplate.push(template)
+        return newTemplate
+      })
+
+      state.templates = newTemplate
     }
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { load } = templatesSlice.actions
+export const { load, setSelectedTemplate } = templatesSlice.actions
 
 export default templatesSlice.reducer

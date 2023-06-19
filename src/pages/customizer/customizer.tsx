@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import type { MouseEventHandler } from 'react'
 import { Accordion } from 'react-bootstrap'
 import DragAndDropImageInput from '../../components/DragAndDropImageInput/DragAndDropImageInput'
 import DragAndDropInput from '../../components/DragAndDropInput/DragAndDropInput'
@@ -15,6 +14,7 @@ import { toggleShowTemplates, toggleEditBackground } from '../../redux/reducers/
 import { changeBackgroundImage } from '../../redux/reducers/customizer'
 import FrameOptions from '../../components/FrameOptions'
 import { updateOrientation } from '../../redux/reducers/canvas'
+import type { CustomCanvas } from '../../common/types'
 import '~/pages/customizer/customizer.scss'
 
 export const Customizer: React.FC = () => {
@@ -85,16 +85,15 @@ export const Customizer: React.FC = () => {
     console.log(showConfirmation)
   }
 
-  const handleCloseEditLayoutBackground: MouseEventHandler<HTMLDivElement> = (event) => {
-    const target = event.target as HTMLDivElement
-    console.log(target)
-    const classList = [...target.classList]
+  const handleCloseEditLayoutBackground = (canvas: CustomCanvas): void => {
+    const classList = [...canvas.target.classList]
     const filteredClassList = classList.filter((element: string) => {
       const canvasClass = ['overlay', 'frame-color-selection-img', 'frame-color-selection-input', 'd-d-content']
       return canvasClass.includes(element)
     })
     dispatch(toggleEditBackground(filteredClassList.length > 0))
   }
+
   const handleConfirmDelete = (): void => {
     setAudioFile(null)
     setAudioBuffer(null)
@@ -262,6 +261,8 @@ export const Customizer: React.FC = () => {
                 subMessage="You will not be able to undo this action."
                 onConfirm={handleConfirmDelete}
                 onCancel={handleCancelDelete}
+                confirmText='Continue'
+                cancelText='Cancel'
               />
               : null
             }

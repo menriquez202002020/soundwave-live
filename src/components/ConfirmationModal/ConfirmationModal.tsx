@@ -5,6 +5,8 @@ interface ConfirmationModalProps {
   isOpen: boolean
   message: string
   subMessage: string
+  cancelText: string
+  confirmText: string
   onConfirm: () => void
   onCancel: () => void
 }
@@ -13,6 +15,8 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
   isOpen,
   message,
   subMessage,
+  cancelText = 'Cancel',
+  confirmText = 'Confirm',
   onConfirm,
   onCancel
 }) => {
@@ -58,12 +62,12 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
               <div className="modal-footer modal-header row">
                 <div className="col">
                   <button className="btn btn-light btn-block w-100" onClick={handleCancel}>
-                    Cancel
+                    {cancelText}
                   </button>
                 </div>
                 <div className="col">
                   <button className="btn btn-primary w-100" onClick={handleConfirm}>
-                    Confirm
+                    {confirmText}
                   </button>
                 </div>
               </div>

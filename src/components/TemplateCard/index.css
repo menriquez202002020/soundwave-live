@@ -4,6 +4,11 @@
     border: 1px solid #EFEFEF;
     border-radius: 8px;
     padding: 16px;
+    cursor: pointer;
+}
+
+.card-wrapper.selected {
+    border: 1px solid #222222;
 }
 
 .image {
