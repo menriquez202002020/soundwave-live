@@ -1,0 +1,17 @@
+[
+  {
+    "value": "frame",
+    "image": "src/assets/img/frame.png",
+    "title": "Frame"
+  },
+  {
+    "value": "canvas",
+    "image": "src/assets/img/canvas.png",
+    "title": "Canvas"
+  },
+  {
+    "value": "raw-art-work",
+    "image": "src/assets/img/raw-art-work.png",
+    "title": "Raw at work"
+  }
+]
