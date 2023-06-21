@@ -234,8 +234,8 @@ export const Customizer: React.FC = () => {
                   </Accordion.Body>
                 </Accordion.Item>
                 {(!controls.showTemplates) &&
-                  <div className='input-btns col-12'>
-                    <button className='btn-transparent col-6'>
+                  <div className='input-btns col-12 customizer-panel_navigation'>
+                    <button className='btn btn-transparent col-6'>
                       Preview
                     </button>
                     <button className='btn btn-primary col-6'>
