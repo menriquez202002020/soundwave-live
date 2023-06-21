@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import type { Template, Selected, Frame, Size, Color } from '../../common/types'
-import { templatesData } from '../../config/initialTemplates'
 
 export interface SelectedState {
   selected: Selected
@@ -25,7 +24,45 @@ const initialState: SelectedState = {
       image: 'src/assets/img/first.png',
       view: 'desktop'
     },
-    template: templatesData[0]
+    template: {
+      id: 1,
+      image: '/src/assets/img/frames/frame-1.png',
+      selected: true,
+      title: {
+        text: 'Minimalist nature',
+        fontSize: '24px',
+        fontFamily: 'Arial',
+        fontWeight: '800',
+        fontColor: 'blue'
+      },
+      subTitle: {
+        text: 'Testing Sub Title 1',
+        fontSize: '18px',
+        fontFamily: 'Arial',
+        fontWeight: '400',
+        fontColor: 'red'
+      },
+      colors: [
+        {
+          id: 1,
+          color: '#F27121'
+        },
+        {
+          id: 2,
+          color: '#3D9984'
+        },
+        {
+          id: 3,
+          color: '#D6B0FF'
+        }
+      ],
+      fonts: [
+        {
+          id: 1,
+          name: 'Josefin sans'
+        }
+      ]
+    }
   }
 }
 

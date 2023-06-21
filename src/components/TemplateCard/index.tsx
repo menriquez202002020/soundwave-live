@@ -3,7 +3,6 @@ import React from 'react'
 import type { Template } from '../../common/types'
 import { useDispatch } from 'react-redux'
 import { setSelectedTemplate } from '../../redux/reducers/templates'
-import { setTemplate } from '../../redux/reducers/selected'
 
 interface TemplateCardProps {
   template: Template
@@ -14,7 +13,6 @@ const TemplateCard: React.FC<TemplateCardProps> = ({ template }) => {
 
   const selectTemplate = (template: Template): void => {
     dispatch(setSelectedTemplate(template))
-    dispatch(setTemplate(template))
   }
 
   return (

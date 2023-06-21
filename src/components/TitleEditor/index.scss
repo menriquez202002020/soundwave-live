@@ -1,0 +1,81 @@
+.sidecontainer {
+  background: #fff;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  overflow-y: hidden;
+  height: 90vh;
+
+  .title-container {
+    display: block;
+    padding: 24px;
+    margin-top: 0;
+    border-bottom: 1px solid #EFEFEF;
+
+    .title {
+      font-family: 'SF Pro';
+      font-style: normal;
+      font-weight: 510;
+      font-size: 24px;
+      line-height: 32px;
+      color: #222222;
+    }
+
+    .subtitle {
+      font-family: 'SF Pro';
+      font-style: normal;
+      font-weight: 510;
+      font-size: 14px;
+      line-height: 24px;
+      color: #B3B2B2;
+    }
+  }
+
+  .form-container {
+    padding: 24px;
+    border: 1px solid #EFEFEF;
+    border-radius: 0 0 8px 8px;
+
+    .group-input {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 24px;
+
+      .control-label {
+        font-family: 'SF Pro';
+        font-style: normal;
+        font-weight: 510;
+        font-size: 14px;
+        line-height: 24px;
+        color: #222222;
+      }
+
+      .form-input, .select-input {
+        padding: 12px;
+        font-family: 'SF Pro';
+        font-style: normal;
+        font-weight: 510;
+        font-size: 14px;
+        line-height: 24px;
+        color: #222222;
+        background: #FAFAFA;
+        border: 1px solid #EFEFEF;
+        border-radius: 8px;
+
+        &:focus {
+          outline: 1px solid rgba(34, 34, 34, 0.4);
+        }
+      }
+    }
+
+    .group-half {
+      display: grid;
+      column-gap: 24px;
+      grid-template-columns: repeat(2, 1fr);
+
+      .group-input {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

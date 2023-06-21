@@ -5,6 +5,7 @@ import customizerReducer from './customizer'
 import listingReducer from './listing'
 import selectedReducer from './selected'
 import canvasReducer from './canvas'
+import checkoutReducer from './checkout'
 
 const rootReducer = combineReducers({
   templates: templatesReducer,
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
   customizer: customizerReducer,
   listing: listingReducer,
   selected: selectedReducer,
-  canvas: canvasReducer
+  canvas: canvasReducer,
+  checkout: checkoutReducer
 })
 
 export default rootReducer

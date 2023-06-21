@@ -4,10 +4,50 @@ import type { Template } from '../../common/types'
 
 export interface TemplatesState {
   templates: Template[]
+  template: Template
 }
 
 const initialState: TemplatesState = {
-  templates: []
+  templates: [],
+  template: {
+    id: 1,
+    image: '/src/assets/img/frames/frame-1.png',
+    selected: true,
+    title: {
+      text: 'Minimalist nature',
+      fontSize: '24px',
+      fontFamily: 'Arial',
+      fontWeight: '800',
+      fontColor: 'blue'
+    },
+    subTitle: {
+      text: 'Testing Sub Title 1',
+      fontSize: '18px',
+      fontFamily: 'Arial',
+      fontWeight: '400',
+      fontColor: 'red'
+    },
+    colors: [
+      {
+        id: 1,
+        color: '#F27121'
+      },
+      {
+        id: 2,
+        color: '#3D9984'
+      },
+      {
+        id: 3,
+        color: '#D6B0FF'
+      }
+    ],
+    fonts: [
+      {
+        id: 1,
+        name: 'Josefin sans'
+      }
+    ]
+  }
 }
 
 export const templatesSlice = createSlice({
@@ -23,6 +63,7 @@ export const templatesSlice = createSlice({
       state.templates.map(template => {
         if (template.id === action.payload.id) {
           template.selected = true
+          state.template = action.payload
         } else {
           template.selected = false
         }
