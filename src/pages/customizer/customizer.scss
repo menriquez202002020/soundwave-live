@@ -81,10 +81,6 @@ p.upload-desc {
   line-height: 18px;
 }
 
-.accordion-body {
-  padding: 24px;
-}
-
 .accordion-button:focus {
   border-color: transparent;
   box-shadow: none;
@@ -107,9 +103,9 @@ button.accordion-button {
     height: 24px;
     width: 24px;
 
-    path {
-      stroke: $gray-600 !important;
-    }
+    // path {
+    //   stroke: $gray-600 !important;
+    // }
   }
 
   &::after {
@@ -119,9 +115,9 @@ button.accordion-button {
   &[aria-expanded="true"] {
     color: $font-color-dark !important;
 
-    .accordion-icon path {
-      stroke: $font-color-dark !important;
-    }
+    // .accordion-icon path {
+    //   stroke: $font-color-dark !important;
+    // }
   }
 
   .accordion-icon {
@@ -182,39 +178,6 @@ button.accordion-button {
   font-weight: 510;
   font-size: 16px;
   line-height: 24px;
-}
-
-.upload-wave-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-.accordion-upload-container {
-  display: flex;
-  flex-direction: column;
-  height: 280px;
-  gap: 10px;
-}
-
-.accordion-upload-container.image-container {
-
-  height: 180px;
-}
-
-.filename {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  gap: 10px;
-}
-
-.filename p {
-  width: 100%;
-  margin: 0;
 }
 
 .plus-icon {
@@ -294,7 +257,7 @@ button.accordion-button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  // gap: 30px;
   position: relative;
   overflow: hidden;
   border-radius: 8px !important;
@@ -313,6 +276,18 @@ button.accordion-button {
 
 .canvas-footer.mobile {
   display: none;
+}
+
+.canvas-text {
+  cursor: pointer;
+  // background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='white' stroke-width='3' stroke-dasharray='10%2c 12' stroke-dashoffset='20' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 10px 40px;
+}
+
+.canvas-soundwave {
+  margin-top: 42px;
 }
 
 .canvas-content .overlay {
@@ -392,24 +367,6 @@ ul.order-preview-container li strong {
 
 /* End of Order Review CSS */
 
-.upload-header.file-uploaded button::after,
-h2.material-and-sizing-header.material-sizing-selected button::after {
-  background: url(/src/assets/icons/accordion-check.png);
-  width: 20px;
-  height: 20px;
-  background-size: contain;
-  transform: rotate(0deg);
-}
-
-.upload-header.file-uploaded .upload-desc,
-button.accordion-button.collapsed .upload-header .upload-desc {
-  display: none;
-}
-
-button.accordion-button .upload-header .upload-desc {
-  display: block;
-}
-
 .col-7.canvas-container.portrait .canvas-component>div:not(.canvas-header) {
   width: 550px;
   transition: width 0.3s ease;
@@ -462,20 +419,20 @@ button.accordion-button .upload-header .upload-desc {
   background-color: transparent;
 }
 
-.btn-custom-delete {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  background: $gray-200;
+// .btn-custom-delete {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+//   padding: 8px;
+//   background: $gray-200;
 
-  width: 32px;
-  height: 32px;
+//   width: 32px;
+//   height: 32px;
 
-  &:hover {
-    box-shadow: 0px 0px 6px 0px #a3a3a367;
-  }
-}
+//   &:hover {
+//     box-shadow: 0px 0px 6px 0px #a3a3a367;
+//   }
+// }
 
 .input-btns {
   display: flex;

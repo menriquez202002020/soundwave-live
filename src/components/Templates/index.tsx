@@ -4,15 +4,15 @@ import React, { useEffect, useState } from 'react'
 import type { RootState } from '../../redux/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { load } from '../../redux/reducers/templates'
-import { toggleShowFilterDropdown } from '../../redux/reducers/controls'
+import { toggleShowFilterDropdown, toggleShowTemplates } from '../../redux/reducers/controls'
 import { setFilters, toggleOptionChecked, clearFilters, removeSelectedFilter } from '../../redux/reducers/listing'
-import { templatesData } from '../../config/initialTemplates'
 import TemplateCard from '../TemplateCard'
 import { filterItems } from '../../data/filters'
 import ConfirmationModal from '../ConfirmationModal/ConfirmationModal'
+import { setTemplate } from '../../redux/reducers/selected'
 
 const Templates: React.FC = () => {
-  const { templates } = useSelector((state: RootState) => state.templates)
+  const { templates, template } = useSelector((state: RootState) => state.templates)
   const { filters, selectedFilters } = useSelector((state: RootState) => state.listing.listing)
   const { controls } = useSelector((state: RootState) => state.controls)
   const [showConfirmation, toggeShowConfirmation] = useState(false)
@@ -31,9 +31,26 @@ const Templates: React.FC = () => {
     toggeShowConfirmation(show)
   }
 
+  const handleConfirm = (): void => {
+    dispatch(setTemplate(template))
+    dispatch(toggleShowTemplates(false))
+    toggeShowConfirmation(false)
+  }
+
+  const fetchTemplates = (): void => {
+    fetch('/src/data/templates.json')
+      .then(async (res) => await res.json())
+      .then((data) => {
+        dispatch(load(data))
+      })
+      .catch(async (err) => {
+        console.log(err)
+      })
+  }
+
   useEffect(() => {
     dispatch(setFilters(filterItems))
-    dispatch(load(templatesData))
+    fetchTemplates()
   }, [])
 
   return (
@@ -107,7 +124,7 @@ const Templates: React.FC = () => {
         isOpen={showConfirmation}
         message='Do you want to keep your progress in new template?'
         subMessage='Your changes will be applied to the new template.'
-        onConfirm={() => { handleModalClick(false) }}
+        onConfirm={handleConfirm}
         onCancel={() => { handleModalClick(false) }}
         confirmText='Yes, Keep'
         cancelText='Discard'

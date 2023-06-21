@@ -3,21 +3,31 @@ import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
 import WaveCanvas from '../WaveCanvas/WaveCanvas'
 import { updateOrientation } from '../../redux/reducers/canvas'
+import { toggleTitleEditor, toggleSubtitleEditor } from '../../redux/reducers/controls'
 import ColorTemplate from '../../components/ColorTemplate/ColorTemplate'
 import './Canvas.scss'
 
 const Canvas: React.FC = () => {
   const [audioFile] = useState<File | null>(null)
-  const [canvasSubtitle] = useState<string>('Enter your subtitle here')
   const [showConfirmation] = useState(false)
-  const { orientation, specifications } = useSelector((state: RootState) => state.canvas)
+  const { orientation, specifications, content } = useSelector((state: RootState) => state.canvas)
+  const { title, subtitle } = content
   const { customizer } = useSelector((state: RootState) => state.customizer)
   const { selected } = useSelector((state: RootState) => state.selected)
+  const { controls } = useSelector((state: RootState) => state.controls)
   const dispatch = useDispatch()
 
   const setCanvasOrientation = (): void => {
     const canvasOrientation = orientation === 'landscape' ? 'portrait' : 'landscape'
     dispatch(updateOrientation(canvasOrientation))
+  }
+
+  const editTitle = (): void => {
+    dispatch(toggleTitleEditor(!controls.showTitleEditor))
+  }
+
+  const editSubtitle = (): void => {
+    dispatch(toggleSubtitleEditor(!controls.showSubtitleEditor))
   }
 
   useEffect(
@@ -35,11 +45,11 @@ const Canvas: React.FC = () => {
         </div>
         <div className={'canvas-content'} style={{ background: `url('${customizer.backgroundImage}'` }}>
           <div className={`overlay ${selected.color.view} ${selected.color.key}`}></div>
-          <div className="canvas-text title">
-            {/* <h1>{canvasTitle}</h1> */}
+          <div onClick={editTitle} className="canvas-text title">
+            <div style={{ fontFamily: title.family, fontWeight: title.weight, fontSize: `${title.size}px` }} className="text">{title.text}</div>
           </div>
-          <div className="canvas-text subtitle">
-            <h1>{canvasSubtitle}</h1>
+          <div onClick={editSubtitle} className="canvas-text subtitle">
+            <div style={{ fontFamily: subtitle.family, fontWeight: subtitle.weight, fontSize: `${subtitle.size}px` }} className="text">{subtitle.text}</div>
           </div>
           <div className="canvas-soundwave">
             {(specifications.audioBuffer !== null)

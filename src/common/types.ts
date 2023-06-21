@@ -17,12 +17,21 @@ export interface Template {
     fontColor: string
   }
   colors: any[]
+  fonts: any[]
 }
 
 export interface Controls {
   showTemplates: boolean
+  showTitleEditor: boolean
+  showSubtitleEditor: boolean
   editBackground: boolean
   showFilterDropdown: boolean
+  showImageSizeAlert: boolean
+  showFileSizeAlert: boolean
+  showRemoveAudioConfirmation: boolean
+  currentStep: string
+  audioComplete: boolean
+  materialComplete: boolean
 }
 
 export interface Customizer {
@@ -89,8 +98,8 @@ export interface Canvas {
   size: string
   totalPrice: number
   content: {
-    title: string
-    subtitle: string
+    title: CanvasTitle
+    subtitle: CanvasTitle
   }
   specifications: {
     audioBuffer: any
@@ -98,4 +107,18 @@ export interface Canvas {
     width: number
     height: number
   }
+  audioFile: File | null
+  audioFileName: string
+}
+
+export interface CanvasTitle {
+  text: string
+  family: string
+  weight: number
+  size: number
+}
+
+export interface Audio {
+  name: string
+  file: File | null
 }

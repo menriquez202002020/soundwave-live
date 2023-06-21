@@ -1,0 +1,130 @@
+.canvas-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+}
+.canvas-header {
+    height: 76px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 24px;
+    justify-content: space-between;
+}
+.canvas-header p {
+    font-family: 'SF Pro';
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+}
+.canvas-content {
+    height: 650px;
+    width: 100%;
+    /* background: url(/src/assets/img/temp2.png); */
+    background: #625f5f;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.canvas-footer {
+    height: 200px;
+    width: 100%;
+}
+.canvas-component {
+    width: 100%;
+    height: 100%;
+}
+.canvas-footer.mobile {
+    display: none;
+}
+.canvas-text {
+    border: 1px dashed #FFFFFF;
+    border-radius: 8px;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.canvas-text.title {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.canvas-text.title h1 {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 61px;
+
+}
+.canvas-text.subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 10px;
+}
+
+@media (max-width: 980px) {
+    .canvas-content {
+        height: 350px;
+    }
+    .canvas-container {
+        height: 460px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .canvas-footer.mobile {
+        display: flex;
+        height: 100%;
+        position: relative;
+        bottom: 0px;
+    }
+    .template-color {
+        margin: 0;
+        position: absolute;
+        top: -40px;
+        left: 10px;
+        gap: 10px;
+    }
+    .canvas-footer.mobile .frame-color-selection.frame-color {
+        height: 30px;
+    }
+    .canvas-footer.desktop {
+        display: none;
+    }
+    .mobile label.col-3.frame-color-selection.frame-color.active img {
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 10px 0px #fff;
+        border-radius: 7px;
+        box-sizing: border-box;
+    }
+    .mobile label.col-3.frame-color-selection img {
+        border-radius: 5px;
+        border: 1px solid #fff;
+    }
+    .canvas-text.title h1 {
+        font-size: 30px;
+    }
+}

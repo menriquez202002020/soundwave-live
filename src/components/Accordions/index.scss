@@ -1,0 +1,93 @@
+@import '../../styles/var.scss';
+
+.upload-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.accordion-button.collapsed {
+  .upload-header {
+    .accordion-icon {
+      path {
+        stroke: #B3B2B2;
+      }
+    }
+
+    .complete {
+      color: #222222;
+
+      .accordion-icon {
+        path {
+          stroke: #222222;
+        }
+      }
+    }
+
+    .upload-desc {
+      display: none;
+    }
+  }
+}
+
+.accordion-body {
+  padding: 24px;
+
+  .wave-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 266px;
+  }
+
+}
+
+.accordion-upload-container {
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  gap: 10px;
+
+  .upload-wave-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .filename {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 10px;
+    margin-top: 24px;
+
+    p {
+      width: 100%;
+      margin: 0;
+    }
+
+    .btn-custom-delete {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 8px;
+      background: $gray-200;
+
+      width: 32px;
+      height: 32px;
+
+      &:hover {
+        box-shadow: 0px 0px 6px 0px #a3a3a367;
+      }
+    }
+  }
+}
+
+.accordion-upload-container.image-container {
+  height: 180px;
+}
