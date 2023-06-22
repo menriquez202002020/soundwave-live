@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import { Accordion } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
 import { type RootState } from '../../redux/store'
-import { toggleShowFileSizeAlert, toggleShowAudioResetConfirmation, setCurrentStep } from '../../redux/reducers/controls'
+import { toggleShowFileSizeAlert, toggleShowAudioResetConfirmation, setCurrentStep, setIsContinueDisabled } from '../../redux/reducers/controls'
 import { setAudioFileName, setAudioFile, updateSpecifications } from '../../redux/reducers/canvas'
 import WaveCanvas from '../WaveCanvas/WaveCanvas'
 import DragAndDropInput from '../DragAndDropInput/DragAndDropInput'
@@ -26,9 +26,11 @@ const AudioUploadAccordion: React.FC<AccordionProps> = ({ eventKey }) => {
         convertToAudioBuffer(file)
         dispatch(setAudioFileName(file.name))
         dispatch(toggleShowFileSizeAlert(false))
+        dispatch(setIsContinueDisabled(false))
       } else {
         dispatch(toggleShowFileSizeAlert(true))
         dispatch(setAudioFile(null))
+        dispatch(setIsContinueDisabled(true))
       }
     }
   }

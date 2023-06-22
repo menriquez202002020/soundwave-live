@@ -419,20 +419,18 @@ ul.order-preview-container li strong {
   background-color: transparent;
 }
 
-// .btn-custom-delete {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: flex-start;
-//   padding: 8px;
-//   background: $gray-200;
-
-//   width: 32px;
-//   height: 32px;
-
-//   &:hover {
-//     box-shadow: 0px 0px 6px 0px #a3a3a367;
-//   }
-// }
+.btn.disabled {
+  background: #EFEFEF;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #B3B2B2;
+  border: none;
+}
 
 .input-btns {
   display: flex;

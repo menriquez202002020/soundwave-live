@@ -32,6 +32,10 @@ export interface Controls {
   currentStep: string
   audioComplete: boolean
   materialComplete: boolean
+  currentEditting: string
+  showTitleSaved: boolean
+  isContinueDisabled: boolean
+  showPreviewModal: boolean
 }
 
 export interface Customizer {

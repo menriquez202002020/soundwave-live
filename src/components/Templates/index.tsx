@@ -7,7 +7,6 @@ import { load } from '../../redux/reducers/templates'
 import { toggleShowFilterDropdown, toggleShowTemplates } from '../../redux/reducers/controls'
 import { setFilters, toggleOptionChecked, clearFilters, removeSelectedFilter } from '../../redux/reducers/listing'
 import TemplateCard from '../TemplateCard'
-import { filterItems } from '../../data/filters'
 import ConfirmationModal from '../ConfirmationModal/ConfirmationModal'
 import { setTemplate } from '../../redux/reducers/selected'
 
@@ -48,8 +47,19 @@ const Templates: React.FC = () => {
       })
   }
 
+  const fetchFilters = (): void => {
+    fetch('/src/data/filters.json')
+      .then(async (res) => await res.json())
+      .then((data) => {
+        dispatch(setFilters(data))
+      })
+      .catch(async (err) => {
+        console.log(err)
+      })
+  }
+
   useEffect(() => {
-    dispatch(setFilters(filterItems))
+    fetchFilters()
     fetchTemplates()
   }, [])
 

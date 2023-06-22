@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import type { RootState } from '../../redux/store'
 import { setFrames } from '../../redux/reducers/listing'
 import { setFrame } from '../../redux/reducers/selected'
+import { setIsContinueDisabled } from '../../redux/reducers/controls'
 
 const FrameOptions: React.FC = () => {
   const { listing } = useSelector((state: RootState) => state.listing)
@@ -21,6 +22,11 @@ const FrameOptions: React.FC = () => {
       })
   }
 
+  const setSelectedFrame = (option: any): void => {
+    dispatch(setFrame(option))
+    dispatch(setIsContinueDisabled(false))
+  }
+
   useEffect(() => {
     fetchFrames()
   }, [])
@@ -34,7 +40,7 @@ const FrameOptions: React.FC = () => {
                 type="radio"
                 value={option.value}
                 checked={selected.frame.value === option.value}
-                onChange={() => { dispatch(setFrame(option)) }}
+                onChange={() => { setSelectedFrame(option) }}
             />
             <img src={option.image} alt={option.title} />
             <span>{option.title}</span>

@@ -21,7 +21,11 @@ const initialState: ControlsState = {
     showRemoveAudioConfirmation: false,
     currentStep: 'audio',
     audioComplete: false,
-    materialComplete: false
+    materialComplete: false,
+    currentEditting: '',
+    showTitleSaved: false,
+    isContinueDisabled: true,
+    showPreviewModal: false
   }
 }
 
@@ -81,6 +85,18 @@ export const controlsSlice = createSlice({
     },
     setMaterialComplete: (state: ControlsState, action: PayloadAction<boolean>) => {
       state.controls.materialComplete = action.payload
+    },
+    setCurrentEditting: (state: ControlsState, action: PayloadAction<string>) => {
+      state.controls.currentEditting = action.payload
+    },
+    setShowtitleSaved: (state: ControlsState, action: PayloadAction<boolean>) => {
+      state.controls.showTitleSaved = action.payload
+    },
+    setIsContinueDisabled: (state: ControlsState, action: PayloadAction<boolean>) => {
+      state.controls.isContinueDisabled = action.payload
+    },
+    setShowPreviewModal: (state: ControlsState, action: PayloadAction<boolean>) => {
+      state.controls.showPreviewModal = action.payload
     }
   }
 })
@@ -96,7 +112,11 @@ export const {
   toggleShowAudioResetConfirmation,
   setCurrentStep,
   setAudioComplete,
-  setMaterialComplete
+  setMaterialComplete,
+  setCurrentEditting,
+  setShowtitleSaved,
+  setIsContinueDisabled,
+  setShowPreviewModal
 } = controlsSlice.actions
 
 export default controlsSlice.reducer

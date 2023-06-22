@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import type { RootState } from '../../redux/store'
 import { setSize } from '../../redux/reducers/selected'
 import { setSizes } from '../../redux/reducers/listing'
+import { setIsContinueDisabled } from '../../redux/reducers/controls'
 
 const LayoutSizing: React.FC = () => {
   const { sizes } = useSelector((state: RootState) => state.listing.listing)
@@ -21,6 +22,11 @@ const LayoutSizing: React.FC = () => {
       })
   }
 
+  const setSelectedSize = (option: any): void => {
+    dispatch(setSize(option))
+    dispatch(setIsContinueDisabled(false))
+  }
+
   useEffect(() => {
     fetchSizes()
   }, [])
@@ -34,7 +40,7 @@ const LayoutSizing: React.FC = () => {
                 type="radio"
                 value={option.title}
                 checked={size.title === option.title}
-                onChange={() => { dispatch(setSize(option)) }}
+                onChange={() => { setSelectedSize(option) }}
             />
             <p>{option.title}</p>
             <span>{option.size_inc}</span>

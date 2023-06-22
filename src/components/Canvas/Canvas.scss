@@ -89,6 +89,16 @@
   .text {
     padding: 16px;
   }
+
+  .text.current {
+    background: rgba(255, 255, 255, 0.2);
+    border: 0.5px solid #EFEFEF;
+    border-radius: 8px;
+  }
+}
+
+.canvas-text.title.current {
+  background-image: none;
 }
 
 .canvas-text.subtitle {
@@ -104,6 +114,16 @@
   .text {
     padding: 8px 16px;
   }
+
+  .text.current {
+    background: rgba(255, 255, 255, 0.2);
+    border: 0.5px solid #EFEFEF;
+    border-radius: 8px;
+  }
+}
+
+.canvas-text.subtitle.current {
+  background-image: none;
 }
 
 @media (max-width: 980px) {

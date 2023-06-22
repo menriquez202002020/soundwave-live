@@ -1,11 +1,12 @@
-import React, { type MouseEventHandler } from 'react'
+import React, { type MouseEventHandler, useEffect, useState } from 'react'
 import './index.scss'
 import type { RootState } from '../../redux/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateSubtitle } from '../../redux/reducers/canvas'
-import { toggleSubtitleEditor, toggleTitleEditor } from '../../redux/reducers/controls'
+import { toggleSubtitleEditor, toggleTitleEditor, setShowtitleSaved } from '../../redux/reducers/controls'
 
 const TitleEditor: React.FC = () => {
+  const [hasUpdate, setHasUpdate] = useState<boolean>(false)
   const { subtitle } = useSelector((state: RootState) => state.canvas.content)
   const { template } = useSelector((state: RootState) => state.selected.selected)
   const { controls } = useSelector((state: RootState) => state.controls)
@@ -18,7 +19,22 @@ const TitleEditor: React.FC = () => {
     }
 
     dispatch(updateSubtitle(newVal))
+    setHasUpdate(true)
   }
+
+  useEffect(() => {
+    const showAlert = setTimeout(() => {
+      if (!hasUpdate) {
+        return
+      }
+      dispatch(setShowtitleSaved(true))
+      setTimeout(() => {
+        dispatch(setShowtitleSaved(false))
+      }, 2000)
+    }, 1500)
+
+    return () => { clearTimeout(showAlert) }
+  }, [subtitle])
 
   const handleCloseTitleCustomization: MouseEventHandler<HTMLDivElement> = (event) => {
     const target = event.target as HTMLDivElement
@@ -89,6 +105,11 @@ const TitleEditor: React.FC = () => {
           </div>
         </div>
       </div>
+      { controls.showTitleSaved &&
+        <div className="message-container">
+          <div className="message-box"><img src="/src/assets/icons/check-ring-green.png" alt="" />Changes saved</div>
+        </div>
+      }
     </div>
   )
 }

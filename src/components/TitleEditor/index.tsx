@@ -1,11 +1,12 @@
-import React, { type MouseEventHandler } from 'react'
+import React, { type MouseEventHandler, useEffect, useState } from 'react'
 import './index.scss'
 import type { RootState } from '../../redux/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateTitle } from '../../redux/reducers/canvas'
-import { toggleTitleEditor, toggleSubtitleEditor } from '../../redux/reducers/controls'
+import { toggleTitleEditor, toggleSubtitleEditor, setCurrentEditting, setShowtitleSaved } from '../../redux/reducers/controls'
 
 const TitleEditor: React.FC = () => {
+  const [hasUpdate, setHasUpdate] = useState<boolean>(false)
   const { title } = useSelector((state: RootState) => state.canvas.content)
   const { template } = useSelector((state: RootState) => state.selected.selected)
   const { controls } = useSelector((state: RootState) => state.controls)
@@ -18,6 +19,7 @@ const TitleEditor: React.FC = () => {
     }
 
     dispatch(updateTitle(newVal))
+    setHasUpdate(true)
   }
 
   const handleCloseTitleCustomization: MouseEventHandler<HTMLDivElement> = (event) => {
@@ -30,12 +32,29 @@ const TitleEditor: React.FC = () => {
 
     if (controls.showTitleEditor) {
       dispatch(toggleTitleEditor(filteredClassList.length > 0))
+    } else {
+      dispatch(setCurrentEditting(''))
     }
 
     if (controls.showSubtitleEditor) {
       dispatch(toggleSubtitleEditor(filteredClassList.length > 0))
+      dispatch(setCurrentEditting(''))
     }
   }
+
+  useEffect(() => {
+    const showAlert = setTimeout(() => {
+      if (!hasUpdate) {
+        return
+      }
+      dispatch(setShowtitleSaved(true))
+      setTimeout(() => {
+        dispatch(setShowtitleSaved(false))
+      }, 2000)
+    }, 1500)
+
+    return () => { clearTimeout(showAlert) }
+  }, [title])
 
   return (
     <div onClick={handleCloseTitleCustomization} className="sidecontainer">
@@ -88,6 +107,11 @@ const TitleEditor: React.FC = () => {
           </div>
         </div>
       </div>
+      { controls.showTitleSaved &&
+        <div className="message-container">
+          <div className="message-box"><img src="/src/assets/icons/check-ring-green.png" alt="" />Changes saved</div>
+        </div>
+      }
     </div>
   )
 }

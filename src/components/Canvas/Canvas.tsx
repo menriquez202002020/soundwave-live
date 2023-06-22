@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
 import WaveCanvas from '../WaveCanvas/WaveCanvas'
 import { updateOrientation } from '../../redux/reducers/canvas'
-import { toggleTitleEditor, toggleSubtitleEditor } from '../../redux/reducers/controls'
+import { toggleTitleEditor, toggleSubtitleEditor, setCurrentEditting } from '../../redux/reducers/controls'
 import ColorTemplate from '../../components/ColorTemplate/ColorTemplate'
 import './Canvas.scss'
 
@@ -24,10 +24,12 @@ const Canvas: React.FC = () => {
 
   const editTitle = (): void => {
     dispatch(toggleTitleEditor(!controls.showTitleEditor))
+    dispatch(setCurrentEditting('title'))
   }
 
   const editSubtitle = (): void => {
     dispatch(toggleSubtitleEditor(!controls.showSubtitleEditor))
+    dispatch(setCurrentEditting('subtitle'))
   }
 
   useEffect(
@@ -45,11 +47,11 @@ const Canvas: React.FC = () => {
         </div>
         <div className={'canvas-content'} style={{ background: `url('${customizer.backgroundImage}'` }}>
           <div className={`overlay ${selected.color.view} ${selected.color.key}`}></div>
-          <div onClick={editTitle} className="canvas-text title">
-            <div style={{ fontFamily: title.family, fontWeight: title.weight, fontSize: `${title.size}px` }} className="text">{title.text}</div>
+          <div onClick={editTitle} className={`canvas-text title ${controls.currentEditting === 'title' ? 'current' : ''}`}>
+            <div style={{ fontFamily: title.family, fontWeight: title.weight, fontSize: `${title.size}px` }} className={`text ${controls.currentEditting === 'title' ? 'current' : ''}`}>{title.text}</div>
           </div>
-          <div onClick={editSubtitle} className="canvas-text subtitle">
-            <div style={{ fontFamily: subtitle.family, fontWeight: subtitle.weight, fontSize: `${subtitle.size}px` }} className="text">{subtitle.text}</div>
+          <div onClick={editSubtitle} className={`canvas-text subtitle ${controls.currentEditting === 'subtitle' ? 'current' : ''}`}>
+            <div style={{ fontFamily: subtitle.family, fontWeight: subtitle.weight, fontSize: `${subtitle.size}px` }} className={`text ${controls.currentEditting === 'subtitle' ? 'current' : ''}`}>{subtitle.text}</div>
           </div>
           <div className="canvas-soundwave">
             {(specifications.audioBuffer !== null)

@@ -3,11 +3,12 @@ import type { MouseEventHandler } from 'react'
 import { Accordion } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
-import { toggleShowTemplates, toggleEditBackground, toggleShowAudioResetConfirmation } from '../../redux/reducers/controls'
+import { toggleShowTemplates, toggleEditBackground, toggleShowAudioResetConfirmation, setIsContinueDisabled, setShowPreviewModal } from '../../redux/reducers/controls'
 import { setAudioFile, updateSpecifications } from '../../redux/reducers/canvas'
 import '~/pages/customizer/customizer.scss'
 import TitleEditor from '../../components/TitleEditor'
 import SubtitleEditor from '../../components/SubtitleEditor'
+import PreviewModal from '../../components/PreviewModal'
 
 // Components
 import ConfirmationModal from '../../components/ConfirmationModal/ConfirmationModal'
@@ -44,6 +45,7 @@ export const Customizer: React.FC = () => {
     dispatch(setAudioFile(null))
     dispatch(updateSpecifications({ audio: null }))
     dispatch(toggleShowAudioResetConfirmation(false))
+    dispatch(setIsContinueDisabled(true))
   }
 
   const handleCancelDelete = (): void => {
@@ -57,11 +59,13 @@ export const Customizer: React.FC = () => {
         name: audioFileName
       }
       dispatch(setAudio(payload))
+      dispatch(setIsContinueDisabled(true))
     }
 
     if (controls.currentStep === 'material') {
       dispatch(setMaterialFrame(selected.frame))
       dispatch(setMaterialSize(selected.size))
+      dispatch(setIsContinueDisabled(true))
     }
   }
 
@@ -107,12 +111,17 @@ export const Customizer: React.FC = () => {
 
                     {(!controls.showTemplates) &&
                       <div className='input-btns col-12'>
-                        <button className='btn-transparent col-6'>
+                        <button onClick={() => { dispatch(setShowPreviewModal(true)) }} className='btn-transparent col-6'>
                           Preview
                         </button>
-                        <button onClick={handleCurrentStep} className='btn btn-primary col-6'>
-                          Continue
-                        </button>
+                        { controls.isContinueDisabled
+                          ? <button disabled className='btn disabled col-6'>
+                              Continue
+                            </button>
+                          : <button onClick={handleCurrentStep} className='btn btn-primary col-6'>
+                              Continue
+                            </button>
+                        }
                       </div>
                     }
                   </Accordion>
@@ -128,6 +137,9 @@ export const Customizer: React.FC = () => {
                   confirmText='Continue'
                   cancelText='Cancel' />
               : null
+            }
+            {controls.showPreviewModal &&
+              <PreviewModal />
             }
           </div>
           }

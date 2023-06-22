@@ -48,12 +48,9 @@ export const AccordionInput: React.FC = () => {
     console.log('reset')
   }
 
-  useEffect(
-    () => {
-      console.log(audioFile)
-    },
-    [audioFile]
-  )
+  useEffect(() => {
+    console.log('Testing')
+  }, [])
 
   return (
     <>
