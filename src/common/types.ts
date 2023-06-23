@@ -36,6 +36,7 @@ export interface Controls {
   showTitleSaved: boolean
   isContinueDisabled: boolean
   showPreviewModal: boolean
+  currentActiveAccordion: string
 }
 
 export interface Customizer {
@@ -44,6 +45,7 @@ export interface Customizer {
 }
 
 export interface Size {
+  key: string
   inch: string
   cm: string
   title: string
@@ -83,6 +85,7 @@ export interface Listing {
 }
 
 export interface Selected {
+  product: any
   frame: Frame
   size: Size
   color: Color

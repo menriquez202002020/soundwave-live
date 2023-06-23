@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Accordion } from 'react-bootstrap'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { type RootState } from '../../redux/store'
 import './index.scss'
+import { setCurrentActiveAccordion } from '../../redux/reducers/controls'
+import { setTotalPrice } from '../../redux/reducers/checkout'
 
 interface AccordionProps {
   eventKey: string
@@ -11,9 +13,24 @@ interface AccordionProps {
 const OrderReviewAccordion: React.FC<AccordionProps> = ({ eventKey }) => {
   const { selected } = useSelector((state: RootState) => state.selected)
   const { orientation } = useSelector((state: RootState) => state.canvas)
+  const { price } = useSelector((state: RootState) => state.checkout)
+  const dispatch = useDispatch()
+
+  const updateTotalPrice = (): void => {
+    const payload = {
+      product: selected.product,
+      size: selected.size
+    }
+
+    dispatch(setTotalPrice(payload))
+  }
+
+  useEffect(() => {
+    updateTotalPrice()
+  }, [selected.size, selected.product])
 
   return (
-    <Accordion.Item eventKey={eventKey}>
+    <Accordion.Item onClick={() => dispatch(setCurrentActiveAccordion('2'))} eventKey={eventKey}>
       <Accordion.Header>
         <div className='upload-header'>
           <div>
@@ -33,13 +50,13 @@ const OrderReviewAccordion: React.FC<AccordionProps> = ({ eventKey }) => {
             ORIENTATION<strong>{orientation}</strong>
           </li>
           <li className="order-item">
-            FRAME TYPE<strong>{selected.frame.title}</strong>
+            FRAME TYPE<strong>{selected.product !== null ? selected.product.title : ''}</strong>
           </li>
           <li className="order-item">
             SIZE<strong>{selected.size.title}</strong>
           </li>
           <li className="order-item">
-            TOTAL PRICE<strong>{'€50.00'}</strong>
+            TOTAL PRICE<strong>{`${price.total} ${price.code}`}</strong>
           </li>
         </ul>
       </Accordion.Body>

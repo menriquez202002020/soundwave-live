@@ -53,21 +53,19 @@ p.upload-desc {
   border: 1px dashed #B3B2B2;
   border-radius: 8px;
 }
-// .accordion  {
-//   height: 100%;
-//   background: #FFFFFF;
-//   border: 1px solid #EFEFEF;
-//   border-top-width: 0;
-//   border-radius: 0 0 8px 8px;
-//   padding: 0px;
-//   font-family: 'SF Pro';
-//   font-style: normal;
-//   font-weight: 510;
-//   font-size: 16px;
-//   line-height: 24px;
-//   color: #B3B2B2;
-// }
-
+.accordion  {
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  padding: 0px;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 510;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B3B2B2;
+}
 .alert-container {
   display: flex;
   height: 40px;
@@ -151,7 +149,7 @@ p.upload-desc {
   background-repeat: no-repeat;
   border-radius: 50px;
 }
-.frame-selection.active::after {
+.col-6.frame-selection.active::after {
   border: 1px solid #F6F6F6;
 }
 .frame-selection.false::after {
@@ -177,11 +175,4 @@ p.upload-desc {
   font-weight: 510;
   font-size: 16px;
   line-height: 17px;
-}
-
-@media screen and (min-width: 981px) {
-  .accordion {
-    border-radius: 8px;
-    border-top-width: 1px;
-  }
 }

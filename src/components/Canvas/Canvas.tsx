@@ -6,10 +6,10 @@ import { updateOrientation } from '../../redux/reducers/canvas'
 import { toggleTitleEditor, toggleSubtitleEditor, setCurrentEditting } from '../../redux/reducers/controls'
 import ColorTemplate from '../../components/ColorTemplate/ColorTemplate'
 import './Canvas.scss'
+import ConfirmationModal from '../ConfirmationModal/ConfirmationModal'
 
 const Canvas: React.FC = () => {
-  const [audioFile] = useState<File | null>(null)
-  const [showConfirmation] = useState(false)
+  const [showPrompt, setShowPrompt] = useState(false)
   const { orientation, specifications, content } = useSelector((state: RootState) => state.canvas)
   const { title, subtitle } = content
   const { customizer } = useSelector((state: RootState) => state.customizer)
@@ -32,10 +32,50 @@ const Canvas: React.FC = () => {
     dispatch(setCurrentEditting('subtitle'))
   }
 
-  useEffect(
-    () => {},
-    [audioFile, showConfirmation]
-  )
+  const handleContextMenu = (e: any): void => {
+    e.preventDefault()
+  }
+
+  const disableRefreshHotkey = (): void => {
+    window.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && e.key === 'r') {
+        e.preventDefault()
+        setShowPrompt(true)
+      }
+
+      if (e.keyCode === 116) {
+        e.preventDefault()
+        setShowPrompt(true)
+      }
+
+      if (e.key === 'PrtSc') {
+        e.preventDefault()
+        alert('disabled print screen')
+      }
+    })
+  }
+
+  const reloadPage = (): void => {
+    setShowPrompt(false)
+    location.reload()
+  }
+
+  useEffect(() => {
+    disableRefreshHotkey()
+    const unloadHandler = (event: any): void => {
+      event.preventDefault()
+      event.returnValue = ''
+      setShowPrompt(true)
+    }
+    window.addEventListener('beforeunload', unloadHandler)
+
+    document.addEventListener('contextmenu', handleContextMenu)
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu)
+    }
+  }, [])
+
   return (
     <>
       <div className='canvas-component'>
@@ -67,6 +107,14 @@ const Canvas: React.FC = () => {
           <ColorTemplate view="mobile" />
         </div>
       </div>
+      <ConfirmationModal
+        isOpen={showPrompt}
+        message='Are you sure you want to close the window?'
+        subMessage='Your changes and customization will not be saved.'
+        onCancel={() => { setShowPrompt(false) }}
+        onConfirm={reloadPage}
+        cancelText='Cancel'
+        confirmText='Yes, Close'/>
     </>
   )
 }

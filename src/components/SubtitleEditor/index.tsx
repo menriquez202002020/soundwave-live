@@ -3,7 +3,7 @@ import './index.scss'
 import type { RootState } from '../../redux/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateSubtitle } from '../../redux/reducers/canvas'
-import { toggleSubtitleEditor, toggleTitleEditor, setShowtitleSaved } from '../../redux/reducers/controls'
+import { toggleSubtitleEditor, toggleTitleEditor, setShowtitleSaved, setCurrentEditting } from '../../redux/reducers/controls'
 
 const TitleEditor: React.FC = () => {
   const [hasUpdate, setHasUpdate] = useState<boolean>(false)
@@ -46,10 +46,12 @@ const TitleEditor: React.FC = () => {
 
     if (controls.showTitleEditor) {
       dispatch(toggleTitleEditor(filteredClassList.length > 0))
+      dispatch(setCurrentEditting(''))
     }
 
     if (controls.showSubtitleEditor) {
       dispatch(toggleSubtitleEditor(filteredClassList.length > 0))
+      dispatch(setCurrentEditting(''))
     }
   }
 

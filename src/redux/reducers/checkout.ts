@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import type { Audio, Frame, Size } from '../../common/types'
+import type { Product } from 'shopify-buy'
 
 export interface CheckoutState {
   audio: Audio
@@ -8,6 +9,15 @@ export interface CheckoutState {
     frame: Frame
     size: Size
   }
+  price: {
+    total: number
+    code: string
+  }
+}
+
+export interface PricePayload {
+  product: Product | null
+  size: Size
 }
 
 const initialState: CheckoutState = {
@@ -22,10 +32,15 @@ const initialState: CheckoutState = {
       image: ''
     },
     size: {
+      key: '',
       inch: '',
       cm: '',
       title: ''
     }
+  },
+  price: {
+    total: 0,
+    code: 'USD'
   }
 }
 
@@ -41,10 +56,26 @@ export const checkoutSlice = createSlice({
     },
     setMaterialSize: (state: CheckoutState, action: PayloadAction<Size>) => {
       state.material.size = action.payload
+    },
+    setTotalPrice: (state: CheckoutState, action: PayloadAction<any>) => {
+      const payload = action.payload
+
+      if (payload.product !== null) {
+        payload.product.variants.map((variant: any) => {
+          if (payload.size.key === variant.title) {
+            state.price = {
+              total: variant.price.amount,
+              code: variant.price.currencyCode
+            }
+          }
+
+          return variant
+        })
+      }
     }
   }
 })
 
-export const { setAudio, setMaterialFrame, setMaterialSize } = checkoutSlice.actions
+export const { setAudio, setMaterialFrame, setMaterialSize, setTotalPrice } = checkoutSlice.actions
 
 export default checkoutSlice.reducer

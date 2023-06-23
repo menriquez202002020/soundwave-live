@@ -1,22 +1,16 @@
 @import "~/styles/var.scss";
-@import "../../styles/mixins";
-
 
 .template-container {
   margin: 0;
   box-sizing: border-box;
   font-family: 'SF Pro';
   font-style: normal;
-  padding: $spacing;
+  padding: 24px;
   --bs-primary: #222222;
   --bs-light: #9C9C9C;
 
   width: 100%;
   height: 100%;
-
-  @include media-query($medium-tab-up) {
-    padding: $spacing-desktop;
-  }
 }
 
 .template-header {
@@ -43,8 +37,7 @@
   height: 920px;
   background: #FFFFFF;
   border: 1px solid #EFEFEF;
-  border-radius: 8px 8px 0 0;
-  border-bottom-width: 0;
+  border-radius: 8px;
 }
 
 
@@ -88,21 +81,13 @@ p.upload-desc {
   line-height: 18px;
 }
 
-.accordion-body {
-  padding: $spacing;
-
-  @include media-query($medium-tab-up) {
-    padding: $spacing-desktop;
-  }
-}
-
 .accordion-button:focus {
   border-color: transparent;
   box-shadow: none;
   outline: 0;
 }
 
-.accordion-button {
+button.accordion-button {
   box-shadow: none;
   gap: 10px;
   font-family: 'SF Pro';
@@ -112,7 +97,7 @@ p.upload-desc {
   line-height: 24px;
   color: $gray-600 !important;
   background-color: transparent !important;
-  padding: $spacing;
+  padding: 24px;
 
   .accordion-icon {
     height: 24px;
@@ -138,10 +123,6 @@ p.upload-desc {
   .accordion-icon {
     margin-right: 12px;
   }
-  
-  @include media-query($medium-tab-up) {
-    padding: $spacing-desktop;
-  }
 }
 
 .accordion-item,
@@ -163,8 +144,7 @@ p.upload-desc {
   height: 100%;
   background: #FFFFFF;
   border: 1px solid #EFEFEF;
-  border-top-width: 0;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px;
   font-family: 'SF Pro';
   font-style: normal;
   font-weight: 510;
@@ -200,83 +180,50 @@ p.upload-desc {
   line-height: 24px;
 }
 
-.upload-wave-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
-}
-
-.accordion-upload-container {
-  display: flex;
-  flex-direction: column;
-  height: 280px;
-  gap: 10px;
-
-
-  .image-container {
-    height: 180px;
-  }
-}
-
-.filename {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  gap: 10px;
-}
-
-.filename p {
-  width: 100%;
-  margin: 0;
-}
-
 .plus-icon {
   margin-bottom: 24px;
 }
 
-.frame-selection {
+.frame-selection.active {
+  position: relative;
+}
 
-  &.active {
-    position: relative;
+.frame-selection.active::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url(/src/assets/icons/template-selected.png);
+  background-position: 100%;
+  background-size: 100%;
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
 
-    &::after {
-      content: "";
-      width: 18px;
-      height: 18px;
-      background: url(/src/assets/icons/template-selected.png);
-      background-position: 100%;
-      background-size: 100%;
-      position: absolute;
-      top: 5px;
-      right: 2px;
-      background-repeat: no-repeat;
-      background-repeat: no-repeat;
-      border-radius: 50px;
-      border: 1px solid #F6F6F6;
-    }
-  }
+.col-6.frame-selection.active::after {
+  border: 1px solid #F6F6F6;
+}
 
-  &.false::after {
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-position: 100%;
-    background-size: 100%;
-    position: absolute;
-    top: 5px;
-    right: 2px;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-  }
+.frame-selection.false::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-position: 100%;
+  background-size: 100%;
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
 
-  input {
-    visibility: hidden;
-    position: absolute;
-  }
+.frame-selection input {
+  visibility: hidden;
+  position: absolute;
 }
 
 .material-and-sizing-container p {
@@ -293,14 +240,10 @@ p.upload-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 24px;
   height: 100%;
   background: #FFFFFF;
   border: 1px solid #EFEFEF;
-
-  @include media-query($medium-tab-up) {
-    padding-left: $spacing-desktop;
-    padding-right: $spacing-desktop;
-  }
 }
 
 .canvas-content {
@@ -317,17 +260,18 @@ p.upload-desc {
   // gap: 30px;
   position: relative;
   overflow: hidden;
-  border-radius: 0;
+  border-radius: 8px !important;
   overflow: hidden;
-
-  @include media-query($medium-tab-up) {
-    border-radius: $border-radius;
-  }
 }
 
 .canvas-footer {
   height: 200px;
   width: 100%;
+}
+
+.canvas-component {
+  width: 100%;
+  height: 100%;
 }
 
 .canvas-footer.mobile {
@@ -393,55 +337,42 @@ p.upload-desc {
 /*End of Canvas*/
 
 /* Order Review CSS */
-.order-preview-container {
+ul.order-preview-container {
   padding: 0;
-  margin: -$spacing;
+  margin: -10px;
+}
 
-  li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: $spacing;
-    justify-content: space-between;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #9C9C9C;
-    border-bottom: 1px solid #EFEFEF;
+ul.order-preview-container li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 24px;
+  justify-content: space-between;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9C9C9C;
+  border-bottom: 1px solid #EFEFEF;
+}
 
-    &:last-of-type {
-      border-bottom: 0;
-    }
-
-    strong {
-      color: #403F3F;
-      font-style: normal;
-      font-weight: 510;
-      font-size: 14px;
-      line-height: 24px;
-    }
-  }
-
-  @include media-query($medium-tab-up) {
-    margin: -$spacing-desktop;
-
-    li {
-      padding-left: $spacing-desktop;
-      padding-right: $spacing-desktop;
-    }
-  }
+ul.order-preview-container li strong {
+  color: #403F3F;
+  font-style: normal;
+  font-weight: 510;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /* End of Order Review CSS */
 
-.canvas-container.portrait .canvas-component>div:not(.canvas-header)  {
+.col-7.canvas-container.portrait .canvas-component>div:not(.canvas-header) {
   width: 550px;
   transition: width 0.3s ease;
 }
 
-.canvas-container.landscape .canvas-component>div:not(.canvas-header) {
+.col-7.canvas-container.landscape .canvas-component>div:not(.canvas-header) {
   width: 100%;
   position: relative;
   left: 50%;
@@ -449,15 +380,7 @@ p.upload-desc {
   transition: width 0.3s ease;
 }
 
-.canvas-component .canvas-content {
-  aspect-ratio:  1.22 / 1;
-
-  @include media-query($medium-tab-up) {
-    aspect-ratio: auto;
-  }
-}
-
-.canvas-container.portrait .canvas-component {
+.col-7.canvas-container.portrait .canvas-component {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -468,7 +391,7 @@ p.upload-desc {
   text-transform: capitalize;
 }
 
-.canvas-container.portrait .template-color {
+.col-7.canvas-container.portrait .template-color {
   gap: 24px;
 }
 
@@ -509,53 +432,29 @@ p.upload-desc {
   border: none;
 }
 
-.customizer-panel {
-
-  &_navigation {
-
-    button {
-      &:first-of-type {
-        margin-right: calc($spacing / 2);
-      }
-      &:last-of-type {
-        margin-left: calc($spacing / 2);
-      }
-    }
-  }
-}
-
 .input-btns {
   display: flex;
   flex-direction: row;
 
-  padding: $spacing;
+  padding: 24px;
 
   position: absolute;
   bottom: 0;
 
   * {
     flex: 1 1 auto;
-  }
-
-  @include media-query($medium-tab-up) {
-    padding: $spacing-desktop;
+    margin: 8px;
   }
 }
 
 // {Media Queries - Reponsiveness}
-@media screen and (min-width: 981px) {
-  .canvas-container {
-    border-radius: 8px;
-    border-bottom-width: 1px;
-  }
-}
 @media (max-width: 980px) {
   .customizer-container {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .canvas-container {
+  .col-7.canvas-container {
     flex: 0 0 auto;
     width: 100% !important;
   }
@@ -564,9 +463,19 @@ p.upload-desc {
     width: 100%;
   }
 
+  .canvas-container {
+    height: 100%;
+  }
+
   .canvas-content {
     height: 450px;
     gap: 10px;
+  }
+
+  .canvas-container {
+    height: 100%;
+    padding: 10px;
+    border-radius: 8px;
   }
 
   .canvas-footer.mobile {

@@ -1,20 +1,24 @@
 [
   {
+    "key": "8x10",
     "size_inc": "8x10 inch",
     "size_cm": "20.32 x 25.4 cm",
     "title": "Small"
   },
   {
+    "key": "12x16",
     "size_inc": "12x16 inch",
     "size_cm": "30.48 x 40.64 cm",
     "title": "Medium"
   },
   {
+    "key": "16x20",
     "size_inc": "16x20 inch",
     "size_cm": "40.64 x 50.8 cm",
     "title": "Large"
   },
   {
+    "key": "24x36",
     "size_inc": "24x36 inch",
     "size_cm": "60.96 x 91.44 cm",
     "title": "Extra Large"

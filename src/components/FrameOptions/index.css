@@ -21,6 +21,9 @@
 .col-4.frame-selection img {
   width: 100%;
   height: 100%;
+  border-radius: 8px;
+  background: lightgray;
+  object-fit: cover;
 }
 .col-4.frame-selection a,label.col-4.frame-selection span {
 
