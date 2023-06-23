@@ -35,7 +35,7 @@ const LayoutSizing: React.FC = () => {
     <div className='sizing-container'>
         {sizes.map((option: any) => (
           <label className={`col-6 frame-selection ${size.title === option.title ? 'active' : ''}`} key={option.title}>
-            <span className='custom-select'></span>
+            <span className='select-box custom-select'></span>
             <input
                 type="radio"
                 value={option.title}

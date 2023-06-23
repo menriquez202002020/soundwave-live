@@ -10,3 +10,99 @@ $gray-100: #FAFAFA;
 
 
 $white: #FFFFFF;
+
+$spacing: 16px;
+$spacing-desktop: 24px;
+
+$border-radius: 8px;
+
+$navbar-height: 62px;
+$customizer-navbar-height: 76px;
+$customizer-footer-height: 200px;
+
+// Grid
+// $grid-medium: 46.85em;
+// $grid-large: 61.85em;
+// $grid-widescreen: 87.5em;
+// $grid-max-width: 73.75em;
+// $grid-gutter: 30px;
+$grid-xxs: 320px;
+$grid-xs: 375px;
+$grid-small: 425px;
+$grid-mobile-medium: 580px;
+$grid-medium: 768px;
+$grid-medium-tab: 981px;
+$grid-large: 1024px;
+$grid-large-tab: 1200px;
+$grid-semi-widescreen: 1366px;
+$grid-widescreen: 1440px;
+$grid-large-widescreen: 1600px;
+$grid-max-width: 1920px;
+
+// Breakpoints used with the media-query mixin
+$mobile-xxs-up: 'mobile-xxs-up';
+$mobile-xxs-down: 'mobile-xxs-down';
+$mobile-xs: 'mobile-xs';
+$mobile-small-down: 'mobile-small-down';
+$mobile-small-up: 'mobile-small-up';
+$mobile-medium-down: 'mobile-medium-down';
+$mobile-medium-up: 'mobile-medium-up';
+$small: 'small';
+$small: 'small-up';
+$medium: 'medium';
+$medium-down: 'medium-down';
+$medium-up: 'medium-up';
+$medium-tab-down: 'medium-tab-down';
+$medium-tab-up: 'medium-tab-up';
+$large-medium-down: 'large-medium-down';
+$large: 'large';
+$large-down: 'large-down';
+$large-up: 'large-up';
+$large-tab-down: 'large-tab-down';
+$large-tab-up: 'large-tab-up';
+$semi-widescreen: 'semi-widescreen';
+$widescreen: 'widescreen';
+$widescreen-down: 'widescreen-down';
+$widescreen-up: 'widescreen-up';
+$grid-max-width: 'grid-max-width';
+$large-widescreen: 'large-widescreen';
+$large-widescreen-down: 'large-widescreen-down';
+$large-widescreen-up: 'large-widescreen-up';
+
+$breakpoints: (
+  $mobile-xxs-up '(min-width: #{$grid-xxs})',
+  $mobile-xxs-down '(max-width: #{$grid-xxs})',
+  $mobile-xs '(max-width: #{$grid-xs})',
+  $mobile-small-down '(max-width: #{$grid-small})',
+  $mobile-small-up '(min-width: #{$grid-small})',
+  $mobile-medium-down '(max-width: #{$grid-mobile-medium})',
+  $mobile-medium-up '(min-width: #{$grid-mobile-medium})',
+  $small '(max-width: #{$grid-medium})',
+  $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large})',
+  $medium-down '(max-width: #{$grid-large})',
+  $medium-up '(min-width: #{$grid-medium})',
+  $medium-tab-down '(max-width: #{$grid-medium-tab})',
+  $medium-tab-up '(min-width: #{$grid-medium-tab})',
+  $large-medium-down '(max-width: #{$grid-medium-tab})',
+  $large '(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen})',
+  $large-down '(max-width: #{$grid-widescreen})',
+  $large-up '(min-width: #{$grid-large})',
+  $large-tab-down '(max-width: #{$grid-large-tab})',
+  $large-tab-up '(min-width: #{$grid-large-tab})',
+  $widescreen '(min-width: #{$grid-widescreen})',
+  $semi-widescreen '(max-width: #{$grid-semi-widescreen})',
+  $widescreen-down '(max-width: #{$grid-widescreen})',
+  $widescreen-up '(min-width: #{$grid-widescreen})',
+  $large-widescreen
+    '(min-width: #{$grid-large-widescreen}) and (max-width: #{$grid-max-width})',
+  $large-widescreen-up '(min-width: #{$grid-large-widescreen})',
+  $large-widescreen-down '(max-width: #{$grid-large-widescreen})',
+  $grid-max-width '(min-width: #{$grid-max-width})'
+);
+
+$sizes: (
+  'lg',
+  'md',
+  'sm',
+  'xs'
+);
