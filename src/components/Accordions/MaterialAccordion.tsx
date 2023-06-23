@@ -4,7 +4,7 @@ import FrameOptions from '../FrameOptions'
 import LayoutSizing from '../LayoutSizing/LayoutSizing'
 import { useSelector, useDispatch } from 'react-redux'
 import { type RootState } from '../../redux/store'
-import { setCurrentStep } from '../../redux/reducers/controls'
+import { setCurrentActiveAccordion, setCurrentStep } from '../../redux/reducers/controls'
 import './index.scss'
 
 interface AccordionProps {
@@ -17,8 +17,13 @@ const MaterialAccordion: React.FC<AccordionProps> = ({ eventKey }) => {
   const { frame, size } = useSelector((state: RootState) => state.checkout.material)
   const dispatch = useDispatch()
 
+  const updateCurrentSte = (): void => {
+    dispatch(setCurrentStep('material'))
+    dispatch(setCurrentActiveAccordion('1'))
+  }
+
   return (
-    <Accordion.Item onClick={() => { dispatch(setCurrentStep('material')) }} eventKey={eventKey}>
+    <Accordion.Item onClick={updateCurrentSte} eventKey={eventKey}>
       <Accordion.Header className={`material-and-sizing-header ${(selected.frame.value !== '' && selected.size.title !== '' && specifications.audioBuffer !== null) ? 'material-sizing-selected' : ''}`} >
         <div className='upload-header'>
           <div>

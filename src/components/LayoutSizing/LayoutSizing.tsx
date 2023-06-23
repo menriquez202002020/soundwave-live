@@ -5,10 +5,11 @@ import type { RootState } from '../../redux/store'
 import { setSize } from '../../redux/reducers/selected'
 import { setSizes } from '../../redux/reducers/listing'
 import { setIsContinueDisabled } from '../../redux/reducers/controls'
+import { setTotalPrice } from '../../redux/reducers/checkout'
 
 const LayoutSizing: React.FC = () => {
   const { sizes } = useSelector((state: RootState) => state.listing.listing)
-  const { size } = useSelector((state: RootState) => state.selected.selected)
+  const { size, product } = useSelector((state: RootState) => state.selected.selected)
   const dispatch = useDispatch()
 
   const fetchSizes = (): void => {
@@ -25,6 +26,13 @@ const LayoutSizing: React.FC = () => {
   const setSelectedSize = (option: any): void => {
     dispatch(setSize(option))
     dispatch(setIsContinueDisabled(false))
+
+    const payload = {
+      product,
+      size
+    }
+
+    dispatch(setTotalPrice(payload))
   }
 
   useEffect(() => {

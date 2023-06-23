@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import type { MouseEventHandler } from 'react'
 import { Accordion } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
-import { toggleShowTemplates, toggleEditBackground, toggleShowAudioResetConfirmation, setIsContinueDisabled, setShowPreviewModal } from '../../redux/reducers/controls'
+import { toggleShowTemplates, toggleEditBackground, toggleShowAudioResetConfirmation, setIsContinueDisabled, setShowPreviewModal, setCurrentActiveAccordion } from '../../redux/reducers/controls'
 import { setAudioFile, updateSpecifications } from '../../redux/reducers/canvas'
 import '~/pages/customizer/customizer.scss'
 import TitleEditor from '../../components/TitleEditor'
@@ -19,6 +19,10 @@ import AudioUploadAccordion from '../../components/Accordions/AudioUploadAccordi
 import MaterialAccordion from '../../components/Accordions/MaterialAccordion'
 import OrderReviewAccordion from '../../components/Accordions/OrderReviewAccordion'
 import { setAudio, setMaterialFrame, setMaterialSize } from '../../redux/reducers/checkout'
+import { fetchAllProducts } from '../../redux/reducers/products'
+import config from '../../config'
+import Client from 'shopify-buy'
+import { setProduct } from '../../redux/reducers/selected'
 
 export const Customizer: React.FC = () => {
   const { controls } = useSelector((state: RootState) => state.controls)
@@ -60,14 +64,37 @@ export const Customizer: React.FC = () => {
       }
       dispatch(setAudio(payload))
       dispatch(setIsContinueDisabled(true))
+      dispatch(setCurrentActiveAccordion('1'))
     }
 
     if (controls.currentStep === 'material') {
       dispatch(setMaterialFrame(selected.frame))
       dispatch(setMaterialSize(selected.size))
       dispatch(setIsContinueDisabled(true))
+      dispatch(setCurrentActiveAccordion('2'))
     }
   }
+
+  const fetchProducts = (): void => {
+    const client = Client.buildClient({
+      storefrontAccessToken: config.STOREFRONT_ACCESS_TOKEN,
+      domain: config.STOREFRONT_BASE_URL,
+      apiVersion: '2023-04'
+    })
+
+    client.product.fetchAll()
+      .then(async (res) => {
+        dispatch(fetchAllProducts(res))
+        dispatch(setProduct(res[0]))
+      })
+      .catch(async (err) => {
+        console.log(err)
+      })
+  }
+
+  useEffect(() => {
+    fetchProducts()
+  }, [])
 
   return (
     <>
@@ -99,7 +126,7 @@ export const Customizer: React.FC = () => {
                   </Accordion>
                 )
               : (
-                  <Accordion defaultActiveKey={['0']} className='main-accordion-layout'>
+                  <Accordion defaultActiveKey={['0']} activeKey={controls.currentActiveAccordion} className='main-accordion-layout'>
                     {/* Audio Upload Accordion */}
                     <AudioUploadAccordion eventKey='0' />
 

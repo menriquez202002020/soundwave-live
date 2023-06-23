@@ -1,5 +1,5 @@
 import '../../styles/main.scss'
-import './templates.css'
+import './templates.scss'
 import React, { useEffect, useState } from 'react'
 import type { RootState } from '../../redux/store'
 import { useDispatch, useSelector } from 'react-redux'

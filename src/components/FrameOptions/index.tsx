@@ -3,12 +3,14 @@ import './index.css'
 import { useSelector, useDispatch } from 'react-redux'
 import type { RootState } from '../../redux/store'
 import { setFrames } from '../../redux/reducers/listing'
-import { setFrame } from '../../redux/reducers/selected'
 import { setIsContinueDisabled } from '../../redux/reducers/controls'
+import type { Product } from 'shopify-buy'
+import { setProduct } from '../../redux/reducers/selected'
+import { setTotalPrice } from '../../redux/reducers/checkout'
 
 const FrameOptions: React.FC = () => {
-  const { listing } = useSelector((state: RootState) => state.listing)
   const { selected } = useSelector((state: RootState) => state.selected)
+  const { products } = useSelector((state: RootState) => state.products)
   const dispatch = useDispatch()
 
   const fetchFrames = (): void => {
@@ -22,9 +24,16 @@ const FrameOptions: React.FC = () => {
       })
   }
 
-  const setSelectedFrame = (option: any): void => {
-    dispatch(setFrame(option))
+  const setSelectedFrame = (product: Product): void => {
+    dispatch(setProduct(product))
     dispatch(setIsContinueDisabled(false))
+
+    const payload = {
+      product: selected.product,
+      size: selected.size
+    }
+
+    dispatch(setTotalPrice(payload))
   }
 
   useEffect(() => {
@@ -33,19 +42,20 @@ const FrameOptions: React.FC = () => {
 
   return (
     <div className='frame-type'>
-        {listing.frames.map((option: any) => (
-            <label className={`col-4 frame-selection frame ${selected.frame.value === option.value ? 'active' : ''}`} key={option.value}>
-            <span className='custom-select'></span>
-            <input
-                type="radio"
-                value={option.value}
-                checked={selected.frame.value === option.value}
-                onChange={() => { setSelectedFrame(option) }}
-            />
-            <img src={option.image} alt={option.title} />
-            <span>{option.title}</span>
-            </label>
-        ))}
+      { products.map((product: any) => (
+          <label className={`col-4 frame-selection frame ${(selected.product !== null && selected.product.id === product.id) ? 'active' : ''}`} key={product.id}>
+          <span className='custom-select'></span>
+          <input
+              type="radio"
+              value={product.hande}
+              checked={(selected.product.id === product.id)}
+              onChange={() => { setSelectedFrame(product) }}
+          />
+          <img src={product.images[0].src} alt={product.images[0].altText} />
+          <span>{product.title}</span>
+          </label>
+      ))
+      }
     </div>
   )
 }
