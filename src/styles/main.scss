@@ -24,12 +24,6 @@
   height: 100vh;
 }
 
-@media (max-width: 980px) {
-  #root {
-    padding: 10px;
-  }
-}
-
 body {
   background: var(--background-color-light);
   font-family: 'SF Pro';
