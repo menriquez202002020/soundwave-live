@@ -62,6 +62,7 @@ const Canvas: React.FC = () => {
 
   useEffect(() => {
     disableRefreshHotkey()
+
     const unloadHandler = (event: any): void => {
       event.preventDefault()
       event.returnValue = ''

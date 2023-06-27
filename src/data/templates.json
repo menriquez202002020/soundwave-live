@@ -36,6 +36,28 @@
         "id": 1,
         "name": "Josefin sans"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -78,6 +100,24 @@
       {
         "id": 2,
         "name": "Glacial Indifference"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -126,6 +166,24 @@
         "id": 2,
         "name": "Kollektif"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -168,6 +226,24 @@
       {
         "id": 1,
         "name": "DM Sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
       }
     ]
   },
@@ -212,6 +288,24 @@
         "id": 2,
         "name": "Open Sans"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
+      }
     ]
   },
   {
@@ -254,6 +348,28 @@
       {
         "id": 2,
         "name": "Blinker"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
       }
     ]
   },
@@ -298,6 +414,28 @@
         "id": 2,
         "name": "Open Sans"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -336,6 +474,24 @@
       {
         "id": 1,
         "name": "Gloria Hallelujah"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -380,6 +536,24 @@
         "id": 1,
         "name": "Montserrat"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -418,6 +592,28 @@
       {
         "id": 1,
         "name": "Montserrat"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
       }
     ]
   },
@@ -461,6 +657,24 @@
       {
         "id": 2,
         "name": "Aileron"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -509,6 +723,24 @@
         "id": 2,
         "name": "Aileron"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -556,6 +788,24 @@
         "id": 2,
         "name": "Noto Serif Display"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -598,6 +848,24 @@
       {
         "id": 2,
         "name": "Kalam"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -642,6 +910,24 @@
         "id": 2,
         "name": "Noto Serif"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -680,6 +966,28 @@
       {
         "id": 1,
         "name": "Josefin Sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
       }
     ]
   },
@@ -723,6 +1031,24 @@
       {
         "id": 2,
         "name": "Montserrat"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -771,6 +1097,24 @@
         "id": 2,
         "name": "Montserrat"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -814,6 +1158,28 @@
         "id": 2,
         "name": "Quicksand"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -856,6 +1222,24 @@
       {
         "id": 2,
         "name": "Roca Black"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -904,6 +1288,24 @@
         "id": 2,
         "name": "Aileron"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -951,6 +1353,24 @@
         "id": 2,
         "name": "Aileron"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -989,6 +1409,24 @@
       {
         "id": 1,
         "name": "Shrikhand"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -1033,6 +1471,28 @@
         "id": 2,
         "name": "Aileron"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -1076,6 +1536,28 @@
         "id": 2,
         "name": "Josefin sans"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -1118,6 +1600,24 @@
       {
         "id": 2,
         "name": "Tenor sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -1166,6 +1666,24 @@
         "id": 2,
         "name": "Cormorant Garamond"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -1209,6 +1727,28 @@
         "id": 2,
         "name": "Garet"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -1251,6 +1791,24 @@
       {
         "id": 2,
         "name": "Garet"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -1299,6 +1857,24 @@
         "id": 2,
         "name": "Sorts Mill Goudy"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -1342,6 +1918,24 @@
         "id": 1,
         "name": "Nectarine"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -1380,6 +1974,24 @@
       {
         "id": 1,
         "name": "Nectarine"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -1424,6 +2036,28 @@
         "id": 2,
         "name": "Noto Serif"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -1462,6 +2096,28 @@
       {
         "id": 1,
         "name": "Josefin Sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
       }
     ]
   },
@@ -1505,6 +2161,24 @@
       {
         "id": 2,
         "name": "Montserrat"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -1553,6 +2227,24 @@
         "id": 2,
         "name": "Montserrat"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -1591,6 +2283,28 @@
       {
         "id": 1,
         "title": "Josefin sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
       }
     ]
   },
@@ -1634,6 +2348,24 @@
       {
         "id": 2,
         "name": "Glacial Indifference"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -1682,6 +2414,24 @@
         "id": 2,
         "name": "Kollektif"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -1724,6 +2474,24 @@
       {
         "id": 1,
         "name": "DM Sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
       }
     ]
   },
@@ -1768,6 +2536,24 @@
         "id": 2,
         "name": "Open Sans"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
+      }
     ]
   },
   {
@@ -1810,6 +2596,28 @@
       {
         "id": 2,
         "name": "Blinker"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
       }
     ]
   },
@@ -1854,6 +2662,28 @@
         "id": 2,
         "name": "Open Sans"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -1892,6 +2722,24 @@
       {
         "id": 1,
         "name": "Gloria Hallelujah"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -1936,6 +2784,24 @@
         "id": 1,
         "name": "Montserrat"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -1974,6 +2840,28 @@
       {
         "id": 1,
         "name": "Montserrat"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
       }
     ]
   },
@@ -2017,6 +2905,24 @@
       {
         "id": 2,
         "name": "Aileron"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -2065,6 +2971,24 @@
         "id": 2,
         "name": "Aileron"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -2112,6 +3036,24 @@
         "id": 2,
         "name": "Noto Serif Display"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -2154,6 +3096,24 @@
       {
         "id": 2,
         "name": "Kalam"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -2198,6 +3158,28 @@
         "id": 2,
         "name": "Noto Serif"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -2236,6 +3218,28 @@
       {
         "id": 1,
         "name": "Josefin Sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
       }
     ]
   },
@@ -2279,6 +3283,24 @@
       {
         "id": 2,
         "name": "Montserrat"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -2327,6 +3349,24 @@
         "id": 2,
         "name": "Montserrat"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -2370,6 +3410,28 @@
         "id": 2,
         "name": "Quicksand"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -2412,6 +3474,24 @@
       {
         "id": 2,
         "name": "Roca Black"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -2460,6 +3540,24 @@
         "id": 2,
         "name": "Aileron"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -2507,6 +3605,24 @@
         "id": 2,
         "name": "Aileron"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -2545,6 +3661,24 @@
       {
         "id": 1,
         "name": "Shrikhand"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -2589,6 +3723,28 @@
         "id": 2,
         "name": "Aileron"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -2632,6 +3788,28 @@
         "id": 2,
         "name": "Josefin sans"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -2674,6 +3852,24 @@
       {
         "id": 2,
         "name": "Tenor sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -2722,6 +3918,24 @@
         "id": 2,
         "name": "Cormorant Garamond"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -2765,6 +3979,28 @@
         "id": 2,
         "name": "Garet"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -2807,6 +4043,24 @@
       {
         "id": 2,
         "name": "Garet"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -2855,6 +4109,24 @@
         "id": 2,
         "name": "Sorts Mill Goudy"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -2898,6 +4170,24 @@
         "id": 1,
         "name": "Nectarine"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
+      }
     ]
   },
   {
@@ -2936,6 +4226,24 @@
       {
         "id": 1,
         "name": "Nectarine"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -2980,6 +4288,28 @@
         "id": 2,
         "name": "Noto Serif"
       }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-2.png",
+        "selected": false
+      }
     ]
   },
   {
@@ -3018,6 +4348,24 @@
       {
         "id": 1,
         "name": "Josefin Sans"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -3061,6 +4409,24 @@
       {
         "id": 2,
         "name": "Montserrat"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-3.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-3.png"
       }
     ]
   },
@@ -3108,6 +4474,24 @@
       {
         "id": 2,
         "name": "Montserrat"
+      }
+    ],
+    "thumbnails": [
+      {
+        "id": 1,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 2,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 3,
+        "image": "/src/assets/img/frames/frame-1.png"
+      },
+      {
+        "id": 4,
+        "image": "/src/assets/img/frames/frame-1.png"
       }
     ]
   }

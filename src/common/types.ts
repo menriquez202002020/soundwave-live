@@ -18,6 +18,11 @@ export interface Template {
   }
   colors: any[]
   fonts: any[]
+  selectedThumbnail: {
+    id: number
+    image: string
+  }
+  thumbnails: any[]
 }
 
 export interface Controls {

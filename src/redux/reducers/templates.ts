@@ -46,6 +46,28 @@ const initialState: TemplatesState = {
         id: 1,
         name: 'Josefin sans'
       }
+    ],
+    selectedThumbnail: {
+      id: 1,
+      image: '/src/assets/img/frames/frame-2.png'
+    },
+    thumbnails: [
+      {
+        id: 1,
+        image: '/src/assets/img/frames/frame-2.png'
+      },
+      {
+        id: 2,
+        image: '/src/assets/img/frames/frame-1.png'
+      },
+      {
+        id: 3,
+        image: '/src/assets/img/frames/frame-3.png'
+      },
+      {
+        id: 4,
+        image: '/src/assets/img/frames/frame-2.png'
+      }
     ]
   }
 }

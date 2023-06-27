@@ -3,10 +3,12 @@ import './index.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { setShowPreviewModal } from '../../redux/reducers/controls'
 import type { RootState } from '../../redux/store'
+import { setSelectedThumbnail } from '../../redux/reducers/selected'
 
 const PreviewModal: React.FC = () => {
   const dispatch = useDispatch()
   const { showPreviewModal } = useSelector((state: RootState) => state.controls.controls)
+  const { selected } = useSelector((state: RootState) => state.selected)
 
   useEffect(() => {
     if (showPreviewModal) {
@@ -18,6 +20,10 @@ const PreviewModal: React.FC = () => {
     if (!showPreviewModal) {
       dispatch(setShowPreviewModal(false))
     }
+  }
+
+  const updateSelectedThumbnail = (thumbnail: any): void => {
+    dispatch(setSelectedThumbnail(thumbnail))
   }
 
   return (
@@ -35,7 +41,7 @@ const PreviewModal: React.FC = () => {
               </div>
               <div className="modal-body">
                 <div className="image-wrapper">
-                  <img className="image" src="/src/assets/img/frames/frame-1.png" alt="" />
+                  <img className="image" src={selected.template.selectedThumbnail.image} alt="" />
                   <div className="colors-container">
                     <div className="color-box active"></div>
                     <div className="color-box"></div>
@@ -44,18 +50,12 @@ const PreviewModal: React.FC = () => {
                 </div>
               </div>
               <div className="modal-footer">
-                <div className="card">
-                  <img className="thumbnail-active" src="/src/assets/img/frames/frame-1.png" alt="" />
-                </div>
-                <div className="card">
-                  <img className="thumbnail" src="/src/assets/img/frames/frame-1.png" alt="" />
-                </div>
-                <div className="card">
-                  <img className="thumbnail" src="/src/assets/img/frames/frame-1.png" alt="" />
-                </div>
-                <div className="card">
-                  <img className="thumbnail" src="/src/assets/img/frames/frame-1.png" alt="" />
-                </div>
+                { selected.template.thumbnails.map(thumbnail => (
+                  <div onClick={() => { updateSelectedThumbnail(thumbnail) }} className="card" key={thumbnail.id}>
+                    <img className={`thumbnail ${thumbnail.selected === true ? 'active' : ''}`} src={thumbnail.image} alt="" />
+                  </div>
+                ))
+                }
               </div>
             </div>
           </div>
