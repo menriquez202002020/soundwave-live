@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "code": "Abril fatface",
+        "path": "src/assets/fonts/AbrilFatface-Regular.ttf"
+    },
+    {
+        "id": 2,
+        "code": "Aileron",
+        "path": "src/assets/fonts/Aileron-Regular.otf"
+    },
+    {
+        "id": 3,
+        "code": "Alice",
+        "path": "src/assets/fonts/Alice-Regular.ttf"
+    },
+    {
+        "id": 4,
+        "code": "Alta",
+        "path": "src/assets/fonts/Alta_regular.otf"
+    },
+    {
+        "id": 5,
+        "code": "Aniyah",
+        "path": "src/assets/fonts/Aniyah.otf"
+    },
+    {
+        "id": 6,
+        "code": "Bellefair",
+        "path": "src/assets/fonts/Bellefair-Regular.ttf"
+    },
+    {
+        "id": 7,
+        "code": "Blinker",
+        "path": "src/assets/fonts/Blinker-Regular.ttf"
+    },
+    {
+        "id": 8,
+        "code": "Blueberry",
+        "path": "src/assets/fonts/Blueberry.ttf"
+    },
+    {
+        "id": 9,
+        "code": "Brightwall",
+        "path": "src/assets/fonts/Brightwall.ttf"
+    },
+    {
+        "id": 10,
+        "code": "Bungee",
+        "path": "src/assets/fonts/Bungee-Regular.ttf"
+    },
+    {
+        "id": 11,
+        "code": "Buongiorno Rastellino",
+        "path": "src/assets/fonts/Buongiorno-Rastellino.otf"
+    },
+    {
+        "id": 12,
+        "code": "Cormorant Garamond",
+        "path": "src/assets/fonts/CormorantGaramond-Regular.ttf"
+    },
+    {
+        "id": 13,
+        "code": "DayDream",
+        "path": "src/assets/fonts/daydream.ttf"
+    },
+    {
+        "id": 14,
+        "code": "DM Sans",
+        "path": "src/assets/fonts/DMSerifDisplay-Regular.ttf"
+    },
+    {
+        "id": 15,
+        "code": "EB Garamond",
+        "path": "src/assets/fonts/EBGaramond-Regular.ttf"
+    },
+    {
+        "id": 16,
+        "code": "Edo",
+        "path": "src/assets/fonts/edosz.ttf"
+    },
+    {
+        "id": 17,
+        "code": "Elika Gorica",
+        "path": "src/assets/fonts/Elika-Gorica.ttf"
+    },
+    {
+        "id": 18,
+        "code": "Dream Avenue",
+        "path": "src/assets/fonts/Net-Dream-Avenue.ttf"
+    },
+    {
+        "id": 19,
+        "code": "The Seasons",
+        "path": "src/assets/fonts/Fontspring-DEMO-theseasons-lt.otf"
+    },
+    {
+        "id": 20,
+        "code": "Fraunces",
+        "path": "src/assets/fonts/Fraunces_72pt-Thin.ttf"
+    },
+    {
+        "id": 21,
+        "code": "Futura",
+        "path": "src/assets/fonts/Futura-Regular.otf"
+    },
+    {
+        "id": 22,
+        "code": "Garet",
+        "path": "src/assets/fonts/Garet-Book.ttf"
+    },
+    {
+        "id": 23,
+        "code": "Give You Glory",
+        "path": "src/assets/fonts/GiveYouGlory-Regular.ttf"
+    },
+    {
+        "id": 24,
+        "code": "Glacial Indifference",
+        "path": "src/assets/fonts/GlacialIndifference-Regular.otf"
+    },
+    {
+        "id": 25,
+        "code": "Gloria Hallelujah",
+        "path": "src/assets/fonts/GloriaHallelujah-Regular.ttf"
+    },
+    {
+        "id": 26,
+        "code": "Hibernate",
+        "path": "src/assets/fonts/Hibernate.otf"
+    },
+    {
+        "id": 27,
+        "code": "Jimmy Script",
+        "path": "src/assets/fonts/JimmyScript-Rg.otf"
+    },
+    {
+        "id": 28,
+        "code": "Josefin sans",
+        "path": "src/assets/fonts/JosefinSans-Regular.ttf"
+    },
+    {
+        "id": 29,
+        "code": "Kalam",
+        "path": "src/assets/fonts/Kalam-Light.ttf"
+    },
+    {
+        "id": 30,
+        "code": "KG Primary Penmanship",
+        "path": "src/assets/fonts/KGPrimaryPenmanship.ttf"
+    },
+    {
+        "id": 31,
+        "code": "Kollektif",
+        "path": "src/assets/fonts/Kollektif.ttf"
+    },
+    {
+        "id": 32,
+        "code": "League Spartan",
+        "path": "src/assets/fonts/LeagueSpartan-ExtraBold.ttf"
+    },
+    {
+        "id": 33,
+        "code": "Lemon Tuesday",
+        "path": "src/assets/fonts/Lemon-Tuesday.otf"
+    },
+    {
+        "id": 34,
+        "code": "Life Logo",
+        "path": "src/assets/fonts/Lifelogo-Easy.ttf"
+    },
+    {
+        "id": 35,
+        "code": "Liana",
+        "path": "src/assets/fonts/Liana.ttf"
+    },
+    {
+        "id": 36,
+        "code": "Marline",
+        "path": "src/assets/fonts/Marline.otf"
+    },
+    {
+        "id": 37,
+        "code": "Montserrat",
+        "path": "src/assets/fonts/Montserrat-Regular.ttf"
+    },
+    {
+        "id": 38,
+        "code": "Nectarine",
+        "path": "src/assets/fonts/Nectarine.ttf"
+    },
+    {
+        "id": 38,
+        "code": "Nickainley",
+        "path": "src/assets/fonts/Nickainley-Normal.otf"
+    },
+    {
+        "id": 39,
+        "code": "Noto Serif",
+        "path": "src/assets/fonts/NotoSerifDisplay_SemiCondensed-Light.ttf"
+    },
+    {
+        "id": 40,
+        "code": "Now Medium",
+        "path": "src/assets/fonts/Now-Medium.otf"
+    },
+    {
+        "id": 41,
+        "code": "Nunito Sans",
+        "path": "src/assets/fonts/NunitoSans-Bold.ttf"
+    },
+    {
+        "id": 42,
+        "code": "Open Sans",
+        "path": "src/assets/fonts/OpenSans-Regular.ttf"
+    },
+    {
+        "id": 43,
+        "code": "Petit Cochon",
+        "path": "src/assets/fonts/Petit-Cochon.otf"
+    },
+    {
+        "id": 44,
+        "code": "Playfair",
+        "path": "src/assets/fonts/PlayfairDisplay-Regular.ttf"
+    },
+    {
+        "id": 45,
+        "code": "Playlist Script",
+        "path": "src/assets/fonts/Playlist-Script.otf"
+    },
+    {
+        "id": 46,
+        "code": "Pop Ins",
+        "path": "src/assets/fonts/Poppins-Regular.ttf"
+    },
+    {
+        "id": 47,
+        "code": "Hatton",
+        "path": "src/assets/fonts/PP-Hatton.otf"
+    },
+    {
+        "id": 48,
+        "code": "Quicksand",
+        "path": "src/assets/fonts/Quicksand-Regular.ttf"
+    },
+    {
+        "id": 49,
+        "code": "Roca Black",
+        "path": "src/assets/fonts/Roca-Black.ttf"
+    },
+    {
+        "id": 50,
+        "code": "RoxboroughCF",
+        "path": "src/assets/fonts/RoxboroughCF.ttf"
+    },
+    {
+        "id": 51,
+        "code": "Shrikhand",
+        "path": "src/assets/fonts/Shrikhand-Regular.ttf"
+    },
+    {
+        "id": 52,
+        "code": "Sorts Mill Goudy",
+        "path": "src/assets/fonts/SortsMillGoudy-Regular.ttf"
+    },
+    {
+        "id": 53,
+        "code": "Source Serif Pro",
+        "path": "src/assets/fonts/SourceSerifPro-Regular.ttf"
+    },
+    {
+        "id": 54,
+        "code": "Stadio Now",
+        "path": "src/assets/fonts/Stadio-Now-Monolinea-trial.ttf"
+    },
+    {
+        "id": 55,
+        "code": "Stardos Stencil",
+        "path": "src/assets/fonts/StardosStencil-Regular.ttf"
+    },
+    {
+        "id": 56,
+        "code": "Tenor Sans",
+        "path": "src/assets/fonts/TenorSans-Regular.ttf"
+    },
+    {
+        "id": 57,
+        "code": "Twister",
+        "path": "src/assets/fonts/Twister.ttf"
+    },
+    {
+        "id": 57,
+        "code": "Yellowtail",
+        "path": "src/assets/fonts/Yellowtail-Regular.ttf"
+    },
+    {
+        "id": 58,
+        "code": "Lato",
+        "path": "src/assets/fonts/Lato-Regular.ttf"
+    }
+]

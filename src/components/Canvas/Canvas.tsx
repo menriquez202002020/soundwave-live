@@ -15,6 +15,7 @@ const Canvas: React.FC = () => {
   const { customizer } = useSelector((state: RootState) => state.customizer)
   const { selected } = useSelector((state: RootState) => state.selected)
   const { controls } = useSelector((state: RootState) => state.controls)
+  const { appLayoutState } = useSelector((state: RootState) => state.customizer)
   const dispatch = useDispatch()
 
   const setCanvasOrientation = (): void => {
@@ -86,13 +87,13 @@ const Canvas: React.FC = () => {
             <img className={`orientation-icon ${orientation + '-orientation'}`} src='src/assets/icons/svg/orientation-icon.svg' alt='' />
           </button>
         </div>
-        <div className={'canvas-content'} style={{ background: `url('${customizer.backgroundImage}'` }}>
+        <div id="canvas-container" className={'canvas-content'} style={{ background: `url('${customizer.backgroundImage}'` }}>
           <div className={`overlay ${selected.color.view} ${selected.color.key}`}></div>
           <div onClick={editTitle} className={`canvas-text title ${controls.currentEditting === 'title' ? 'current' : ''}`}>
-            <div style={{ fontFamily: title.family, fontWeight: title.weight, fontSize: `${title.size}px` }} className={`text ${controls.currentEditting === 'title' ? 'current' : ''}`}>{title.text}</div>
+            <div style={{ fontFamily: `'${title.family}'`, fontWeight: title.weight, fontSize: `${appLayoutState === 'Desktop' ? title.size : 32}px` }} className={`text ${controls.currentEditting === 'title' ? 'current' : ''}`}>{title.text}</div>
           </div>
           <div onClick={editSubtitle} className={`canvas-text subtitle ${controls.currentEditting === 'subtitle' ? 'current' : ''}`}>
-            <div style={{ fontFamily: subtitle.family, fontWeight: subtitle.weight, fontSize: `${subtitle.size}px` }} className={`text ${controls.currentEditting === 'subtitle' ? 'current' : ''}`}>{subtitle.text}</div>
+            <div style={{ fontFamily: `'${subtitle.family}'`, fontWeight: subtitle.weight, fontSize: `${appLayoutState === 'Desktop' ? subtitle.size : 18}px` }} className={`text ${controls.currentEditting === 'subtitle' ? 'current' : ''}`}>{subtitle.text}</div>
           </div>
           <div className="canvas-soundwave">
             {(specifications.audioBuffer !== null)

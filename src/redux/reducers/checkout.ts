@@ -9,6 +9,7 @@ export interface CheckoutState {
     frame: Frame
     size: Size
   }
+  customizedImage: string | null
   price: {
     total: number
     code: string
@@ -25,6 +26,7 @@ const initialState: CheckoutState = {
     file: null,
     name: ''
   },
+  customizedImage: null,
   material: {
     frame: {
       title: '',
@@ -51,6 +53,9 @@ export const checkoutSlice = createSlice({
     setAudio: (state: CheckoutState, action: PayloadAction<Audio>) => {
       state.audio = action.payload
     },
+    setCustomizedImage: (state: CheckoutState, action: PayloadAction<string | null>) => {
+      state.customizedImage = action.payload
+    },
     setMaterialFrame: (state: CheckoutState, action: PayloadAction<Frame>) => {
       state.material.frame = action.payload
     },
@@ -76,6 +81,6 @@ export const checkoutSlice = createSlice({
   }
 })
 
-export const { setAudio, setMaterialFrame, setMaterialSize, setTotalPrice } = checkoutSlice.actions
+export const { setAudio, setMaterialFrame, setMaterialSize, setTotalPrice, setCustomizedImage } = checkoutSlice.actions
 
 export default checkoutSlice.reducer

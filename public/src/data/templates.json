@@ -34,7 +34,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin sans"
+        "name": "Josefin sans",
+        "code": "JosefinSans-R"
       }
     ]
   },
@@ -73,11 +74,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nickainley"
+        "name": "Nickainley",
+        "code": "Nickainley-R"
       },
       {
         "id": 2,
-        "name": "Glacial Indifference"
+        "name": "Glacial Indifference",
+        "code": "GlacialIndifference-R"
       }
     ]
   },
@@ -120,11 +123,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Lato"
+        "name": "Lato",
+        "code": "Lato-R"
       },
       {
         "id": 2,
-        "name": "Kollektif"
+        "name": "Kollektif",
+        "code": "Kollektif-R"
       }
     ]
   },
@@ -167,7 +172,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "DM Sans"
+        "name": "DM Sans",
+        "code": "DMSerif-R"
       }
     ]
   },
@@ -206,11 +212,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Alta"
+        "name": "Alta",
+        "code": "Alta-R"
       },
       {
         "id": 2,
-        "name": "Open Sans"
+        "name": "Open Sans",
+        "code": "OpenSans-R"
       }
     ]
   },
@@ -249,11 +257,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "YellowTail"
+        "name": "YellowTail",
+        "code": "YellowTail-R"
       },
       {
         "id": 2,
-        "name": "Blinker"
+        "name": "Blinker",
+        "code": "Blinker-R"
       }
     ]
   },
@@ -292,11 +302,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "YellowTail"
+        "name": "YellowTail",
+        "code": "YellowTail-R"
       },
       {
         "id": 2,
-        "name": "Open Sans"
+        "name": "Open Sans",
+        "code": "OpenSans-R"
       }
     ]
   },
@@ -335,7 +347,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Gloria Hallelujah"
+        "name": "Gloria Hallelujah",
+        "code": "GloriaHallelujah-R"
       }
     ]
   },
@@ -378,7 +391,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -417,7 +431,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -456,11 +471,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -503,11 +520,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -550,11 +569,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       },
       {
         "id": 2,
-        "name": "Noto Serif Display"
+        "name": "Noto Serif Display",
+        "code": "NotoSerifDisplay_SemiCondensed-R"
       }
     ]
   },
@@ -593,11 +614,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "EB Garamond"
+        "name": "EB Garamond",
+        "code": "EBGaramond-R"
       },
       {
         "id": 2,
-        "name": "Kalam"
+        "name": "Kalam",
+        "code": "Kalam-R"
       }
     ]
   },
@@ -636,11 +659,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Noto Serif"
+        "name": "Noto Serif",
+        "code": "NotoSerifDisplay_SemiCondensed-R"
       }
     ]
   },
@@ -679,7 +704,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin Sans"
+        "name": "Josefin Sans",
+        "code": "JosefinSans-R"
       }
     ]
   },
@@ -718,11 +744,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -765,11 +793,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Edo"
+        "name": "Edo",
+        "code": "edosz-R"
       },
       {
         "id": 2,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -808,11 +838,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Quicksand"
+        "name": "Quicksand",
+        "code": "Quicksand-R"
       }
     ]
   },
@@ -851,11 +883,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Dream Avenue"
+        "name": "Dream Avenue",
+        "code": "NetDream-R"
       },
       {
         "id": 2,
-        "name": "Roca Black"
+        "name": "Roca Black",
+        "code": "RocaBlack-R"
       }
     ]
   },
@@ -898,11 +932,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Blueberry"
+        "name": "Blueberry",
+        "code": "Blueberry-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -945,11 +981,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Brightwall"
+        "name": "Brightwall",
+        "code": "Brightwall-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -988,7 +1026,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Shrikhand"
+        "name": "Shrikhand",
+        "code": "Shrikhand-R"
       }
     ]
   },
@@ -1027,11 +1066,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Brightwall"
+        "name": "Brightwall",
+        "code": "Brightwall-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -1070,11 +1111,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "DM Serif Sans"
+        "name": "DM Serif Sans",
+        "code": "DMSerif-R"
       },
       {
         "id": 2,
-        "name": "Josefin sans"
+        "name": "Josefin sans",
+        "code": "JosefinSans-R"
       }
     ]
   },
@@ -1113,11 +1156,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Hatton"
+        "name": "Hatton",
+        "code": "PPHatton-R"
       },
       {
         "id": 2,
-        "name": "Tenor sans"
+        "name": "Tenor sans",
+        "code": "TenorSans-R"
       }
     ]
   },
@@ -1160,11 +1205,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Abril fatface"
+        "name": "Abril fatface",
+        "code": "AbrilFF-R"
       },
       {
         "id": 2,
-        "name": "Cormorant Garamond"
+        "name": "Cormorant Garamond",
+        "code": "CormorantGaramond-R"
       }
     ]
   },
@@ -1203,11 +1250,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "The Seasons"
+        "name": "The Seasons",
+        "code": "TheSeasons-R"
       },
       {
         "id": 2,
-        "name": "Garet"
+        "name": "Garet",
+        "code": "GaretB-R"
       }
     ]
   },
@@ -1246,11 +1295,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Marline"
+        "name": "Marline",
+        "code": "Marline-R"
       },
       {
         "id": 2,
-        "name": "Garet"
+        "name": "Garet",
+        "code": "GaretB-R"
       }
     ]
   },
@@ -1293,11 +1344,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "RoxboroughCF"
+        "name": "RoxboroughCF",
+        "code": "RoxboroughCF-R"
       },
       {
         "id": 2,
-        "name": "Sorts Mill Goudy"
+        "name": "Sorts Mill Goudy",
+        "code": "SortsMillGoudy-R"
       }
     ]
   },
@@ -1340,7 +1393,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nectarine"
+        "name": "Nectarine",
+        "code": "Nectarine-R"
       }
     ]
   },
@@ -1379,7 +1433,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nectarine"
+        "name": "Nectarine",
+        "code": "Nectarine-R"
       }
     ]
   },
@@ -1418,11 +1473,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Noto Serif"
+        "name": "Noto Serif",
+        "code": "NotoSerifDisplay_SemiCondensed-R"
       }
     ]
   },
@@ -1461,7 +1518,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin Sans"
+        "name": "Josefin Sans",
+        "code": "JosefinSans-R"
       }
     ]
   },
@@ -1500,11 +1558,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -1547,11 +1607,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Edo"
+        "name": "Edo",
+        "code": "edosz-R"
       },
       {
         "id": 2,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -1590,7 +1652,8 @@
     "fonts": [
       {
         "id": 1,
-        "title": "Josefin sans"
+        "title": "Josefin sans",
+        "code": "JosefinSans-R"
       }
     ]
   },
@@ -1629,11 +1692,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nickainley"
+        "name": "Nickainley",
+        "code": "Nickainley-R"
       },
       {
         "id": 2,
-        "name": "Glacial Indifference"
+        "name": "Glacial Indifference",
+        "code": "GlacialIndifference-R"
       }
     ]
   },
@@ -1676,11 +1741,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Lato"
+        "name": "Lato",
+        "code": "Lato-R"
       },
       {
         "id": 2,
-        "name": "Kollektif"
+        "name": "Kollektif",
+        "code": "Kollektif-R"
       }
     ]
   },
@@ -1723,7 +1790,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "DM Sans"
+        "name": "DM Sans",
+        "code": "DMSerif-R"
       }
     ]
   },
@@ -1762,11 +1830,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Alta"
+        "name": "Alta",
+        "code": "Alta-R"
       },
       {
         "id": 2,
-        "name": "Open Sans"
+        "name": "Open Sans",
+        "code": "OpenSans-R"
       }
     ]
   },
@@ -1805,11 +1875,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "YellowTail"
+        "name": "YellowTail",
+        "code": "YellowTail-R"
       },
       {
         "id": 2,
-        "name": "Blinker"
+        "name": "Blinker",
+        "code": "Blinker-R"
       }
     ]
   },
@@ -1848,11 +1920,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "YellowTail"
+        "name": "YellowTail",
+        "code": "YellowTail-R"
       },
       {
         "id": 2,
-        "name": "Open Sans"
+        "name": "Open Sans",
+        "code": "OpenSans-R"
       }
     ]
   },
@@ -1891,7 +1965,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Gloria Hallelujah"
+        "name": "Gloria Hallelujah",
+        "code": "GloriaHallelujah-R"
       }
     ]
   },
@@ -1934,7 +2009,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -1973,7 +2049,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -2012,11 +2089,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -2059,11 +2138,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -2106,11 +2187,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       },
       {
         "id": 2,
-        "name": "Noto Serif Display"
+        "name": "Noto Serif Display",
+        "code": "NotoSerifDisplay_SemiCondensed-R"
       }
     ]
   },
@@ -2149,11 +2232,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "EB Garamond"
+        "name": "EB Garamond",
+        "code": "EBGaramond-R"
       },
       {
         "id": 2,
-        "name": "Kalam"
+        "name": "Kalam",
+        "code": "Kalam-R"
       }
     ]
   },
@@ -2192,11 +2277,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Noto Serif"
+        "name": "Noto Serif",
+        "code": "NotoSerifDisplay_SemiCondensed-R"
       }
     ]
   },
@@ -2235,7 +2322,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin Sans"
+        "name": "Josefin Sans",
+        "code": "JosefinSans-R"
       }
     ]
   },
@@ -2274,11 +2362,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -2321,11 +2411,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Edo"
+        "name": "Edo",
+        "code": "edosz-R"
       },
       {
         "id": 2,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -2364,11 +2456,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Quicksand"
+        "name": "Quicksand",
+        "code": "Quicksand-R"
       }
     ]
   },
@@ -2407,11 +2501,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Dream Avenue"
+        "name": "Dream Avenue",
+        "code": "NetDream-R"
       },
       {
         "id": 2,
-        "name": "Roca Black"
+        "name": "Roca Black",
+        "code": "RocaBlack-R"
       }
     ]
   },
@@ -2454,11 +2550,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Blueberry"
+        "name": "Blueberry",
+        "code": "Blueberry-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -2501,11 +2599,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Brightwall"
+        "name": "Brightwall",
+        "code": "Brightwall-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -2544,7 +2644,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Shrikhand"
+        "name": "Shrikhand",
+        "code": "Shrikhand-R"
       }
     ]
   },
@@ -2583,11 +2684,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Brightwall"
+        "name": "Brightwall",
+        "code": "Brightwall-R"
       },
       {
         "id": 2,
-        "name": "Aileron"
+        "name": "Aileron",
+        "code": "Aileron-R"
       }
     ]
   },
@@ -2626,11 +2729,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "DM Serif Sans"
+        "name": "DM Serif Sans",
+        "code": "DMSerif-R"
       },
       {
         "id": 2,
-        "name": "Josefin sans"
+        "name": "Josefin sans",
+        "code": "JosefinSans-R"
       }
     ]
   },
@@ -2669,11 +2774,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Hatton"
+        "name": "Hatton",
+        "code": "PPHatton-R"
       },
       {
         "id": 2,
-        "name": "Tenor sans"
+        "name": "Tenor sans",
+        "code": "TenorSans-R"
       }
     ]
   },
@@ -2716,11 +2823,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Abril fatface"
+        "name": "Abril fatface",
+        "code": "AbrilFF-R"
       },
       {
         "id": 2,
-        "name": "Cormorant Garamond"
+        "name": "Cormorant Garamond",
+        "code": "CormorantGaramond-R"
       }
     ]
   },
@@ -2759,11 +2868,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "The Seasons"
+        "name": "The Seasons",
+        "code": "TheSeasons-R"
       },
       {
         "id": 2,
-        "name": "Garet"
+        "name": "Garet",
+        "code": "GaretB-R"
       }
     ]
   },
@@ -2802,11 +2913,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Marline"
+        "name": "Marline",
+        "code": "Marline-R"
       },
       {
         "id": 2,
-        "name": "Garet"
+        "name": "Garet",
+        "code": "GaretB-R"
       }
     ]
   },
@@ -2849,11 +2962,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "RoxboroughCF"
+        "name": "RoxboroughCF",
+        "code": "RoxboroughCF-R"
       },
       {
         "id": 2,
-        "name": "Sorts Mill Goudy"
+        "name": "Sorts Mill Goudy",
+        "code": "SortsMillGoudy-R"
       }
     ]
   },
@@ -2896,7 +3011,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nectarine"
+        "name": "Nectarine",
+        "code": "Nectarine-R"
       }
     ]
   },
@@ -2935,7 +3051,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nectarine"
+        "name": "Nectarine",
+        "code": "Nectarine-R"
       }
     ]
   },
@@ -2974,11 +3091,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "Playfair",
+        "code": "PlayfairDisplay-R"
       },
       {
         "id": 2,
-        "name": "Noto Serif"
+        "name": "Noto Serif",
+        "code": "NotoSerifDisplay_SemiCondensed-R"
       }
     ]
   },
@@ -3017,7 +3136,8 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin Sans"
+        "name": "Josefin Sans",
+        "code": "JosefinSans-R"
       }
     ]
   },
@@ -3056,11 +3176,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair"
+        "name": "PlayfairDisplay",
+        "code": "JosefinSans-R"
       },
       {
         "id": 2,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   },
@@ -3103,11 +3225,13 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Edo"
+        "name": "Edo",
+        "code": "edosz-R"
       },
       {
         "id": 2,
-        "name": "Montserrat"
+        "name": "Montserrat",
+        "code": "Montserrat-R"
       }
     ]
   }

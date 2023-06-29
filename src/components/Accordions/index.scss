@@ -91,3 +91,9 @@
 .accordion-upload-container.image-container {
   height: 180px;
 }
+
+@media (max-width: 768px) {
+  .wave-wrapper canvas {
+    height: 146px !important;
+  }
+}

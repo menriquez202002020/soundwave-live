@@ -32,6 +32,7 @@ const Templates: React.FC = () => {
 
   const handleConfirm = (): void => {
     dispatch(setTemplate(template))
+    console.log(template)
     dispatch(toggleShowTemplates(false))
     toggeShowConfirmation(false)
   }

@@ -62,7 +62,8 @@ const initialState: SelectedState = {
       fonts: [
         {
           id: 1,
-          name: 'Josefin sans'
+          name: 'Josefin sans',
+          code: 'JosefSans-R'
         }
       ],
       selectedThumbnail: {

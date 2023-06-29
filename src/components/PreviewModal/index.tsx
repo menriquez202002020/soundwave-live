@@ -9,6 +9,8 @@ const PreviewModal: React.FC = () => {
   const dispatch = useDispatch()
   const { showPreviewModal } = useSelector((state: RootState) => state.controls.controls)
   const { selected } = useSelector((state: RootState) => state.selected)
+  const { customizedImage } = useSelector((state: RootState) => state.checkout)
+  const { appLayoutState } = useSelector((state: RootState) => state.customizer)
 
   useEffect(() => {
     if (showPreviewModal) {
@@ -28,38 +30,76 @@ const PreviewModal: React.FC = () => {
 
   return (
     <>
-      {showPreviewModal && (
-        <div className={`modal ${showPreviewModal ? 'is-visible' : ''}`} onAnimationEnd={onAnimationEnd}>
-          <div className="modal-overlay" onClick={() => { dispatch(setShowPreviewModal(false)) }}></div>
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-header">
-                <span className="title">Preview</span>
-                <button onClick={() => { dispatch(setShowPreviewModal(false)) }} className="close-button">
-                  <img className="icon" src='/src/assets/icons/close.png' />
-                </button>
-              </div>
-              <div className="modal-body">
-                <div className="image-wrapper">
-                  <img className="image" src={selected.template.selectedThumbnail.image} alt="" />
-                  <div className="colors-container">
-                    <div className="color-box active"></div>
-                    <div className="color-box"></div>
-                    <div className="color-box"></div>
+      {showPreviewModal &&
+      (
+        appLayoutState === 'Desktop'
+          ? (
+              <div className={`modal ${showPreviewModal ? 'is-visible' : ''}`} onAnimationEnd={onAnimationEnd}>
+                <div className="modal-overlay" onClick={() => { dispatch(setShowPreviewModal(false)) }}></div>
+                <div className="modal-dialog modal-dialog-centered">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <span className="title">Preview</span>
+                      <button onClick={() => { dispatch(setShowPreviewModal(false)) }} className="close-button">
+                        <img className="icon" src='/src/assets/icons/close.png' />
+                      </button>
+                    </div>
+                    <div className="modal-body">
+                      <div className="image-wrapper">
+                        <img className="image" src={selected.template.selectedThumbnail.image} alt="" />
+                        <img src={(customizedImage !== null) ? customizedImage : ''} alt="" className="frame" />
+                        <div className="colors-container">
+                          <div className="color-box active"></div>
+                          <div className="color-box"></div>
+                          <div className="color-box"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="modal-footer">
+                      { selected.template.thumbnails.map(thumbnail => (
+                        <div onClick={() => { updateSelectedThumbnail(thumbnail) }} className="card" key={thumbnail.id}>
+                          <img className={`thumbnail ${thumbnail.selected === true ? 'active' : ''}`} src={thumbnail.image} alt="" />
+                        </div>
+                      ))
+                      }
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="modal-footer">
-                { selected.template.thumbnails.map(thumbnail => (
-                  <div onClick={() => { updateSelectedThumbnail(thumbnail) }} className="card" key={thumbnail.id}>
-                    <img className={`thumbnail ${thumbnail.selected === true ? 'active' : ''}`} src={thumbnail.image} alt="" />
+            )
+          : (
+              <div className={`modal mobile-layout ${showPreviewModal ? 'is-visible' : ''}`} onAnimationEnd={onAnimationEnd}>
+                <div className="modal-overlay" onClick={() => { dispatch(setShowPreviewModal(false)) }}></div>
+                <div className="modal-dialog modal-dialog-centered">
+                  <div className="modal-content">
+                    <div className="modal-body">
+                      <div className="image-wrapper">
+                        <button onClick={() => { dispatch(setShowPreviewModal(false)) }} className="close-button">
+                          <img className="icon" src='/src/assets/icons/svg/mobile-close.svg' />
+                        </button>
+                        <img className="image" src={selected.template.selectedThumbnail.image} alt="" />
+                        <img src={(customizedImage !== null) ? customizedImage : ''} alt="" className="frame" />
+                        <div className="colors-container">
+                          <div className="color-box active"></div>
+                          <div className="color-box"></div>
+                          <div className="color-box"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="modal-footer">
+                      <div className='template-contents'>
+                        { selected.template.thumbnails.map(thumbnail => (
+                          <div onClick={() => { updateSelectedThumbnail(thumbnail) }} className="card" key={thumbnail.id}>
+                            <img className={`thumbnail ${thumbnail.selected === true ? 'active' : ''}`} src={thumbnail.image} alt="" />
+                          </div>
+                        ))
+                        }
+                      </div>
+                    </div>
                   </div>
-                ))
-                }
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
+            )
       )
       }
     </>

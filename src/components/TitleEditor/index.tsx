@@ -19,6 +19,7 @@ const TitleEditor: React.FC = () => {
     }
 
     dispatch(updateTitle(newVal))
+    console.log(newVal)
     setHasUpdate(true)
   }
 

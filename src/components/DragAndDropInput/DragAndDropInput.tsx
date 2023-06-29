@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react'
+import { type RootState } from '../../redux/store'
 import './DragAndDropInput.scss'
+import { useSelector } from 'react-redux'
 
 interface DragAndDropInputProps {
   onFileChange: (file: File) => void
@@ -13,6 +15,7 @@ const DragAndDropInput: React.FC<DragAndDropInputProps> = ({ onFileChange }) => 
   const [state, setState] = useState<DragAndDropInputState>({
     isDragging: false
   })
+  const { appLayoutState } = useSelector((state: RootState) => state.customizer)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const handleDragEnter = (event: React.DragEvent<HTMLInputElement>): void => {
@@ -56,7 +59,7 @@ const DragAndDropInput: React.FC<DragAndDropInputProps> = ({ onFileChange }) => 
         hidden
         ref={inputRef}
       />
-      <p onClick={handleClick}>Click to upload <span className='drag-drop-title-light'>or drag & drop</span></p>
+      <p onClick={handleClick}>Click to upload { appLayoutState === 'Desktop' ?? <span className='drag-drop-title-light'>or drag & drop</span> }</p>
       <span className='drag-drop-subtitle'>MP3, MP4  &middot;  10MB</span>
     </div>
   )

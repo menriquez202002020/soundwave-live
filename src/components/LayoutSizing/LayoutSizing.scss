@@ -63,3 +63,16 @@ label.col-6.frame-selection.active {
   border-radius: 100px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+
+
+@media (max-width: 768px) {
+  .sizing-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    grid-gap: 10px; 
+    .frame-selection {
+      width: 100% !important;
+    }
+  }
+}

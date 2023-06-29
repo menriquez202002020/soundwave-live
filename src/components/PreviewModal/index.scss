@@ -52,10 +52,23 @@
 
     .image-wrapper {
       position: relative;
+      height: 536px;
 
       .image {
+        position: absolute;
         height: 100%;
         width: 100%;
+        object-fit: cover;
+      }
+
+      .frame {
+        position: absolute;
+        border: 2px solid #000;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 250px;
         object-fit: cover;
       }
 
@@ -159,4 +172,55 @@
     color: var(--bs-light);
     font-weight: 410;
     text-align: center;
+}
+
+.mobile-layout {
+  height: 100%;
+  overflow-y: scroll;
+  .modal-dialog {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    .modal-content {
+      height: 100%;
+      border-radius: 0px;
+      .modal-body {
+        height: 60%;
+        padding: 0px;
+        .image-wrapper {
+          height: 100%;
+          position: relative;
+          img {
+            border-radius: 0px;
+          }
+          .close-button {
+            padding: 0;
+            border: none;
+            z-index: 2;
+            background: transparent;
+            right: 16px;
+            top: 16px;
+            position: absolute;
+            img {
+            }
+          }
+        }
+      }
+      .modal-footer {
+        width: 100%;
+        flex-wrap: unset;
+        overflow: auto;
+        padding: 16px;
+        .template-contents {
+          width: fit-content;
+          flex-direction: row;
+          display: flex;
+          border: none;
+          display: flex;
+          justify-content: flex-start;
+          gap: 16px;
+        }
+      }
+    }
+  }
 }

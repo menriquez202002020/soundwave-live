@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './index.css'
+import './index.scss'
 import { useSelector, useDispatch } from 'react-redux'
 import type { RootState } from '../../redux/store'
 import { setFrames } from '../../redux/reducers/listing'
