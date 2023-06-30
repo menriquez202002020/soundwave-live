@@ -1,5 +1,26 @@
 .btn-primary { font-size: 16px !important; }
 
+// For image preview customization
+.image-wrapper {
+  position: relative;
+
+  .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .frame {
+    position: absolute;
+    border: 2px solid #000;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+  }
+}
+
 .modal {
   animation: fade-in 0.3s ease-in-out;
 
@@ -50,6 +71,13 @@
   .modal-body {
     padding: 0 24px;
 
+    .loading_container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 24px 0;
+    }
+
     .image-wrapper {
       position: relative;
       height: 536px;
@@ -66,7 +94,6 @@
         border: 2px solid #000;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
         height: 200px;
         width: 250px;
         object-fit: cover;
@@ -187,6 +214,13 @@
       .modal-body {
         height: 60%;
         padding: 0px;
+
+        .loading_container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
         .image-wrapper {
           height: 100%;
           position: relative;
@@ -201,8 +235,6 @@
             right: 16px;
             top: 16px;
             position: absolute;
-            img {
-            }
           }
         }
       }

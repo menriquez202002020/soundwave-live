@@ -31,6 +31,7 @@ const initialState: SelectedState = {
       id: 1,
       image: '/src/assets/img/frames/frame-1.png',
       selected: true,
+      previewImage: '',
       title: {
         text: 'Minimalist nature',
         fontSize: '24px',
@@ -68,28 +69,54 @@ const initialState: SelectedState = {
       ],
       selectedThumbnail: {
         id: 1,
-        image: '/src/assets/img/frames/frame-2.png'
+        image: '/src/assets/img/previews/preview-3.jpg',
+        imagePosition: {
+          height: '160px',
+          width: '228px',
+          top: '294px',
+          left: '101px'
+        }
       },
       thumbnails: [
         {
           id: 1,
-          image: '/src/assets/img/frames/frame-2.png',
-          selected: true
+          image: '/src/assets/img/previews/preview-3.jpg',
+          imagePosition: {
+            height: '160px',
+            width: '228px',
+            top: '294px',
+            left: '101px'
+          }
         },
         {
           id: 2,
-          image: '/src/assets/img/frames/frame-3.png',
-          selected: false
+          image: '/src/assets/img/previews/preview-1.jpg',
+          imagePosition: {
+            height: '101px',
+            width: '143px',
+            top: '177px',
+            left: '108px'
+          }
         },
         {
           id: 3,
-          image: '/src/assets/img/frames/frame-1.png',
-          selected: false
+          image: '/src/assets/img/previews/preview-2.jpg',
+          imagePosition: {
+            height: '196px',
+            width: '139px',
+            top: '125px',
+            left: '171px'
+          }
         },
         {
           id: 4,
-          image: '/src/assets/img/frames/frame-2.png',
-          selected: false
+          image: '/src/assets/img/previews/preview-3.jpg',
+          imagePosition: {
+            height: '160px',
+            width: '228px',
+            top: '294px',
+            left: '101px'
+          }
         }
       ]
     }
@@ -124,10 +151,13 @@ export const selectedSlice = createSlice({
         return thumbnail
       })
       state.selected.template.selectedThumbnail = thumbnailPayload
+    },
+    setPreviewImage: (state: SelectedState, action: PayloadAction<string>) => {
+      state.selected.template.previewImage = action.payload
     }
   }
 })
 
-export const { setProduct, setFrame, setSize, setColor, setTemplate, setSelectedThumbnail } = selectedSlice.actions
+export const { setProduct, setFrame, setSize, setColor, setTemplate, setSelectedThumbnail, setPreviewImage } = selectedSlice.actions
 
 export default selectedSlice.reducer

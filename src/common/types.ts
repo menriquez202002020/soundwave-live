@@ -2,6 +2,7 @@ export interface Template {
   id: number
   image: string
   selected: boolean
+  previewImage: string
   title: {
     text: string
     fontSize: string
@@ -21,6 +22,12 @@ export interface Template {
   selectedThumbnail: {
     id: number
     image: string
+    imagePosition: {
+      height: string
+      width: string
+      top: string
+      left: string
+    }
   }
   thumbnails: any[]
 }
@@ -42,6 +49,7 @@ export interface Controls {
   isContinueDisabled: boolean
   showPreviewModal: boolean
   currentActiveAccordion: string
+  isPreviewLoading: boolean
 }
 
 export interface Customizer {

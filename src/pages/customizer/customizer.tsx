@@ -3,7 +3,7 @@ import type { MouseEventHandler } from 'react'
 import { Accordion } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
-import { toggleShowTemplates, toggleEditBackground, toggleShowAudioResetConfirmation, setIsContinueDisabled, setShowPreviewModal, setCurrentActiveAccordion } from '../../redux/reducers/controls'
+import { toggleShowTemplates, toggleEditBackground, toggleShowAudioResetConfirmation, setIsContinueDisabled, setShowPreviewModal, setCurrentActiveAccordion, setIsPreviewLoading } from '../../redux/reducers/controls'
 import { setAudioFile, updateSpecifications } from '../../redux/reducers/canvas'
 import '~/pages/customizer/customizer.scss'
 import TitleEditor from '../../components/TitleEditor'
@@ -23,8 +23,9 @@ import { setAudio, setMaterialFrame, setMaterialSize, setCustomizedImage } from 
 import { fetchAllProducts } from '../../redux/reducers/products'
 import config from '../../config'
 import Client from 'shopify-buy'
-import { setProduct } from '../../redux/reducers/selected'
+import { setPreviewImage, setProduct, setSelectedThumbnail } from '../../redux/reducers/selected'
 import { changeLayoutState } from '../../redux/reducers/customizer'
+import { PreparePreview } from '../../components/PreparePreview'
 
 export const Customizer: React.FC = () => {
   const { controls } = useSelector((state: RootState) => state.controls)
@@ -94,11 +95,29 @@ export const Customizer: React.FC = () => {
       })
   }
 
+  const setCurrentPreviewImage = (): void => {
+    const node: HTMLElement | null = document.getElementById('main_container_prepare') as HTMLElement
+
+    node.style.display = 'block'
+
+    html2canvas(node)
+      .then(async (canvas) => {
+        dispatch(setPreviewImage(canvas.toDataURL()))
+        node.style.display = 'none'
+        dispatch(setIsPreviewLoading(false))
+      })
+      .catch(async (err) => {
+        console.log(err)
+      })
+  }
+
   const handlePreviewClick = (): void => {
     const node: HTMLElement | null = document.getElementById('canvas-container') as HTMLElement
     node.style.position = 'unset'
     node.style.left = '0'
     node.style.transform = 'unset'
+
+    dispatch(setIsPreviewLoading(true))
 
     html2canvas(node)
       .then(async (canvas) => {
@@ -106,9 +125,17 @@ export const Customizer: React.FC = () => {
         node.style.position = 'relative'
         node.style.left = '50%'
         node.style.transform = 'translateX(-50%)'
+
+        const firstThumbnail = selected.template.selectedThumbnail
+        dispatch(setSelectedThumbnail(firstThumbnail))
+
+        setTimeout(() => {
+          setCurrentPreviewImage()
+        }, 500)
       })
       .catch(async (err) => {
         console.log(err)
+        dispatch(setIsPreviewLoading(false))
       })
 
     dispatch(setShowPreviewModal(true))
@@ -199,6 +226,7 @@ export const Customizer: React.FC = () => {
           </div>
         </div>
       </div>
+      <PreparePreview />
     </>
   )
 }

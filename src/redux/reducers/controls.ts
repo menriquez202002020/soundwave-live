@@ -26,7 +26,8 @@ const initialState: ControlsState = {
     showTitleSaved: false,
     isContinueDisabled: true,
     showPreviewModal: false,
-    currentActiveAccordion: '0'
+    currentActiveAccordion: '0',
+    isPreviewLoading: false
   }
 }
 
@@ -101,6 +102,9 @@ export const controlsSlice = createSlice({
     },
     setCurrentActiveAccordion: (state: ControlsState, action: PayloadAction<string>) => {
       state.controls.currentActiveAccordion = action.payload
+    },
+    setIsPreviewLoading: (state: ControlsState, action: PayloadAction<boolean>) => {
+      state.controls.isPreviewLoading = action.payload
     }
   }
 })
@@ -121,7 +125,8 @@ export const {
   setShowtitleSaved,
   setIsContinueDisabled,
   setShowPreviewModal,
-  setCurrentActiveAccordion
+  setCurrentActiveAccordion,
+  setIsPreviewLoading
 } = controlsSlice.actions
 
 export default controlsSlice.reducer
