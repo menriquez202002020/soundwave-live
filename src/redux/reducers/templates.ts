@@ -7,6 +7,13 @@ export interface TemplatesState {
   template: Template
 }
 
+type ImagePosition = {
+  height: string;
+  width: string;
+  top: string;
+  left: string;
+};
+
 const initialState: TemplatesState = {
   templates: [],
   template: {
@@ -49,7 +56,13 @@ const initialState: TemplatesState = {
     ],
     selectedThumbnail: {
       id: 1,
-      image: '/src/assets/img/frames/frame-2.png'
+      image: '/src/assets/img/frames/frame-2.png',
+      imagePosition: {
+        height: "100px",
+        width: "200px",
+        top: "10px",
+        left: "20px",
+      },
     },
     thumbnails: [
       {
