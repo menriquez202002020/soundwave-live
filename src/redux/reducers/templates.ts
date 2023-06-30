@@ -7,18 +7,12 @@ export interface TemplatesState {
   template: Template
 }
 
-type ImagePosition = {
-  height: string;
-  width: string;
-  top: string;
-  left: string;
-};
-
 const initialState: TemplatesState = {
   templates: [],
   template: {
     id: 1,
     image: '/src/assets/img/frames/frame-1.png',
+    previewImage: '/src/assets/img/frames/frame-1.png',
     selected: true,
     title: {
       text: 'Minimalist nature',
