@@ -3,7 +3,7 @@ import type { MouseEventHandler } from 'react'
 import { Accordion } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
-import { toggleShowTemplates, toggleEditBackground, toggleShowAudioResetConfirmation, setIsContinueDisabled, setShowPreviewModal, setCurrentActiveAccordion, setIsPreviewLoading } from '../../redux/reducers/controls'
+import { toggleShowTemplates, toggleEditBackground, toggleShowAudioResetConfirmation, setIsContinueDisabled, setShowPreviewModal, setCurrentActiveAccordion, setCurrentStep, setIsPreviewLoading, toggleTitleEditor, toggleSubtitleEditor, setCurrentEditting } from '../../redux/reducers/controls'
 import { setAudioFile, updateSpecifications } from '../../redux/reducers/canvas'
 import '~/pages/customizer/customizer.scss'
 import TitleEditor from '../../components/TitleEditor'
@@ -31,16 +31,33 @@ export const Customizer: React.FC = () => {
   const { controls } = useSelector((state: RootState) => state.controls)
   const { selected } = useSelector((state: RootState) => state.selected)
   const { orientation, audioFile, audioFileName } = useSelector((state: RootState) => state.canvas)
+  const { appLayoutState } = useSelector((state: RootState) => state.customizer)
   const dispatch = useDispatch()
 
   const handleCloseEditLayoutBackground: MouseEventHandler<HTMLDivElement> = (event) => {
     const target = event.target as HTMLDivElement
     const classList = Array.from(target.classList)
-    const filteredClassList = classList.filter((element: string) => {
+    const filteredClassListText = classList.filter((element: string) => {
+      const canvasClass = ['group-input', 'form-input', 'select-input', 'control-label', 'form-container', 'group-half']
+      return canvasClass.includes(element)
+    })
+    const filteredClassListCanvas = classList.filter((element: string) => {
       const canvasClass = ['overlay', 'frame-color-selection-img', 'frame-color-selection-input', 'd-d-content']
       return canvasClass.includes(element)
     })
-    dispatch(toggleEditBackground(filteredClassList.length > 0))
+    if (controls.showTitleEditor || controls.showSubtitleEditor) {
+      if (controls.showTitleEditor) {
+        dispatch(toggleTitleEditor(filteredClassListText.length > 0))
+        dispatch(setCurrentEditting(''))
+      }
+
+      if (controls.showSubtitleEditor) {
+        dispatch(toggleSubtitleEditor(filteredClassListText.length > 0))
+        dispatch(setCurrentEditting(''))
+      }
+    } else {
+      dispatch(toggleEditBackground(filteredClassListCanvas.length > 0))
+    }
   }
 
   const handleConfirmDelete = (): void => {
@@ -69,12 +86,12 @@ export const Customizer: React.FC = () => {
       dispatch(setIsContinueDisabled(true))
       dispatch(setCurrentActiveAccordion('1'))
     }
-
     if (controls.currentStep === 'material') {
       dispatch(setMaterialFrame(selected.frame))
       dispatch(setMaterialSize(selected.size))
-      dispatch(setIsContinueDisabled(true))
+      dispatch(setIsContinueDisabled(false))
       dispatch(setCurrentActiveAccordion('2'))
+      dispatch(setCurrentStep('order'))
     }
   }
 
@@ -148,12 +165,15 @@ export const Customizer: React.FC = () => {
 
   return (
     <>
-      <div className='template-container'>
-        <div className="template-action-container">
-          <button onClick={() => dispatch(toggleShowTemplates(true))} className="add-template-button">Template gallery</button>
-          <button onClick={() => dispatch(toggleShowTemplates(false))} className="close-template-button"><img src="/src/assets/icons/close.png" alt="" className="icon" /></button>
-        </div>
-        <div className='col-12 customizer-container' onClick={handleCloseEditLayoutBackground}>
+      <div onClick={handleCloseEditLayoutBackground} className={`template-container ${controls.showTemplates && appLayoutState !== 'Desktop' ? 'mobile-template-container' : ''}`}>
+        {
+          (!(controls.showTemplates && appLayoutState !== 'Desktop')) &&
+          <div className="template-action-container">
+            <button onClick={() => dispatch(toggleShowTemplates(true))} className="add-template-button">Template gallery</button>
+            <button onClick={() => dispatch(toggleShowTemplates(false))} className="close-template-button"><img src="/src/assets/icons/close.png" alt="" className="icon" /></button>
+          </div>
+        }
+        <div className='col-12 customizer-container' >
           { controls.showTemplates || controls.showTitleEditor || controls.showSubtitleEditor
             ? (
               <div className="col-5 input-container">
@@ -186,17 +206,17 @@ export const Customizer: React.FC = () => {
                     {/* Order Review Accordion */}
                     <OrderReviewAccordion eventKey='2' />
 
-                    {(!controls.showTemplates) &&
+                    {(!controls.showTemplates && appLayoutState === 'Desktop') &&
                       <div className='input-btns col-12'>
                         <button onClick={handlePreviewClick} className='btn-transparent col-6'>
                           Preview
                         </button>
                         { controls.isContinueDisabled
                           ? <button disabled className='btn disabled col-6'>
-                              Continue
+                              {controls.currentStep === 'order' ? 'Go to checkout' : 'Continue' }
                             </button>
                           : <button onClick={handleCurrentStep} className='btn btn-primary col-6'>
-                              Continue
+                              {controls.currentStep === 'order' ? 'Go to checkout' : 'Continue' }
                             </button>
                         }
                       </div>
@@ -204,6 +224,7 @@ export const Customizer: React.FC = () => {
                   </Accordion>
                 )
             }
+
             {controls.showRemoveAudioConfirmation
               ? <ConfirmationModal
                   isOpen={controls.showRemoveAudioConfirmation}
@@ -221,11 +242,27 @@ export const Customizer: React.FC = () => {
           </div>
           }
           {/* Canvas Container */}
-          <div className={`col-7 canvas-container ${orientation}`}>
-            <Canvas />
-          </div>
+          {
+            (!controls.showTemplates || appLayoutState === 'Desktop') &&
+            <div className={`col-7 canvas-container ${orientation}`}>
+              <Canvas />
+            </div>
+          }
         </div>
       </div>
+      {(!controls.showTemplates && appLayoutState !== 'Desktop' && !(controls.showTemplates || controls.showTitleEditor || controls.showSubtitleEditor)) && <div className='mobile-footer input-btns col-12'>
+        <button onClick={handlePreviewClick} className='btn-transparent col-6'>
+          Preview
+        </button>
+        { controls.isContinueDisabled
+          ? <button disabled className='btn disabled col-6'>
+              {controls.currentStep === 'order' ? 'Go to checkout' : 'Continue' }
+            </button>
+          : <button onClick={handleCurrentStep} className='btn btn-primary col-6'>
+              {controls.currentStep === 'order' ? 'Go to checkout' : 'Continue' }
+            </button>
+        }
+      </div>}
       <PreparePreview />
     </>
   )

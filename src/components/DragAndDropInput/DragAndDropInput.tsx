@@ -59,7 +59,7 @@ const DragAndDropInput: React.FC<DragAndDropInputProps> = ({ onFileChange }) => 
         hidden
         ref={inputRef}
       />
-      <p onClick={handleClick}>Click to upload { appLayoutState === 'Desktop' ?? <span className='drag-drop-title-light'>or drag & drop</span> }</p>
+      <p onClick={handleClick}>Click to upload { appLayoutState === 'Desktop' && <span className='drag-drop-title-light'>or drag & drop</span> }</p>
       <span className='drag-drop-subtitle'>MP3, MP4  &middot;  10MB</span>
     </div>
   )

@@ -12,8 +12,8 @@ const initialState: TemplatesState = {
   template: {
     id: 1,
     image: '/src/assets/img/frames/frame-1.png',
-    previewImage: '/src/assets/img/frames/frame-1.png',
     selected: true,
+    previewImage: '',
     title: {
       text: 'Minimalist nature',
       fontSize: '24px',
@@ -52,11 +52,11 @@ const initialState: TemplatesState = {
       id: 1,
       image: '/src/assets/img/frames/frame-2.png',
       imagePosition: {
-        height: "100px",
-        width: "200px",
-        top: "10px",
-        left: "20px",
-      },
+        height: '196px',
+        width: '139px',
+        top: '125px',
+        left: '171px'
+      }
     },
     thumbnails: [
       {

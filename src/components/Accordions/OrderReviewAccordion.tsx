@@ -3,9 +3,8 @@ import { Accordion } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
 import { type RootState } from '../../redux/store'
 import './index.scss'
-import { setCurrentActiveAccordion } from '../../redux/reducers/controls'
+import { setCurrentActiveAccordion, setCurrentStep } from '../../redux/reducers/controls'
 import { setTotalPrice } from '../../redux/reducers/checkout'
-
 interface AccordionProps {
   eventKey: string
 }
@@ -25,12 +24,17 @@ const OrderReviewAccordion: React.FC<AccordionProps> = ({ eventKey }) => {
     dispatch(setTotalPrice(payload))
   }
 
+  const updateCurrentStep = (): void => {
+    dispatch(setCurrentStep('order'))
+    dispatch(setCurrentActiveAccordion('2'))
+  }
+
   useEffect(() => {
     updateTotalPrice()
   }, [selected.size, selected.product])
 
   return (
-    <Accordion.Item onClick={() => dispatch(setCurrentActiveAccordion('2'))} eventKey={eventKey}>
+    <Accordion.Item onClick={() => updateCurrentStep} eventKey={eventKey}>
       <Accordion.Header>
         <div className='upload-header'>
           <div>

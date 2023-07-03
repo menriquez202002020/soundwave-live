@@ -15,3 +15,10 @@
 .drag-and-drop-input {
     z-index: 30 !important;
 }
+
+@media (max-width: 768px) {
+    .upload-icon {
+        width: 24px !important;
+        margin-bottom: 12px;
+    }
+}

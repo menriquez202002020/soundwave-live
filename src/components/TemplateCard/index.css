@@ -1,6 +1,6 @@
 .card-wrapper {
     width: 100%;
-    background: #FFFFFF;
+    background: #FAFAFA;
     border: 1px solid #EFEFEF;
     border-radius: 8px;
     padding: 16px;
@@ -8,7 +8,7 @@
 }
 
 .card-wrapper.selected {
-    border: 1px solid #222222;
+    border: 1px solid #403F3F;
 }
 
 .image {

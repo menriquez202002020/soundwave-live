@@ -81,12 +81,24 @@ const Canvas: React.FC = () => {
   return (
     <>
       <div className='canvas-component'>
-        <div className='canvas-header'>
-          <p className='text-capitalize'>{orientation} Image Background Template</p>
-          <button className='btn-circle' onClick={setCanvasOrientation}>
-            <img className={`orientation-icon ${orientation + '-orientation'}`} src='src/assets/icons/svg/orientation-icon.svg' alt='' />
-          </button>
-        </div>
+        {
+          (appLayoutState !== 'Desktop' && (controls.showTemplates || controls.showTitleEditor || controls.showSubtitleEditor))
+            ? <div className="title-container">
+              <div className="title">{controls.showTitleEditor ? 'Title Customization' : 'Subtitle Customization'}</div>
+              <div className="subtitle">Style title of your soundwave art</div>
+            </div>
+            : (controls.editBackground)
+                ? <div className="title-container">
+                <div className="title">Background customization</div>
+                <div className="subtitle">Upload an image</div>
+              </div>
+                : <div className='canvas-header'>
+                <p className='text-capitalize'>{orientation} Image Background {appLayoutState === 'Desktop' ?? <span>Template</span>}</p>
+                  <button className='btn-circle' onClick={setCanvasOrientation}>
+                    <img className={`orientation-icon ${orientation + '-orientation'}`} src='src/assets/icons/svg/orientation-icon.svg' alt='' />
+                  </button>
+              </div>
+        }
         <div id="canvas-container" className={'canvas-content'} style={{ background: `url('${customizer.backgroundImage}'` }}>
           <div className={`overlay ${selected.color.view} ${selected.color.key}`}></div>
           <div onClick={editTitle} className={`canvas-text title ${controls.currentEditting === 'title' ? 'current' : ''}`}>

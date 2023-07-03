@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react'
+import { useSelector } from 'react-redux'
 import './DragAndDropImageInput.css'
+import type { RootState } from '../../redux/store'
 
 interface DragAndDropInputProps {
   onImageChange: (file: File) => void
@@ -10,6 +12,7 @@ interface DragAndDropInputState {
 }
 
 const DragAndDropImageInput: React.FC<DragAndDropInputProps> = ({ onImageChange }) => {
+  const { appLayoutState } = useSelector((state: RootState) => state.customizer)
   const [state, setState] = useState<DragAndDropInputState>({
     isDragging: false
   })
@@ -47,7 +50,7 @@ const DragAndDropImageInput: React.FC<DragAndDropInputProps> = ({ onImageChange 
       onDrop={handleDrop}
       onClick={handleFileInputClick}
     >
-      <img src='../src/assets/icons/img-upload.png' alt='' onClick={() => inputRef?.current?.click()} className='plus-icon d-d-content' />
+      <img src='../src/assets/icons/img-upload.png' alt='' onClick={() => inputRef?.current?.click()} className='upload-icon d-d-content' />
       <input
         className='d-d-content'
         type='file'
@@ -56,7 +59,7 @@ const DragAndDropImageInput: React.FC<DragAndDropInputProps> = ({ onImageChange 
         hidden
         ref={inputRef}
       />
-      <p className='d-d-content' onClick={() => inputRef?.current?.click()}>Upload or drag & drop your image</p>
+      <p className='d-d-content' onClick={() => inputRef?.current?.click()}>{ appLayoutState === 'Desktop' ? 'Upload or drag & drop your image' : 'Upload your image'}</p>
       <span>JPG, JPEG, PNG - 5MB</span>
     </div>
   )

@@ -90,16 +90,13 @@
     padding: 16px;
     text-align: center;
   }
-
-  .text.current {
-    background: rgba(255, 255, 255, 0.2);
-    border: 0.5px solid #EFEFEF;
-    border-radius: 8px;
-  }
 }
 
 .canvas-text.title.current {
   background-image: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0.5px solid #EFEFEF;
+  border-radius: 8px;
 }
 
 .canvas-text.subtitle {
@@ -128,20 +125,63 @@
   background-image: none;
 }
 
+.title-container {
+  display: block;
+  margin-top: 0;
+  padding: 16px;
+
+  .title {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 510;
+    font-size: 18px;
+    line-height: 32px;
+    color: #222222;
+  }
+
+  .subtitle {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 510;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B3B2B2;
+  }
+}
+
 @media (max-width: 768px) {
     .canvas-content {
-        height: fit-content;
-        padding: 72px 0px 40px 0px;
+      height: fit-content;
+      padding: 72px 0px 40px 0px;
+      border-radius: 0px !important;
+    }
+    .canvas-header { 
+      padding: 16px;
+    }
+    .canvas-header p {
+      font-size: 14px;
+      font-weight: medium;
     }
     .canvas-container {
       height: fit-content;
-      padding: 10px;
+      padding: 0px;
       border-radius: 8px 8px 0px 0px;
+      .title-container {
+        width: 100% !important;
+      }
     }
     .canvas-text.title {
       line-height: 32px;
       padding: 4px 16px;
       line-break: anywhere;
+    }
+    .canvas-text.title.current {
+      background: rgba(255, 255, 255, 0.2);
+      border: 0.5px solid #EFEFEF;
+      border-radius: 8px;
+      .text {
+        padding: 16px 14px;
+      }
     }
     .canvas-text.subtitle {
       line-break: anywhere;
@@ -164,23 +204,23 @@
       height: 84px !important;
     }
     .template-color {
+      z-index: 3;
         margin: 0;
         position: absolute;
         top: -40px;
         left: 10px;
-        gap: 10px;
-    }
-    .canvas-footer.mobile .frame-color-selection.frame-color {
-        height: 30px;
+        gap: 10px !important;
     }
     .canvas-footer.desktop {
         display: none;
     }
     .mobile label.col-3.frame-color-selection.frame-color.active img {
         border: 3px solid #fff;
-        box-shadow: 0px 0px 10px 0px #fff;
         border-radius: 7px;
         box-sizing: border-box;
+        height: 24px;
+        width: 24px;
+        box-shadow: none !important;
     }
     .mobile label.col-3.frame-color-selection img {
         border-radius: 5px;

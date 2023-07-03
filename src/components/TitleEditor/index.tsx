@@ -1,15 +1,16 @@
-import React, { type MouseEventHandler, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.scss'
 import type { RootState } from '../../redux/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateTitle } from '../../redux/reducers/canvas'
-import { toggleTitleEditor, toggleSubtitleEditor, setCurrentEditting, setShowtitleSaved } from '../../redux/reducers/controls'
+import { setShowtitleSaved } from '../../redux/reducers/controls'
 
 const TitleEditor: React.FC = () => {
   const [hasUpdate, setHasUpdate] = useState<boolean>(false)
   const { title } = useSelector((state: RootState) => state.canvas.content)
   const { template } = useSelector((state: RootState) => state.selected.selected)
   const { controls } = useSelector((state: RootState) => state.controls)
+  const { appLayoutState } = useSelector((state: RootState) => state.customizer)
   const dispatch = useDispatch()
 
   const update = (param: any): void => {
@@ -21,25 +22,6 @@ const TitleEditor: React.FC = () => {
     dispatch(updateTitle(newVal))
     console.log(newVal)
     setHasUpdate(true)
-  }
-
-  const handleCloseTitleCustomization: MouseEventHandler<HTMLDivElement> = (event) => {
-    const target = event.target as HTMLDivElement
-    const classList = Array.from(target.classList)
-    const filteredClassList = classList.filter((element: string) => {
-      const canvasClass = ['group-input', 'form-input', 'select-input', 'control-label', 'form-container', 'group-half']
-      return canvasClass.includes(element)
-    })
-
-    if (controls.showTitleEditor) {
-      dispatch(toggleTitleEditor(filteredClassList.length > 0))
-      dispatch(setCurrentEditting(''))
-    }
-
-    if (controls.showSubtitleEditor) {
-      dispatch(toggleSubtitleEditor(filteredClassList.length > 0))
-      dispatch(setCurrentEditting(''))
-    }
   }
 
   useEffect(() => {
@@ -57,11 +39,14 @@ const TitleEditor: React.FC = () => {
   }, [title])
 
   return (
-    <div onClick={handleCloseTitleCustomization} className="sidecontainer">
-      <div className="title-container">
-        <div className="title">Title Customization</div>
-        <div className="subtitle">Style title of your soundwave art</div>
-      </div>
+    <div className="sidecontainer">
+      {
+        appLayoutState === 'Desktop' &&
+        <div className="title-container">
+          <div className="title">Title Customization</div>
+          <div className="subtitle">Style title of your soundwave art</div>
+        </div>
+      }
       <div className="form-container">
         {/* Title text */}
         <div className="group-input">

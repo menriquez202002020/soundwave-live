@@ -96,4 +96,21 @@
   .wave-wrapper canvas {
     height: 146px !important;
   }
+  .accordion-upload-container {
+    height: 176px !important;
+  }
+  .accordion-upload-container .filename {
+    margin-top: 0px;
+  }
+  .accordion-body {
+    padding: 16px !important;
+  }
+  .plus-icon {
+    width: 48px !important;
+    margin-bottom: 12px;
+  }
+  .mobile-bg-text {
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
 }

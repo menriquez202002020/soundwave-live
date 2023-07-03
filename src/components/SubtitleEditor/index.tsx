@@ -10,6 +10,7 @@ const TitleEditor: React.FC = () => {
   const { subtitle } = useSelector((state: RootState) => state.canvas.content)
   const { template } = useSelector((state: RootState) => state.selected.selected)
   const { controls } = useSelector((state: RootState) => state.controls)
+  const { appLayoutState } = useSelector((state: RootState) => state.customizer)
   const dispatch = useDispatch()
 
   const update = (param: any): void => {
@@ -57,10 +58,13 @@ const TitleEditor: React.FC = () => {
 
   return (
     <div onClick={handleCloseTitleCustomization} className="sidecontainer">
-      <div className="title-container">
-        <div className="title">Subtitle Customization</div>
-        <div className="subtitle">Style subtitle of your soundwave art</div>
-      </div>
+      {
+        appLayoutState === 'Desktop' &&
+        <div className="title-container">
+          <div className="title">Subtitle Customization</div>
+          <div className="subtitle">Style subtitle of your soundwave art</div>
+        </div>
+      }
       <div className="form-container">
         {/* Title text */}
         <div className="group-input">
