@@ -50,30 +50,54 @@ const initialState: TemplatesState = {
     ],
     selectedThumbnail: {
       id: 1,
-      image: '/src/assets/img/frames/frame-2.png',
+      image: '/src/assets/img/previews/preview-3.jpg',
       imagePosition: {
-        height: '196px',
-        width: '139px',
-        top: '125px',
-        left: '171px'
+        height: '160px',
+        width: '228px',
+        top: '294px',
+        left: '101px'
       }
     },
     thumbnails: [
       {
         id: 1,
-        image: '/src/assets/img/frames/frame-2.png'
+        image: '/src/assets/img/previews/preview-3.jpg',
+        imagePosition: {
+          height: '160px',
+          width: '228px',
+          top: '294px',
+          left: '101px'
+        }
       },
       {
         id: 2,
-        image: '/src/assets/img/frames/frame-1.png'
+        image: '/src/assets/img/previews/preview-1.jpg',
+        imagePosition: {
+          height: '101px',
+          width: '143px',
+          top: '177px',
+          left: '108px'
+        }
       },
       {
         id: 3,
-        image: '/src/assets/img/frames/frame-3.png'
+        image: '/src/assets/img/previews/preview-2.jpg',
+        imagePosition: {
+          height: '196px',
+          width: '139px',
+          top: '125px',
+          left: '171px'
+        }
       },
       {
         id: 4,
-        image: '/src/assets/img/frames/frame-2.png'
+        image: '/src/assets/img/previews/preview-3.jpg',
+        imagePosition: {
+          height: '160px',
+          width: '228px',
+          top: '294px',
+          left: '101px'
+        }
       }
     ]
   }

@@ -34,10 +34,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin sans",
-        "code": "JosefinSans-R"
+        "name": "Josefin sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 2,
@@ -74,15 +115,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nickainley",
-        "code": "Nickainley-R"
+        "name": "Nickainley"
       },
       {
         "id": 2,
-        "name": "Glacial Indifference",
-        "code": "GlacialIndifference-R"
+        "name": "Glacial Indifference"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 3,
@@ -123,15 +204,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Lato",
-        "code": "Lato-R"
+        "name": "Lato"
       },
       {
         "id": 2,
-        "name": "Kollektif",
-        "code": "Kollektif-R"
+        "name": "Kollektif"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 4,
@@ -172,10 +293,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "DM Sans",
-        "code": "DMSerif-R"
+        "name": "DM Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 5,
@@ -212,15 +374,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Alta",
-        "code": "Alta-R"
+        "name": "Alta"
       },
       {
         "id": 2,
-        "name": "Open Sans",
-        "code": "OpenSans-R"
+        "name": "Open Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 6,
@@ -257,15 +459,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "YellowTail",
-        "code": "YellowTail-R"
+        "name": "YellowTail"
       },
       {
         "id": 2,
-        "name": "Blinker",
-        "code": "Blinker-R"
+        "name": "Blinker"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 7,
@@ -302,15 +544,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "YellowTail",
-        "code": "YellowTail-R"
+        "name": "YellowTail"
       },
       {
         "id": 2,
-        "name": "Open Sans",
-        "code": "OpenSans-R"
+        "name": "Open Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 8,
@@ -347,10 +629,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Gloria Hallelujah",
-        "code": "GloriaHallelujah-R"
+        "name": "Gloria Hallelujah"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 9,
@@ -391,10 +714,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 10,
@@ -431,10 +795,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 11,
@@ -471,15 +876,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 12,
@@ -520,15 +965,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 13,
@@ -569,15 +1054,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       },
       {
         "id": 2,
-        "name": "Noto Serif Display",
-        "code": "NotoSerifDisplay_SemiCondensed-R"
+        "name": "Noto Serif Display"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 14,
@@ -614,15 +1139,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "EB Garamond",
-        "code": "EBGaramond-R"
+        "name": "EB Garamond"
       },
       {
         "id": 2,
-        "name": "Kalam",
-        "code": "Kalam-R"
+        "name": "Kalam"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 15,
@@ -659,15 +1224,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Noto Serif",
-        "code": "NotoSerifDisplay_SemiCondensed-R"
+        "name": "Noto Serif"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 16,
@@ -704,10 +1309,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin Sans",
-        "code": "JosefinSans-R"
+        "name": "Josefin Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 17,
@@ -744,15 +1390,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 18,
@@ -793,15 +1479,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Edo",
-        "code": "edosz-R"
+        "name": "Edo"
       },
       {
         "id": 2,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 19,
@@ -838,15 +1564,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Quicksand",
-        "code": "Quicksand-R"
+        "name": "Quicksand"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 20,
@@ -883,15 +1649,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Dream Avenue",
-        "code": "NetDream-R"
+        "name": "Dream Avenue"
       },
       {
         "id": 2,
-        "name": "Roca Black",
-        "code": "RocaBlack-R"
+        "name": "Roca Black"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 21,
@@ -932,15 +1738,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Blueberry",
-        "code": "Blueberry-R"
+        "name": "Blueberry"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 22,
@@ -981,15 +1827,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Brightwall",
-        "code": "Brightwall-R"
+        "name": "Brightwall"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 23,
@@ -1026,10 +1912,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Shrikhand",
-        "code": "Shrikhand-R"
+        "name": "Shrikhand"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 24,
@@ -1066,15 +1993,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Brightwall",
-        "code": "Brightwall-R"
+        "name": "Brightwall"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 25,
@@ -1111,15 +2078,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "DM Serif Sans",
-        "code": "DMSerif-R"
+        "name": "DM Serif Sans"
       },
       {
         "id": 2,
-        "name": "Josefin sans",
-        "code": "JosefinSans-R"
+        "name": "Josefin sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 26,
@@ -1156,15 +2163,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Hatton",
-        "code": "PPHatton-R"
+        "name": "Hatton"
       },
       {
         "id": 2,
-        "name": "Tenor sans",
-        "code": "TenorSans-R"
+        "name": "Tenor sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 27,
@@ -1205,15 +2252,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Abril fatface",
-        "code": "AbrilFF-R"
+        "name": "Abril fatface"
       },
       {
         "id": 2,
-        "name": "Cormorant Garamond",
-        "code": "CormorantGaramond-R"
+        "name": "Cormorant Garamond"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 28,
@@ -1250,15 +2337,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "The Seasons",
-        "code": "TheSeasons-R"
+        "name": "The Seasons"
       },
       {
         "id": 2,
-        "name": "Garet",
-        "code": "GaretB-R"
+        "name": "Garet"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 29,
@@ -1295,15 +2422,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Marline",
-        "code": "Marline-R"
+        "name": "Marline"
       },
       {
         "id": 2,
-        "name": "Garet",
-        "code": "GaretB-R"
+        "name": "Garet"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 30,
@@ -1344,15 +2511,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "RoxboroughCF",
-        "code": "RoxboroughCF-R"
+        "name": "RoxboroughCF"
       },
       {
         "id": 2,
-        "name": "Sorts Mill Goudy",
-        "code": "SortsMillGoudy-R"
+        "name": "Sorts Mill Goudy"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 31,
@@ -1393,10 +2600,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nectarine",
-        "code": "Nectarine-R"
+        "name": "Nectarine"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 32,
@@ -1433,10 +2681,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nectarine",
-        "code": "Nectarine-R"
+        "name": "Nectarine"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 33,
@@ -1473,15 +2762,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Noto Serif",
-        "code": "NotoSerifDisplay_SemiCondensed-R"
+        "name": "Noto Serif"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 34,
@@ -1518,10 +2847,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin Sans",
-        "code": "JosefinSans-R"
+        "name": "Josefin Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 35,
@@ -1558,15 +2928,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 36,
@@ -1607,15 +3017,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Edo",
-        "code": "edosz-R"
+        "name": "Edo"
       },
       {
         "id": 2,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 37,
@@ -1652,10 +3102,51 @@
     "fonts": [
       {
         "id": 1,
-        "title": "Josefin sans",
-        "code": "JosefinSans-R"
+        "title": "Josefin sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 38,
@@ -1692,15 +3183,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nickainley",
-        "code": "Nickainley-R"
+        "name": "Nickainley"
       },
       {
         "id": 2,
-        "name": "Glacial Indifference",
-        "code": "GlacialIndifference-R"
+        "name": "Glacial Indifference"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 39,
@@ -1741,15 +3272,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Lato",
-        "code": "Lato-R"
+        "name": "Lato"
       },
       {
         "id": 2,
-        "name": "Kollektif",
-        "code": "Kollektif-R"
+        "name": "Kollektif"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 40,
@@ -1790,10 +3361,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "DM Sans",
-        "code": "DMSerif-R"
+        "name": "DM Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 41,
@@ -1830,15 +3442,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Alta",
-        "code": "Alta-R"
+        "name": "Alta"
       },
       {
         "id": 2,
-        "name": "Open Sans",
-        "code": "OpenSans-R"
+        "name": "Open Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 42,
@@ -1875,15 +3527,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "YellowTail",
-        "code": "YellowTail-R"
+        "name": "YellowTail"
       },
       {
         "id": 2,
-        "name": "Blinker",
-        "code": "Blinker-R"
+        "name": "Blinker"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 43,
@@ -1920,15 +3612,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "YellowTail",
-        "code": "YellowTail-R"
+        "name": "YellowTail"
       },
       {
         "id": 2,
-        "name": "Open Sans",
-        "code": "OpenSans-R"
+        "name": "Open Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 44,
@@ -1965,10 +3697,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Gloria Hallelujah",
-        "code": "GloriaHallelujah-R"
+        "name": "Gloria Hallelujah"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 45,
@@ -2009,10 +3782,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 46,
@@ -2049,10 +3863,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 47,
@@ -2089,15 +3944,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 48,
@@ -2138,15 +4033,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 49,
@@ -2187,15 +4122,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       },
       {
         "id": 2,
-        "name": "Noto Serif Display",
-        "code": "NotoSerifDisplay_SemiCondensed-R"
+        "name": "Noto Serif Display"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 50,
@@ -2232,15 +4207,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "EB Garamond",
-        "code": "EBGaramond-R"
+        "name": "EB Garamond"
       },
       {
         "id": 2,
-        "name": "Kalam",
-        "code": "Kalam-R"
+        "name": "Kalam"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 51,
@@ -2277,15 +4292,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Noto Serif",
-        "code": "NotoSerifDisplay_SemiCondensed-R"
+        "name": "Noto Serif"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 52,
@@ -2322,10 +4377,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin Sans",
-        "code": "JosefinSans-R"
+        "name": "Josefin Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 53,
@@ -2362,15 +4458,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 54,
@@ -2411,15 +4547,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Edo",
-        "code": "edosz-R"
+        "name": "Edo"
       },
       {
         "id": 2,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 55,
@@ -2456,15 +4632,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Quicksand",
-        "code": "Quicksand-R"
+        "name": "Quicksand"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 56,
@@ -2501,15 +4717,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Dream Avenue",
-        "code": "NetDream-R"
+        "name": "Dream Avenue"
       },
       {
         "id": 2,
-        "name": "Roca Black",
-        "code": "RocaBlack-R"
+        "name": "Roca Black"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 57,
@@ -2550,15 +4806,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Blueberry",
-        "code": "Blueberry-R"
+        "name": "Blueberry"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 58,
@@ -2599,15 +4895,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Brightwall",
-        "code": "Brightwall-R"
+        "name": "Brightwall"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 59,
@@ -2644,10 +4980,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Shrikhand",
-        "code": "Shrikhand-R"
+        "name": "Shrikhand"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 60,
@@ -2684,15 +5061,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Brightwall",
-        "code": "Brightwall-R"
+        "name": "Brightwall"
       },
       {
         "id": 2,
-        "name": "Aileron",
-        "code": "Aileron-R"
+        "name": "Aileron"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 61,
@@ -2729,15 +5146,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "DM Serif Sans",
-        "code": "DMSerif-R"
+        "name": "DM Serif Sans"
       },
       {
         "id": 2,
-        "name": "Josefin sans",
-        "code": "JosefinSans-R"
+        "name": "Josefin sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 62,
@@ -2774,15 +5231,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Hatton",
-        "code": "PPHatton-R"
+        "name": "Hatton"
       },
       {
         "id": 2,
-        "name": "Tenor sans",
-        "code": "TenorSans-R"
+        "name": "Tenor sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 63,
@@ -2823,15 +5320,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Abril fatface",
-        "code": "AbrilFF-R"
+        "name": "Abril fatface"
       },
       {
         "id": 2,
-        "name": "Cormorant Garamond",
-        "code": "CormorantGaramond-R"
+        "name": "Cormorant Garamond"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 64,
@@ -2868,15 +5405,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "The Seasons",
-        "code": "TheSeasons-R"
+        "name": "The Seasons"
       },
       {
         "id": 2,
-        "name": "Garet",
-        "code": "GaretB-R"
+        "name": "Garet"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 65,
@@ -2913,15 +5490,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Marline",
-        "code": "Marline-R"
+        "name": "Marline"
       },
       {
         "id": 2,
-        "name": "Garet",
-        "code": "GaretB-R"
+        "name": "Garet"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 66,
@@ -2962,15 +5579,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "RoxboroughCF",
-        "code": "RoxboroughCF-R"
+        "name": "RoxboroughCF"
       },
       {
         "id": 2,
-        "name": "Sorts Mill Goudy",
-        "code": "SortsMillGoudy-R"
+        "name": "Sorts Mill Goudy"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 67,
@@ -3011,10 +5668,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nectarine",
-        "code": "Nectarine-R"
+        "name": "Nectarine"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 68,
@@ -3051,10 +5749,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Nectarine",
-        "code": "Nectarine-R"
+        "name": "Nectarine"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 69,
@@ -3091,15 +5830,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Playfair",
-        "code": "PlayfairDisplay-R"
+        "name": "Playfair"
       },
       {
         "id": 2,
-        "name": "Noto Serif",
-        "code": "NotoSerifDisplay_SemiCondensed-R"
+        "name": "Noto Serif"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 70,
@@ -3136,10 +5915,51 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Josefin Sans",
-        "code": "JosefinSans-R"
+        "name": "Josefin Sans"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 71,
@@ -3176,15 +5996,55 @@
     "fonts": [
       {
         "id": 1,
-        "name": "PlayfairDisplay",
-        "code": "JosefinSans-R"
+        "name": "PlayfairDisplay"
       },
       {
         "id": 2,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   },
   {
     "id": 72,
@@ -3225,14 +6085,54 @@
     "fonts": [
       {
         "id": 1,
-        "name": "Edo",
-        "code": "edosz-R"
+        "name": "Edo"
       },
       {
         "id": 2,
-        "name": "Montserrat",
-        "code": "Montserrat-R"
+        "name": "Montserrat"
       }
-    ]
+    ],
+    "thumbnails": [
+        {
+          "id": 1,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/src/assets/img/previews/preview-1.jpg",
+          "imagePosition": {
+            "height": "101px",
+            "width": "143px",
+            "top": "177px",
+            "left": "108px"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/src/assets/img/previews/preview-2.jpg",
+          "imagePosition": {
+            "height": "196px",
+            "width": "139px",
+            "top": "125px",
+            "left": "171px"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/src/assets/img/previews/preview-3.jpg",
+          "imagePosition": {
+            "height": "160px",
+            "width": "228px",
+            "top": "294px",
+            "left": "101px"
+          }
+        }
+      ]
   }
 ]

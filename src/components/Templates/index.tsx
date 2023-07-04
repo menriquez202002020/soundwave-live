@@ -4,17 +4,20 @@ import React, { useEffect, useState } from 'react'
 import type { RootState } from '../../redux/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { load } from '../../redux/reducers/templates'
-import { toggleShowFilterDropdown, toggleShowTemplates } from '../../redux/reducers/controls'
+import { setIsPreviewLoading, setShowPreviewModal, toggleShowFilterDropdown, toggleShowTemplates } from '../../redux/reducers/controls'
 import { setFilters, toggleOptionChecked, clearFilters, removeSelectedFilter } from '../../redux/reducers/listing'
 import TemplateCard from '../TemplateCard'
 import ConfirmationModal from '../ConfirmationModal/ConfirmationModal'
-import { setTemplate } from '../../redux/reducers/selected'
+import { setPreviewImage, setSelectedThumbnail, setTemplate } from '../../redux/reducers/selected'
+import html2canvas from 'html2canvas'
+import { setCustomizedImage } from '../../redux/reducers/checkout'
 
 const Templates: React.FC = () => {
   const { templates, template } = useSelector((state: RootState) => state.templates)
   const { filters, selectedFilters } = useSelector((state: RootState) => state.listing.listing)
   const { controls } = useSelector((state: RootState) => state.controls)
   const { appLayoutState } = useSelector((state: RootState) => state.customizer)
+  const { selected } = useSelector((state: RootState) => state.selected)
   const [showConfirmation, toggeShowConfirmation] = useState(false)
   const dispatch = useDispatch()
 
@@ -32,8 +35,11 @@ const Templates: React.FC = () => {
   }
 
   const handleConfirm = (): void => {
-    dispatch(setTemplate(template))
-    console.log(template)
+    const tempTemplate = {
+      ...template,
+      selectedThumbnail: template.thumbnails[0]
+    }
+    dispatch(setTemplate(tempTemplate))
     dispatch(toggleShowTemplates(false))
     toggeShowConfirmation(false)
   }
@@ -58,6 +64,53 @@ const Templates: React.FC = () => {
       .catch(async (err) => {
         console.log(err)
       })
+  }
+
+  const setCurrentPreviewImage = (): void => {
+    const node: HTMLElement | null = document.getElementById('main_container_prepare') as HTMLElement
+
+    node.style.display = 'block'
+
+    html2canvas(node)
+      .then(async (canvas) => {
+        dispatch(setPreviewImage(canvas.toDataURL()))
+        node.style.display = 'none'
+        dispatch(setIsPreviewLoading(false))
+      })
+      .catch(async (err) => {
+        console.log(err)
+      })
+  }
+
+  const handlePreviewClick = (): void => {
+    const node: HTMLElement | null = document.getElementById('canvas-container') as HTMLElement
+    node.style.position = 'unset'
+    node.style.left = '0'
+    node.style.transform = 'unset'
+
+    dispatch(setIsPreviewLoading(true))
+
+    html2canvas(node)
+      .then(async (canvas) => {
+        dispatch(setCustomizedImage(canvas.toDataURL()))
+        node.style.position = 'relative'
+        node.style.left = '50%'
+        node.style.transform = 'translateX(-50%)'
+
+        const firstThumbnail = selected.template.selectedThumbnail
+        dispatch(setSelectedThumbnail(firstThumbnail))
+
+        setTimeout(() => {
+          setCurrentPreviewImage()
+        }, 500)
+      })
+      .catch(async (err) => {
+        console.log(err)
+        dispatch(setIsPreviewLoading(false))
+      })
+
+    dispatch(setShowPreviewModal(true))
+    dispatch(toggleShowTemplates(false))
   }
 
   useEffect(() => {
@@ -178,7 +231,7 @@ const Templates: React.FC = () => {
           <button className="load-more">Load more</button>
         </div>
         <div className="action-container">
-          <button className="preview">Preview</button>
+          <button className="preview" onClick={handlePreviewClick}>Preview</button>
           <button onClick={() => { handleModalClick(true) }} className="continue">Continue</button>
         </div>
         <div className="modals">

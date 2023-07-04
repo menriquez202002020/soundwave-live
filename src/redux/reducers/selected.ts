@@ -141,7 +141,6 @@ export const selectedSlice = createSlice({
     },
     setTemplate: (state: SelectedState, action: PayloadAction<Template>) => {
       const template = action.payload
-      state.selected.template.selectedThumbnail = template.thumbnails[0]
       state.selected.template = template
     },
     setSelectedThumbnail: (state: SelectedState, action: PayloadAction<any>) => {
